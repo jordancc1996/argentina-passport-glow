@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import EditorialSection from "@/components/EditorialSection";
-import patagoniaImage from "@/assets/patagonia-landscape.jpg";
+import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
 import mendozaImage from "@/assets/mendoza-vineyards.jpg";
 
 const About = () => {
@@ -19,8 +19,8 @@ const About = () => {
         <section className="relative py-32">
           <div className="absolute inset-0 z-0">
             <img
-              src={patagoniaImage}
-              alt="Patagonia landscape"
+              src={buenosAiresCityscape}
+              alt="Buenos Aires cityscape"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/30" />
