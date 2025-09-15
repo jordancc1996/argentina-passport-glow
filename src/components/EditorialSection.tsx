@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 interface EditorialSectionProps {
   children: React.ReactNode;
   className?: string;
@@ -10,11 +12,23 @@ const EditorialSection = ({
   centered = true 
 }: EditorialSectionProps) => {
   return (
-    <section className={`section-padding ${className}`}>
-      <div className={`max-w-4xl mx-auto px-8 ${centered ? 'text-center' : ''}`}>
+    <motion.section 
+      className={`section-padding ${className}`}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <motion.div 
+        className={`max-w-4xl mx-auto px-8 ${centered ? 'text-center' : ''}`}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
         {children}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

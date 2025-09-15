@@ -1,4 +1,6 @@
 import heroImage from "@/assets/hero-buenos-aires.jpg";
+import { motion } from 'framer-motion';
+import { useParallax, useScrollOpacity } from '@/hooks/useParallax';
 
 interface HeroProps {
   title: string;
@@ -15,10 +17,16 @@ const Hero = ({
   backgroundImage = heroImage,
   overlay = true 
 }: HeroProps) => {
+  const parallaxY = useParallax(-0.3);
+  const opacity = useScrollOpacity(600);
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Parallax Background Image */}
+      <motion.div 
+        className="absolute inset-0 z-0 scale-110"
+        style={{ y: parallaxY }}
+      >
         <img
           src={backgroundImage}
           alt="Argentina landscape"
@@ -27,26 +35,47 @@ const Hero = ({
         {overlay && (
           <div className="absolute inset-0 bg-black/20" />
         )}
-      </div>
+      </motion.div>
       
-      {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-8">
-        <h1 className="font-serif text-hero md:text-6xl lg:text-7xl xl:text-8xl text-white mb-8 tracking-wide">
+      {/* Content with Parallax Effects */}
+      <motion.div 
+        className="relative z-10 text-center max-w-4xl mx-auto px-8"
+        style={{ opacity }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+      >
+        <motion.h1 
+          className="font-serif text-hero md:text-6xl lg:text-7xl xl:text-8xl text-white mb-8 tracking-wide"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+        >
           {title}
-        </h1>
+        </motion.h1>
         
         {subtitle && (
-          <h2 className="font-serif text-xl-editorial md:text-3xl text-white/90 mb-12 tracking-wide max-w-3xl mx-auto">
+          <motion.h2 
+            className="font-serif text-xl-editorial md:text-3xl text-white/90 mb-12 tracking-wide max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.6 }}
+          >
             {subtitle}
-          </h2>
+          </motion.h2>
         )}
         
         {description && (
-          <p className="text-body md:text-lg text-white/80 max-w-2xl mx-auto tracking-wide">
+          <motion.p 
+            className="text-body md:text-lg text-white/80 max-w-2xl mx-auto tracking-wide"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.9 }}
+          >
             {description}
-          </p>
+          </motion.p>
         )}
-      </div>
+      </motion.div>
     </section>
   );
 };
