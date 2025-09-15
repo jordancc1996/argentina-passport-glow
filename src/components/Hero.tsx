@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-buenos-aires.jpg";
+import heroImage from "@/assets/hero-aerial-buenos-aires.jpg";
 import { motion } from 'framer-motion';
 import { useParallax, useScrollOpacity } from '@/hooks/useParallax';
 
