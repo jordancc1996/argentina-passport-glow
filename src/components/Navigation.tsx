@@ -34,7 +34,7 @@ const Navigation = () => {
           {/* Brand */}
           <Link 
             to="/" 
-            className="text-xl font-serif tracking-widest text-primary hover:text-text-secondary transition-colors duration-300"
+            className="text-xl font-serif tracking-widest text-primary hover:text-text-secondary transition-colors duration-300 cursor-pointer"
           >
             ARGENTINA RESIDENCE
           </Link>
