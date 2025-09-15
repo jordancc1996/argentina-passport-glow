@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
-import buenosAiresImage from "@/assets/hero-buenos-aires.jpg";
+import casaRosadaImage from "@/assets/casa-rosada-program.jpg";
 
 const Program = () => {
   return (
@@ -9,7 +9,7 @@ const Program = () => {
       <Hero
         title="Residency Program"
         subtitle="Your pathway to South American residency"
-        backgroundImage={buenosAiresImage}
+        backgroundImage={casaRosadaImage}
       />
       
       <EditorialSection>
