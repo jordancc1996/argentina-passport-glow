@@ -47,6 +47,15 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          light: "hsl(var(--gold-light))",
+        },
+        text: {
+          primary: "hsl(var(--text-primary))",
+          secondary: "hsl(var(--text-secondary))",
+          muted: "hsl(var(--text-muted))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +66,25 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      fontFamily: {
+        serif: ['Playfair Display', 'serif'],
+        sans: ['Inter', 'sans-serif'],
+      },
+      fontSize: {
+        'hero': ['3.5rem', { lineHeight: '1.2', letterSpacing: '0.02em' }],
+        'xl-editorial': ['2.25rem', { lineHeight: '1.3', letterSpacing: '0.02em' }],
+        'lg-editorial': ['1.5rem', { lineHeight: '1.6', letterSpacing: '0.02em' }],
+        'body': ['1.125rem', { lineHeight: '1.6' }],
+      },
+      letterSpacing: {
+        'wide': '0.02em',
+        'wider': '0.05em',
+        'widest': '0.1em',
+      },
+      spacing: {
+        'section': '6rem',
+        'container': '2rem',
       },
       borderRadius: {
         lg: "var(--radius)",
