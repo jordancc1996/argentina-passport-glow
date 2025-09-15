@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import EditorialSection from "@/components/EditorialSection";
 import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
-import mendozaImage from "@/assets/mendoza-vineyards.jpg";
+import buenosAiresChurch from "@/assets/buenos-aires-architecture-church.jpg";
 
 const About = () => {
   return (
@@ -62,8 +62,8 @@ const About = () => {
         <section className="relative py-32">
           <div className="absolute inset-0 z-0">
             <img
-              src={mendozaImage}
-              alt="Mendoza vineyards"
+              src={buenosAiresChurch}
+              alt="Buenos Aires historic architecture"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/20" />
