@@ -52,8 +52,9 @@ const FormCarryForm = ({ formType, buttonText, title, description }: FormCarryFo
         // Trigger file download for market insights
         if (formType === "market-insights") {
           const link = document.createElement('a');
-          link.href = '/argentina-market-report.pdf';
+          link.href = 'https://drive.google.com/uc?export=download&id=1UCSXKRW2iGplscfjeH2sX5tLL0JiOFGq';
           link.download = 'argentina-market-report.pdf';
+          link.target = '_blank';
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
