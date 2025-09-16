@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
+import heroNightImage from "@/assets/hero-buenos-aires-night.jpg";
 
 const Index = () => {
   return (
@@ -9,6 +10,7 @@ const Index = () => {
         title="Argentina Residence"
         subtitle="Live and invest in South America's most dynamic economy"
         description="Discover exceptional opportunities for discerning investors seeking strategic South American residency through our premium investment program."
+        backgroundImage={heroNightImage}
       />
       
       <EditorialSection>
