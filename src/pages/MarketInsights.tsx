@@ -61,35 +61,6 @@ const MarketInsights = () => {
         </div>
       </EditorialSection>
 
-      <EditorialSection>
-        <h2 className="font-serif text-2xl-editorial mb-8 tracking-wide">Market Trends</h2>
-        <div className="space-y-6">
-          <div>
-            <h3 className="font-serif text-xl-editorial mb-4 tracking-wide">Currency Dynamics</h3>
-            <p className="text-editorial text-text-secondary mb-6 tracking-wide">
-              Understanding peso dynamics and hedging strategies is crucial for foreign investors. 
-              Our team provides comprehensive guidance on currency risk management and optimal 
-              investment timing.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-serif text-xl-editorial mb-4 tracking-wide">Regulatory Environment</h3>
-            <p className="text-editorial text-text-secondary mb-6 tracking-wide">
-              Recent legislative changes have simplified foreign investment procedures and enhanced 
-              legal protections. We stay current with all regulatory developments to ensure 
-              compliant investment strategies.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-serif text-xl-editorial mb-4 tracking-wide">Growth Projections</h3>
-            <p className="text-editorial text-text-secondary mb-6 tracking-wide">
-              Economic forecasts indicate strong growth potential across key sectors, supported by 
-              government initiatives to attract foreign investment and modernize infrastructure.
-            </p>
-          </div>
-        </div>
-      </EditorialSection>
-
       <EditorialSection className="bg-secondary/30">
         <FormCarryForm
           formType="market-insights"
