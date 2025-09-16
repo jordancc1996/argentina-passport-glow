@@ -48,6 +48,16 @@ const FormCarryForm = ({ formType, buttonText, title, description }: FormCarryFo
             : "Thank you for your interest. We'll contact you within 24 hours.",
         });
         reset();
+        
+        // Trigger file download for market insights
+        if (formType === "market-insights") {
+          const link = document.createElement('a');
+          link.href = '/argentina-market-report.pdf';
+          link.download = 'argentina-market-report.pdf';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        }
       } else {
         throw new Error('Submission failed');
       }
