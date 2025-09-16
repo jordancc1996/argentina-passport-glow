@@ -9,7 +9,6 @@ const Index = () => {
       <Hero
         title="Argentina Residence"
         subtitle="Live and invest in South America's most dynamic economy"
-        description="Discover exceptional opportunities for discerning investors seeking strategic South American residency through our premium investment program."
         backgroundImage={heroNightImage}
       />
       
