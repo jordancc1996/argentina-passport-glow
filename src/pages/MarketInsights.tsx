@@ -66,7 +66,7 @@ const MarketInsights = () => {
           formType="market-insights"
           buttonText="Download Market Report"
           title="Get Detailed Market Insights Report"
-          description="Receive our comprehensive 25-page Argentina market analysis report delivered directly to your inbox. This exclusive report includes investment opportunities, risk assessments, and strategic recommendations."
+          description="Receive our comprehensive Argentina market analysis report delivered directly to your inbox. This exclusive report includes investment opportunities, risk assessments, and strategic recommendations."
         />
       </EditorialSection>
     </Layout>
