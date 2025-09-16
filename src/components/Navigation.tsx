@@ -7,6 +7,7 @@ const Navigation = () => {
     { path: "/", label: "home" },
     { path: "/program", label: "program" },
     { path: "/about", label: "about argentina" },
+    { path: "/market-insights", label: "market insights" },
     { path: "/contact", label: "contact" },
   ];
 
