@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import plazaDeMayoImage from "@/assets/plaza-de-mayo-contact.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -35,14 +36,20 @@ const Contact = () => {
   return (
     <Layout>
       <div className="pt-20">
-        <EditorialSection>
-          <h1 className="font-serif text-hero mb-8 tracking-wide">
-            Take the First Step
-          </h1>
-          <p className="text-editorial text-text-secondary mb-12 tracking-wide max-w-3xl mx-auto">
-            Begin your journey toward Argentine residency. Our team provides personalized guidance for discerning investors seeking South American opportunities.
-          </p>
-        </EditorialSection>
+        <div 
+          className="relative bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${plazaDeMayoImage})` }}
+        >
+          <div className="absolute inset-0 bg-black/50"></div>
+          <EditorialSection className="relative z-10 text-white">
+            <h1 className="font-serif text-hero mb-8 tracking-wide">
+              Take the First Step
+            </h1>
+            <p className="text-editorial text-white/90 mb-12 tracking-wide max-w-3xl mx-auto">
+              Begin your journey toward Argentine residency. Our team provides personalized guidance for discerning investors seeking South American opportunities.
+            </p>
+          </EditorialSection>
+        </div>
         
         <EditorialSection className="bg-secondary/30">
           <div className="max-w-2xl mx-auto">
