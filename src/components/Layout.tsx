@@ -1,5 +1,6 @@
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import CallToAction from "./CallToAction";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -12,6 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
       <main className="pt-20">
         {children}
       </main>
+      <CallToAction />
       <Footer />
     </div>
   );
