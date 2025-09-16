@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import EditorialSection from "../components/EditorialSection";
-import heroImage from "../assets/buenos-aires-cityscape.jpg";
+import heroImage from "../assets/argentina-flag-market.jpg";
 
 const MarketInsights = () => {
   return (
