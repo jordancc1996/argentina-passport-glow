@@ -28,7 +28,7 @@ const Program = () => {
           <div>
             <h3 className="font-serif text-xl-editorial mb-6 tracking-wide">Investment Requirements</h3>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
-              The Argentina Residency by Investment program requires a minimum investment of USD $150,000 in approved sectors including real estate, government bonds, or establishing a local business.
+              The Argentina Residency by Investment program requires a minimum investment of USD $500,000 in approved sectors including real estate, government bonds, or establishing a local business.
             </p>
             <p className="text-body text-text-secondary tracking-wide">
               Investments must be maintained for a minimum period of three years, with clear pathways to permanent residency and eventual citizenship.
