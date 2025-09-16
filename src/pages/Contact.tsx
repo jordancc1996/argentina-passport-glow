@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import plazaDeMayoImage from "@/assets/plaza-de-mayo-contact.jpg";
+import argentineFlagImage from "@/assets/argentina-flag-background.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -38,7 +38,7 @@ const Contact = () => {
       <div className="pt-20">
         <div 
           className="relative bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${plazaDeMayoImage})` }}
+          style={{ backgroundImage: `url(${argentineFlagImage})` }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
           <EditorialSection className="relative z-10 text-white">
