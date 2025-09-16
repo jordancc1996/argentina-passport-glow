@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import EditorialSection from "../components/EditorialSection";
+import FormCarryForm from "../components/FormCarryForm";
 import heroImage from "../assets/argentina-flag-market.jpg";
 
 const MarketInsights = () => {
@@ -87,6 +88,15 @@ const MarketInsights = () => {
             </p>
           </div>
         </div>
+      </EditorialSection>
+
+      <EditorialSection className="bg-secondary/30">
+        <FormCarryForm
+          formType="market-insights"
+          buttonText="Download Market Report"
+          title="Get Detailed Market Insights Report"
+          description="Receive our comprehensive 25-page Argentina market analysis report delivered directly to your inbox. This exclusive report includes investment opportunities, risk assessments, and strategic recommendations."
+        />
       </EditorialSection>
     </Layout>
   );
