@@ -5,15 +5,22 @@ import { Link } from "react-router-dom";
 const CallToAction = () => {
   return (
     <EditorialSection className="bg-secondary/30">
-      <h3 className="font-serif text-xl-editorial mb-8 tracking-wide">Ready to Begin?</h3>
+      <h3 className="font-serif text-xl-editorial mb-8 tracking-wide">Ready to Learn More?</h3>
       <p className="text-editorial text-text-secondary mb-12 tracking-wide max-w-2xl mx-auto">
-        Take the first step toward your Argentine residency. Our team will personally review your application and contact you within 24 hours with a customized investment strategy.
+        Explore our comprehensive resources and guides to learn everything you need to know about Argentina's golden visa program.
       </p>
-      <Link to="/application">
-        <Button size="lg" className="px-12">
-          Start Your Application
-        </Button>
-      </Link>
+      <div className="flex flex-wrap gap-4 justify-center">
+        <Link to="/resources">
+          <Button size="lg" className="px-12">
+            Explore Resources
+          </Button>
+        </Link>
+        <Link to="/faq">
+          <Button size="lg" variant="outline" className="px-12">
+            View FAQ
+          </Button>
+        </Link>
+      </div>
     </EditorialSection>
   );
 };
