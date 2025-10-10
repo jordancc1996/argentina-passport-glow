@@ -9,10 +9,10 @@ const About = () => {
       <div className="pt-20">
         <EditorialSection>
           <h1 className="font-serif text-hero mb-8 tracking-wide">
-            Argentina represents exceptional opportunity for discerning investors seeking South American residency.
+            About Argentina Residence
           </h1>
           <p className="text-editorial text-text-secondary mb-12 tracking-wide">
-            Our expertise is synonymous with strategic insight and unparalleled access.
+            A free informational resource for individuals interested in Argentina's upcoming golden visa program.
           </p>
         </EditorialSection>
         
@@ -102,6 +102,16 @@ const About = () => {
               </p>
             </div>
           </div>
+        </EditorialSection>
+
+        <EditorialSection className="bg-secondary/30">
+          <h3 className="font-serif text-xl-editorial mb-6 tracking-wide">About This Resource</h3>
+          <p className="text-body text-text-secondary mb-6 tracking-wide max-w-3xl mx-auto">
+            ArgentinaResidence.com is an independent, free informational resource created to help individuals learn about Argentina's residency by investment opportunities, particularly the upcoming golden visa program.
+          </p>
+          <p className="text-body text-text-secondary tracking-wide max-w-3xl mx-auto">
+            This website provides educational content only and is not affiliated with any government agency, immigration service provider, or investment firm. All information should be verified with official sources, and visitors are encouraged to consult with qualified legal and financial professionals for personalized advice.
+          </p>
         </EditorialSection>
       </div>
     </Layout>

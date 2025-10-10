@@ -1,6 +1,8 @@
 import Layout from "@/components/Layout";
 import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import heroNightImage from "@/assets/hero-buenos-aires-night.jpg";
 
 const Index = () => {
@@ -14,11 +16,22 @@ const Index = () => {
       
       <EditorialSection>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
-          Argentina offers unparalleled investment opportunities for sophisticated global citizens seeking South American residency.
+          Argentina offers unparalleled investment opportunities for global citizens seeking South American residency.
         </h2>
-        <p className="text-editorial text-text-secondary mb-12 tracking-wide">
-          Our expertise is synonymous with strategic insight and exceptional value.
+        <p className="text-editorial text-text-secondary mb-8 tracking-wide">
+          A free informational resource about Argentina's upcoming golden visa program.
         </p>
+        <div className="flex flex-wrap gap-4 justify-center mt-8">
+          <Button asChild variant="default" size="lg">
+            <Link to="/about">About This Resource</Link>
+          </Button>
+          <Button asChild variant="outline" size="lg">
+            <Link to="/faq">FAQ</Link>
+          </Button>
+          <Button asChild variant="outline" size="lg">
+            <Link to="/resources">Resources</Link>
+          </Button>
+        </div>
       </EditorialSection>
       
       <EditorialSection className="bg-secondary/30">
@@ -49,7 +62,7 @@ const Index = () => {
       <EditorialSection>
         <h3 className="font-serif text-xl-editorial mb-8 tracking-wide">Your pathway to Argentine residency</h3>
         <p className="text-body text-text-secondary mb-12 max-w-3xl mx-auto tracking-wide">
-          With expert knowledge of investment requirements and a customized approach, we guide discerning clients through every stage of the residency process. We are collaborative and meticulous, bringing these qualities to every engagement, from initial consultation to residency approval.
+          Learn about investment requirements, application procedures, and everything you need to know about Argentina's residency by investment program. Explore our comprehensive guides and resources to help you make informed decisions.
         </p>
       </EditorialSection>
     </Layout>
