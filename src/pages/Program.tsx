@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import buenosAiresArchitecture from "@/assets/buenos-aires-architecture.jpg";
@@ -8,6 +9,11 @@ import buenosAiresArchitecture from "@/assets/buenos-aires-architecture.jpg";
 const Program = () => {
   return (
     <Layout>
+      <SEO 
+        title="Argentina Residence Program 2025 | Investment Residency Details"
+        description="Complete details about Argentina's residence by investment program. Learn about investment options, benefits, timeline, and requirements."
+        canonical="/program"
+      />
       <Hero
         title="Residency Program"
         subtitle="Your pathway to South American residency"
@@ -15,9 +21,9 @@ const Program = () => {
       />
       
       <EditorialSection>
-        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
+        <h1 className="font-serif text-xl-editorial mb-8 tracking-wide">
           Argentina's Residency by Investment Program offers unparalleled opportunities for global investors seeking South American residency.
-        </h2>
+        </h1>
         <p className="text-editorial text-text-secondary mb-12 tracking-wide">
           Our program is synonymous with exceptional value and strategic advantage.
         </p>
@@ -26,7 +32,7 @@ const Program = () => {
       <EditorialSection className="bg-secondary/30">
         <div className="grid md:grid-cols-2 gap-16 text-left">
           <div>
-            <h3 className="font-serif text-xl-editorial mb-6 tracking-wide">Investment Requirements</h3>
+            <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Investment Requirements</h2>
             <p className="text-body text-text-secondary mb-6 tracking-wide">
               The Argentina Residency by Investment program requires a minimum investment of USD $500,000 in approved sectors including real estate, government bonds, or establishing a local business.
             </p>
@@ -36,7 +42,7 @@ const Program = () => {
           </div>
           
           <div>
-            <h3 className="font-serif text-xl-editorial mb-6 tracking-wide">Program Benefits</h3>
+            <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Program Benefits</h2>
             <ul className="text-body text-text-secondary space-y-4 tracking-wide">
               <li>• Temporary residence visa with work authorization</li>
               <li>• Access to Argentina's comprehensive healthcare system</li>
@@ -50,24 +56,24 @@ const Program = () => {
       </EditorialSection>
       
       <EditorialSection>
-        <h3 className="font-serif text-xl-editorial mb-8 tracking-wide">Application Process</h3>
+        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Application Process</h2>
         <div className="max-w-3xl mx-auto text-left space-y-8">
           <div className="border-l-2 border-gold pl-8">
-            <h4 className="font-serif text-lg-editorial mb-4 tracking-wide">Initial Consultation</h4>
+            <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Initial Consultation</h3>
             <p className="text-body text-text-secondary tracking-wide">
               Comprehensive assessment of your investment objectives and residency goals. Our team provides detailed guidance on investment options and program requirements.
             </p>
           </div>
           
           <div className="border-l-2 border-gold pl-8">
-            <h4 className="font-serif text-lg-editorial mb-4 tracking-wide">Documentation & Investment</h4>
+            <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Documentation & Investment</h3>
             <p className="text-body text-text-secondary tracking-wide">
               Complete preparation of required documentation and facilitation of your investment. We handle all legal requirements and coordinate with local authorities.
             </p>
           </div>
           
           <div className="border-l-2 border-gold pl-8">
-            <h4 className="font-serif text-lg-editorial mb-4 tracking-wide">Residency Approval</h4>
+            <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Residency Approval</h3>
             <p className="text-body text-text-secondary tracking-wide">
               Final review and approval process typically completed within 6-8 months. Upon approval, receive your temporary residence visa and begin your Argentine residency journey.
             </p>

@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import EditorialSection from "@/components/EditorialSection";
+import SEO from "@/components/SEO";
 import {
   Accordion,
   AccordionContent,
@@ -53,6 +54,11 @@ const FAQ = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Argentina Residency FAQ | Common Questions Answered"
+        description="Answers to frequently asked questions about Argentina residency by investment. Learn about requirements, timeline, costs, and process."
+        canonical="/faq"
+      />
       <div className="pt-20">
         <EditorialSection>
           <h1 className="font-serif text-hero mb-8 tracking-wide">

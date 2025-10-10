@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import EditorialSection from "@/components/EditorialSection";
+import SEO from "@/components/SEO";
 import { ExternalLink } from "lucide-react";
 
 const Resources = () => {
@@ -42,6 +43,11 @@ const Resources = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Argentina Residency Resources | Guides & Documents"
+        description="Free resources, guides, and tools for obtaining Argentina residency. Download checklists, templates, and helpful information."
+        canonical="/resources"
+      />
       <div className="pt-20">
         <EditorialSection>
           <h1 className="font-serif text-hero mb-8 tracking-wide">

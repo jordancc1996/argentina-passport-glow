@@ -1,11 +1,17 @@
 import Layout from "@/components/Layout";
 import EditorialSection from "@/components/EditorialSection";
+import SEO from "@/components/SEO";
 import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
 import buenosAiresChurch from "@/assets/buenos-aires-architecture-church.jpg";
 
 const About = () => {
   return (
     <Layout>
+      <SEO 
+        title="Living in Argentina | Guide for Foreign Residents & Expats"
+        description="Discover Argentina's lifestyle, culture, economy, and benefits for foreign residents. Complete guide to living in Argentina as an expat."
+        canonical="/about"
+      />
       <div className="pt-20">
         <EditorialSection>
           <h1 className="font-serif text-hero mb-8 tracking-wide">
@@ -38,7 +44,7 @@ const About = () => {
         <EditorialSection className="bg-secondary/30">
           <div className="grid md:grid-cols-2 gap-16 text-left">
             <div>
-              <h3 className="font-serif text-xl-editorial mb-6 tracking-wide">Economic Landscape</h3>
+              <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Economic Landscape</h2>
               <p className="text-body text-text-secondary mb-6 tracking-wide">
                 Argentina stands as Latin America's second-largest economy, offering diverse investment opportunities across agriculture, technology, renewable energy, and real estate sectors.
               </p>
@@ -48,7 +54,7 @@ const About = () => {
             </div>
             
             <div>
-              <h3 className="font-serif text-xl-editorial mb-6 tracking-wide">Cultural Heritage</h3>
+              <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Cultural Heritage</h2>
               <p className="text-body text-text-secondary mb-6 tracking-wide">
                 From the European elegance of Buenos Aires to the wine regions of Mendoza, Argentina offers a sophisticated lifestyle that attracts international residents.
               </p>
@@ -79,24 +85,24 @@ const About = () => {
         </section>
         
         <EditorialSection>
-          <h3 className="font-serif text-xl-editorial mb-8 tracking-wide">Why Choose Argentina</h3>
+          <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Why Choose Argentina</h2>
           <div className="max-w-3xl mx-auto text-left space-y-8">
             <div className="border-l-2 border-gold pl-8">
-              <h4 className="font-serif text-lg-editorial mb-4 tracking-wide">Strategic Location</h4>
+              <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Strategic Location</h3>
               <p className="text-body text-text-secondary tracking-wide">
                 Argentina's position as the gateway to South America provides access to regional markets while maintaining proximity to both Atlantic and Pacific trade routes.
               </p>
             </div>
             
             <div className="border-l-2 border-gold pl-8">
-              <h4 className="font-serif text-lg-editorial mb-4 tracking-wide">Natural Resources</h4>
+              <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Natural Resources</h3>
               <p className="text-body text-text-secondary tracking-wide">
                 Rich in agricultural land, mineral resources, and renewable energy potential, Argentina offers diverse investment opportunities across multiple sectors.
               </p>
             </div>
             
             <div className="border-l-2 border-gold pl-8">
-              <h4 className="font-serif text-lg-editorial mb-4 tracking-wide">Quality of Life</h4>
+              <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Quality of Life</h3>
               <p className="text-body text-text-secondary tracking-wide">
                 World-class healthcare, excellent education systems, and a sophisticated cultural scene make Argentina an ideal destination for international families.
               </p>
@@ -105,7 +111,7 @@ const About = () => {
         </EditorialSection>
 
         <EditorialSection className="bg-secondary/30">
-          <h3 className="font-serif text-xl-editorial mb-6 tracking-wide">About This Resource</h3>
+          <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">About This Resource</h2>
           <p className="text-body text-text-secondary mb-6 tracking-wide max-w-3xl mx-auto">
             ArgentinaResidence.com is an independent, free informational resource created to help individuals learn about Argentina's residency by investment opportunities, particularly the upcoming golden visa program.
           </p>

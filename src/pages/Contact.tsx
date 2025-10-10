@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import EditorialSection from "@/components/EditorialSection";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -35,6 +36,11 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Contact Us | Argentina Residency Consultation"
+        description="Schedule a free consultation about Argentina residency. Contact our team for personalized guidance on your residency application."
+        canonical="/contact"
+      />
       <div className="pt-20">
         <div 
           className="relative bg-cover bg-center bg-no-repeat"
@@ -139,19 +145,19 @@ const Contact = () => {
             </p>
             <div className="grid md:grid-cols-3 gap-8 text-left">
               <div>
-                <h4 className="font-serif text-lg-editorial mb-4 tracking-wide">Consultation</h4>
+                <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Consultation</h2>
                 <p className="text-sm text-text-muted tracking-wide">
                   Personalized assessment of your investment and residency objectives.
                 </p>
               </div>
               <div>
-                <h4 className="font-serif text-lg-editorial mb-4 tracking-wide">Documentation</h4>
+                <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Documentation</h2>
                 <p className="text-sm text-text-muted tracking-wide">
                   Complete preparation and submission of all required materials.
                 </p>
               </div>
               <div>
-                <h4 className="font-serif text-lg-editorial mb-4 tracking-wide">Approval</h4>
+                <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Approval</h2>
                 <p className="text-sm text-text-muted tracking-wide">
                   Ongoing support through the approval process and beyond.
                 </p>
