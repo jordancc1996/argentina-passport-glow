@@ -6,12 +6,41 @@ import FormCarryForm from "../components/FormCarryForm";
 import heroImage from "../assets/argentina-flag-market.jpg";
 
 const MarketInsights = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Argentina Market Insights",
+    "description": "Understanding Argentina's Investment Landscape",
+    "author": {
+      "@type": "Organization",
+      "name": "Argentina Residence"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Argentina Residence",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.argentinaresidence.com/og-image.jpg"
+      }
+    },
+    "datePublished": "2025-01-01",
+    "dateModified": "2025-01-01",
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Argentina Investment",
+        "description": "Investment opportunities and market analysis for Argentina"
+      }
+    ]
+  };
+
   return (
     <Layout>
       <SEO 
         title="Argentina Market Insights | Real Estate & Investment Updates"
         description="Latest market insights, trends, and analysis for Argentina investment and real estate opportunities. Stay informed about the Argentine market."
         canonical="/market-insights"
+        schema={schema}
       />
       <Hero
         backgroundImage={heroImage}

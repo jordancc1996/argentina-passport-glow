@@ -34,12 +34,26 @@ const Contact = () => {
     });
   };
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Argentina Residence",
+    "description": "Get in touch for information about Argentina residency by investment",
+    "url": "https://www.argentinaresidence.com/contact",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Argentina Residence",
+      "url": "https://www.argentinaresidence.com"
+    }
+  };
+
   return (
     <Layout>
       <SEO 
         title="Contact Us | Argentina Residency Consultation"
         description="Schedule a free consultation about Argentina residency. Contact our team for personalized guidance on your residency application."
         canonical="/contact"
+        schema={schema}
       />
       <div className="pt-20">
         <div 

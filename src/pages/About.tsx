@@ -5,12 +5,29 @@ import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
 import buenosAiresChurch from "@/assets/buenos-aires-architecture-church.jpg";
 
 const About = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Argentina Residence",
+      "description": "A free informational resource for individuals interested in Argentina's upcoming golden visa program",
+      "url": "https://www.argentinaresidence.com"
+    },
+    "about": {
+      "@type": "Place",
+      "name": "Argentina",
+      "description": "South America's most dynamic economy offering investment opportunities and residency programs"
+    }
+  };
+
   return (
     <Layout>
       <SEO 
         title="Living in Argentina | Guide for Foreign Residents & Expats"
         description="Discover Argentina's lifestyle, culture, economy, and benefits for foreign residents. Complete guide to living in Argentina as an expat."
         canonical="/about"
+        schema={schema}
       />
       <div className="pt-20">
         <EditorialSection>

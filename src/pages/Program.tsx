@@ -7,12 +7,32 @@ import { Link } from "react-router-dom";
 import buenosAiresArchitecture from "@/assets/buenos-aires-architecture.jpg";
 
 const Program = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Residency by Investment Program",
+    "provider": {
+      "@type": "Organization",
+      "name": "Argentina Residence"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Argentina"
+    },
+    "description": "Argentina's Residency by Investment Program offers opportunities for global investors seeking South American residency through strategic investments.",
+    "offers": {
+      "@type": "Offer",
+      "description": "Temporary residence visa with work authorization, pathway to permanent residency, and access to healthcare system"
+    }
+  };
+
   return (
     <Layout>
       <SEO 
         title="Argentina Residence Program 2025 | Investment Residency Details"
         description="Complete details about Argentina's residence by investment program. Learn about investment options, benefits, timeline, and requirements."
         canonical="/program"
+        schema={schema}
       />
       <Hero
         title="Residency Program"

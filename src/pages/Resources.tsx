@@ -41,12 +41,34 @@ const Resources = () => {
     }
   ];
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Argentina Residency Resources",
+    "description": "Essential information and official sources for Argentina residency",
+    "url": "https://www.argentinaresidence.com/resources",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": officialResources.map((resource, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "WebPage",
+          "name": resource.title,
+          "description": resource.description,
+          "url": resource.url
+        }
+      }))
+    }
+  };
+
   return (
     <Layout>
       <SEO 
         title="Argentina Residency Resources | Guides & Documents"
         description="Free resources, guides, and tools for obtaining Argentina residency. Download checklists, templates, and helpful information."
         canonical="/resources"
+        schema={schema}
       />
       <div className="pt-20">
         <EditorialSection>

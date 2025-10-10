@@ -7,12 +7,37 @@ import { Button } from "@/components/ui/button";
 import heroNightImage from "@/assets/hero-buenos-aires-night.jpg";
 
 const Index = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Argentina Residence",
+        "url": "https://www.argentinaresidence.com",
+        "logo": "https://www.argentinaresidence.com/og-image.jpg",
+        "description": "Free informational resource about Argentina's golden visa and residency by investment program",
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://www.argentinaresidence.com",
+        "name": "Argentina Residence",
+        "description": "Live and invest in South America's most dynamic economy",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Argentina Residence"
+        }
+      }
+    ]
+  };
+
   return (
     <Layout>
       <SEO 
         title="Argentina Residence by Investment | Permanent Residency Program"
         description="Obtain Argentina permanent residency through investment. Learn about requirements, process, timeline, and benefits of Argentina's residence program."
         canonical="/"
+        schema={schema}
       />
       <Hero
         title="Argentina Residence"

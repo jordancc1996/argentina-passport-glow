@@ -5,9 +5,10 @@ interface SEOProps {
   description: string;
   canonical?: string;
   ogImage?: string;
+  schema?: Record<string, any>;
 }
 
-const SEO = ({ title, description, canonical, ogImage = '/og-image.jpg' }: SEOProps) => {
+const SEO = ({ title, description, canonical, ogImage = '/og-image.jpg', schema }: SEOProps) => {
   const baseUrl = 'https://www.argentinaresidence.com';
   const fullCanonical = canonical ? `${baseUrl}${canonical}` : baseUrl;
 
@@ -22,6 +23,11 @@ const SEO = ({ title, description, canonical, ogImage = '/og-image.jpg' }: SEOPr
       <meta property="og:image" content={`${baseUrl}${ogImage}`} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
+      {schema && (
+        <script type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      )}
     </Helmet>
   );
 };

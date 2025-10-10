@@ -52,12 +52,26 @@ const FAQ = () => {
     }
   ];
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <Layout>
       <SEO 
         title="Argentina Residency FAQ | Common Questions Answered"
         description="Answers to frequently asked questions about Argentina residency by investment. Learn about requirements, timeline, costs, and process."
         canonical="/faq"
+        schema={schema}
       />
       <div className="pt-20">
         <EditorialSection>
