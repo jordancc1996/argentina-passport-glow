@@ -10,6 +10,7 @@ const Navigation = () => {
     { path: "/market-insights", label: "market insights" },
     { path: "/faq", label: "faq" },
     { path: "/resources", label: "resources" },
+    { path: "/blog", label: "blog" },
     { path: "/contact", label: "contact" },
   ];
 

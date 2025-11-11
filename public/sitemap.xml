@@ -31,6 +31,11 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.argentinaresidence.com/blog</loc>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://www.argentinaresidence.com/contact</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
