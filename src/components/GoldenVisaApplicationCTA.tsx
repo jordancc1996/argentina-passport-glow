@@ -5,13 +5,14 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useForm, Controller } from "react-hook-form";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-import EditorialSection from "./EditorialSection";
 
 interface GoldenVisaApplicationData {
-  fullName: string;
+  firstName: string;
+  lastName: string;
   email: string;
   countryCode: string;
   phoneNumber: string;
+  relocateTimeline: string;
   investmentAmount: string;
 }
 
@@ -48,6 +49,15 @@ const GoldenVisaApplicationCTA = () => {
     "Prefer to discuss"
   ];
 
+  const relocateTimelines = [
+    "Within 3 months",
+    "3-6 months",
+    "6-12 months",
+    "1-2 years",
+    "2+ years",
+    "Just exploring options"
+  ];
+
   const onSubmit = async (data: GoldenVisaApplicationData) => {
     setIsSubmitting(true);
     
@@ -59,16 +69,20 @@ const GoldenVisaApplicationCTA = () => {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          ...data,
+          firstName: data.firstName,
+          lastName: data.lastName,
+          email: data.email,
           phone: `${data.countryCode} ${data.phoneNumber}`,
+          relocateTimeline: data.relocateTimeline,
+          investmentAmount: data.investmentAmount,
           formType: 'golden-visa-application'
         })
       });
 
       if (response.ok) {
         toast({
-          title: "Application Received!",
-          description: "Thank you for your interest in Argentina's Golden Visa program. Our team will contact you within 24 hours to discuss your application.",
+          title: "Thank you for signing up!",
+          description: "We'll send you exclusive guides and updates about Argentina's Golden Visa program.",
         });
         reset();
       } else {
@@ -86,109 +100,100 @@ const GoldenVisaApplicationCTA = () => {
   };
 
   return (
-    <EditorialSection className="bg-secondary/30">
-      <div className="grid md:grid-cols-2 gap-12 md:gap-16 text-left items-center">
-        {/* Content Side */}
-        <div>
-          <h2 className="font-serif text-2xl-editorial md:text-3xl-editorial mb-6 tracking-wide">
-            Start Your Journey to Argentine Residency
-          </h2>
-          <p className="text-editorial text-text-secondary tracking-wide mb-6">
-            Gain Argentine residency and unlock access to South America's most dynamic markets. 
-            Our Golden Visa program offers a streamlined path to living, working, and investing 
-            in one of the continent's most promising economies.
-          </p>
-          <ul className="space-y-3 text-editorial text-text-secondary">
-            <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">✓</span>
-              <span>Fast-track residency with investment options from $50,000</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">✓</span>
-              <span>Access to MERCOSUR markets and business opportunities</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">✓</span>
-              <span>Path to citizenship after just 2 years of residency</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">✓</span>
-              <span>Favorable tax environment for foreign investors</span>
-            </li>
-          </ul>
-        </div>
+    <section className="section-padding bg-secondary/20">
+      <div className="max-w-3xl mx-auto px-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-serif tracking-wide text-[#A67C52] mb-6">
+          LEARN MORE & SIGN UP FOR UPDATES
+        </h2>
+        <p className="text-base md:text-lg text-text-secondary mb-12 leading-relaxed">
+          The goal of our website is to be a lead magnet and offer value in the form of guides and 
+          checklists. Get exclusive access to our comprehensive Argentina residency planning resources.
+        </p>
 
-        {/* Form Side */}
-        <div className="bg-background/80 backdrop-blur-sm p-8 rounded-lg shadow-lg border border-border/50">
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-            <div>
-              <Label htmlFor="fullName" className="text-sm font-medium mb-2 block">
-                Full Name *
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="text-left">
+              <Label htmlFor="firstName" className="text-sm font-medium mb-2 block text-[#A67C52]">
+                First Name*
               </Label>
               <Input
-                id="fullName"
-                {...register("fullName", { required: "Full name is required" })}
-                placeholder="Enter your full name"
+                id="firstName"
+                {...register("firstName", { required: "First name is required" })}
+                placeholder=""
+                className="bg-background"
               />
-              {errors.fullName && (
-                <p className="text-destructive text-sm mt-1">{errors.fullName.message}</p>
+              {errors.firstName && (
+                <p className="text-destructive text-sm mt-1">{errors.firstName.message}</p>
               )}
             </div>
 
-            <div>
-              <Label htmlFor="email" className="text-sm font-medium mb-2 block">
-                Business/Education Email *
+            <div className="text-left">
+              <Label htmlFor="lastName" className="text-sm font-medium mb-2 block text-[#A67C52]">
+                Last Name*
               </Label>
               <Input
-                id="email"
-                type="email"
-                {...register("email", { 
-                  required: "Email is required",
-                  pattern: {
-                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                    message: "Please enter a valid email address"
-                  }
-                })}
-                placeholder="your.name@company.com"
+                id="lastName"
+                {...register("lastName", { required: "Last name is required" })}
+                placeholder=""
+                className="bg-background"
               />
-              {errors.email && (
-                <p className="text-destructive text-sm mt-1">{errors.email.message}</p>
+              {errors.lastName && (
+                <p className="text-destructive text-sm mt-1">{errors.lastName.message}</p>
               )}
             </div>
+          </div>
 
+          <div className="text-left">
+            <Label htmlFor="email" className="text-sm font-medium mb-2 block text-[#A67C52]">
+              Email*
+            </Label>
+            <Input
+              id="email"
+              type="email"
+              {...register("email", { 
+                required: "Email is required",
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  message: "Please enter a valid email address"
+                }
+              })}
+              placeholder=""
+              className="bg-background"
+            />
+            <p className="text-sm text-text-secondary/70 italic mt-1">
+              Please use a work or .edu email address
+            </p>
+            {errors.email && (
+              <p className="text-destructive text-sm mt-1">{errors.email.message}</p>
+            )}
+          </div>
+
+          <div className="text-left">
+            <Label htmlFor="phoneNumber" className="text-sm font-medium mb-2 block text-[#A67C52]">
+              Phone Number*
+            </Label>
             <div className="grid grid-cols-3 gap-3">
-              <div>
-                <Label htmlFor="countryCode" className="text-sm font-medium mb-2 block">
-                  Code *
-                </Label>
-                <Controller
-                  name="countryCode"
-                  control={control}
-                  rules={{ required: "Country code is required" }}
-                  render={({ field }) => (
-                    <Select onValueChange={field.onChange} value={field.value}>
-                      <SelectTrigger id="countryCode">
-                        <SelectValue placeholder="Code" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {countryCodes.map((item) => (
-                          <SelectItem key={item.code} value={item.code}>
-                            {item.code}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  )}
-                />
-                {errors.countryCode && (
-                  <p className="text-destructive text-sm mt-1">{errors.countryCode.message}</p>
+              <Controller
+                name="countryCode"
+                control={control}
+                rules={{ required: "Country code is required" }}
+                render={({ field }) => (
+                  <Select onValueChange={field.onChange} value={field.value}>
+                    <SelectTrigger id="countryCode" className="bg-background">
+                      <SelectValue placeholder="United..." />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {countryCodes.map((item) => (
+                        <SelectItem key={item.code} value={item.code}>
+                          {item.country}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 )}
-              </div>
+              />
               
               <div className="col-span-2">
-                <Label htmlFor="phoneNumber" className="text-sm font-medium mb-2 block">
-                  Phone Number *
-                </Label>
                 <Input
                   id="phoneNumber"
                   {...register("phoneNumber", { 
@@ -198,58 +203,88 @@ const GoldenVisaApplicationCTA = () => {
                       message: "Please enter a valid phone number"
                     }
                   })}
-                  placeholder="1234567890"
+                  placeholder=""
+                  className="bg-background"
                 />
-                {errors.phoneNumber && (
-                  <p className="text-destructive text-sm mt-1">{errors.phoneNumber.message}</p>
-                )}
               </div>
             </div>
+            {(errors.countryCode || errors.phoneNumber) && (
+              <p className="text-destructive text-sm mt-1">
+                {errors.countryCode?.message || errors.phoneNumber?.message}
+              </p>
+            )}
+          </div>
 
-            <div>
-              <Label htmlFor="investmentAmount" className="text-sm font-medium mb-2 block">
-                Expected Investment Amount *
-              </Label>
-              <Controller
-                name="investmentAmount"
-                control={control}
-                rules={{ required: "Investment amount is required" }}
-                render={({ field }) => (
-                  <Select onValueChange={field.onChange} value={field.value}>
-                    <SelectTrigger id="investmentAmount">
-                      <SelectValue placeholder="Select investment range" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {investmentRanges.map((range) => (
-                        <SelectItem key={range} value={range}>
-                          {range}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                )}
-              />
-              {errors.investmentAmount && (
-                <p className="text-destructive text-sm mt-1">{errors.investmentAmount.message}</p>
-              )}
-            </div>
-
-            <Button 
-              type="submit" 
-              size="lg" 
-              className="w-full mt-6"
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? "Submitting..." : "Start My Application"}
-            </Button>
-
-            <p className="text-xs text-text-secondary text-center mt-4">
-              We respect your privacy. Your information is secure and will never be shared.
+          <div className="text-left">
+            <Label htmlFor="relocateTimeline" className="text-sm font-medium mb-2 block text-[#A67C52]">
+              Do you intend to relocate to Argentina within the next 12 months?*
+            </Label>
+            <p className="text-xs text-text-secondary/70 italic mb-2">
+              ** PLEASE READ ** You might not need to invest at all! Relocating to Argentina can make you eligible for residency with no investment required
             </p>
-          </form>
-        </div>
+            <Controller
+              name="relocateTimeline"
+              control={control}
+              rules={{ required: "Please select a timeline" }}
+              render={({ field }) => (
+                <Select onValueChange={field.onChange} value={field.value}>
+                  <SelectTrigger id="relocateTimeline" className="bg-background">
+                    <SelectValue placeholder="Please Select" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {relocateTimelines.map((timeline) => (
+                      <SelectItem key={timeline} value={timeline}>
+                        {timeline}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              )}
+            />
+            {errors.relocateTimeline && (
+              <p className="text-destructive text-sm mt-1">{errors.relocateTimeline.message}</p>
+            )}
+          </div>
+
+          <div className="text-left">
+            <Label htmlFor="investmentAmount" className="text-sm font-medium mb-2 block text-[#A67C52]">
+              Which Golden Visa program are you interested in?*
+            </Label>
+            <Controller
+              name="investmentAmount"
+              control={control}
+              rules={{ required: "Please select an investment range" }}
+              render={({ field }) => (
+                <Select onValueChange={field.onChange} value={field.value}>
+                  <SelectTrigger id="investmentAmount" className="bg-background">
+                    <SelectValue placeholder="Please Select" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {investmentRanges.map((range) => (
+                      <SelectItem key={range} value={range}>
+                        {range}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              )}
+            />
+            {errors.investmentAmount && (
+              <p className="text-destructive text-sm mt-1">{errors.investmentAmount.message}</p>
+            )}
+          </div>
+
+          <Button 
+            type="submit" 
+            size="lg" 
+            className="w-full mt-8 bg-[#A67C52] hover:bg-[#8B6844] text-white font-medium text-base py-6"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "SUBMITTING..." : "I WANT TO LEARN MORE"}
+          </Button>
+        </form>
       </div>
-    </EditorialSection>
+    </section>
   );
 };
 
