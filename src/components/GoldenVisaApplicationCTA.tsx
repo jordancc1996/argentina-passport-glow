@@ -100,12 +100,12 @@ const GoldenVisaApplicationCTA = () => {
   };
 
   return (
-    <section className="section-padding bg-secondary/20">
+    <section className="section-padding bg-dark-teal">
       <div className="max-w-3xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-serif tracking-wide text-gold mb-6">
+        <h2 className="text-3xl md:text-4xl font-serif tracking-wide text-white mb-6">
           LEARN MORE & SIGN UP FOR UPDATES
         </h2>
-        <p className="text-base md:text-lg text-text-secondary mb-12 leading-relaxed">
+        <p className="text-base md:text-lg text-white/80 mb-12 leading-relaxed">
           The goal of our website is to be a lead magnet and offer value in the form of guides and 
           checklists. Get exclusive access to our comprehensive Argentina residency planning resources.
         </p>
@@ -113,14 +113,14 @@ const GoldenVisaApplicationCTA = () => {
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div className="grid md:grid-cols-2 gap-4">
             <div className="text-left">
-              <Label htmlFor="firstName" className="text-sm font-medium mb-2 block text-gold">
+              <Label htmlFor="firstName" className="text-sm font-medium mb-2 block text-text-cream">
                 First Name*
               </Label>
               <Input
                 id="firstName"
                 {...register("firstName", { required: "First name is required" })}
                 placeholder=""
-                className="bg-background"
+                className="bg-dark-teal-light border-white/20 text-white placeholder:text-white/40 focus:border-white/40"
               />
               {errors.firstName && (
                 <p className="text-destructive text-sm mt-1">{errors.firstName.message}</p>
@@ -128,14 +128,14 @@ const GoldenVisaApplicationCTA = () => {
             </div>
 
             <div className="text-left">
-              <Label htmlFor="lastName" className="text-sm font-medium mb-2 block text-gold">
+              <Label htmlFor="lastName" className="text-sm font-medium mb-2 block text-text-cream">
                 Last Name*
               </Label>
               <Input
                 id="lastName"
                 {...register("lastName", { required: "Last name is required" })}
                 placeholder=""
-                className="bg-background"
+                className="bg-dark-teal-light border-white/20 text-white placeholder:text-white/40 focus:border-white/40"
               />
               {errors.lastName && (
                 <p className="text-destructive text-sm mt-1">{errors.lastName.message}</p>
@@ -144,7 +144,7 @@ const GoldenVisaApplicationCTA = () => {
           </div>
 
           <div className="text-left">
-            <Label htmlFor="email" className="text-sm font-medium mb-2 block text-gold">
+            <Label htmlFor="email" className="text-sm font-medium mb-2 block text-text-cream">
               Email*
             </Label>
             <Input
@@ -158,9 +158,9 @@ const GoldenVisaApplicationCTA = () => {
                 }
               })}
               placeholder=""
-              className="bg-background"
+              className="bg-dark-teal-light border-white/20 text-white placeholder:text-white/40 focus:border-white/40"
             />
-            <p className="text-sm text-text-secondary/70 italic mt-1">
+            <p className="text-sm text-white/60 italic mt-1">
               Please use a work or .edu email address
             </p>
             {errors.email && (
@@ -169,7 +169,7 @@ const GoldenVisaApplicationCTA = () => {
           </div>
 
           <div className="text-left">
-            <Label htmlFor="phoneNumber" className="text-sm font-medium mb-2 block text-gold">
+            <Label htmlFor="phoneNumber" className="text-sm font-medium mb-2 block text-text-cream">
               Phone Number*
             </Label>
             <div className="grid grid-cols-3 gap-3">
@@ -179,12 +179,12 @@ const GoldenVisaApplicationCTA = () => {
                 rules={{ required: "Country code is required" }}
                 render={({ field }) => (
                   <Select onValueChange={field.onChange} value={field.value}>
-                    <SelectTrigger id="countryCode" className="bg-background">
+                    <SelectTrigger id="countryCode" className="bg-dark-teal-light border-white/20 text-white">
                       <SelectValue placeholder="United..." />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className="bg-dark-teal-light border-white/20">
                       {countryCodes.map((item) => (
-                        <SelectItem key={item.code} value={item.code}>
+                        <SelectItem key={item.code} value={item.code} className="text-white focus:bg-dark-teal focus:text-white">
                           {item.country}
                         </SelectItem>
                       ))}
@@ -204,7 +204,7 @@ const GoldenVisaApplicationCTA = () => {
                     }
                   })}
                   placeholder=""
-                  className="bg-background"
+                  className="bg-dark-teal-light border-white/20 text-white placeholder:text-white/40 focus:border-white/40"
                 />
               </div>
             </div>
@@ -216,10 +216,10 @@ const GoldenVisaApplicationCTA = () => {
           </div>
 
           <div className="text-left">
-            <Label htmlFor="relocateTimeline" className="text-sm font-medium mb-2 block text-gold">
+            <Label htmlFor="relocateTimeline" className="text-sm font-medium mb-2 block text-text-cream">
               Do you intend to relocate to Argentina within the next 12 months?*
             </Label>
-            <p className="text-xs text-text-secondary/70 italic mb-2">
+            <p className="text-xs text-white/60 italic mb-2">
               ** PLEASE READ ** You might not need to invest at all! Relocating to Argentina can make you eligible for residency with no investment required
             </p>
             <Controller
@@ -228,12 +228,12 @@ const GoldenVisaApplicationCTA = () => {
               rules={{ required: "Please select a timeline" }}
               render={({ field }) => (
                 <Select onValueChange={field.onChange} value={field.value}>
-                  <SelectTrigger id="relocateTimeline" className="bg-background">
+                  <SelectTrigger id="relocateTimeline" className="bg-dark-teal-light border-white/20 text-white">
                     <SelectValue placeholder="Please Select" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-dark-teal-light border-white/20">
                     {relocateTimelines.map((timeline) => (
-                      <SelectItem key={timeline} value={timeline}>
+                      <SelectItem key={timeline} value={timeline} className="text-white focus:bg-dark-teal focus:text-white">
                         {timeline}
                       </SelectItem>
                     ))}
@@ -247,7 +247,7 @@ const GoldenVisaApplicationCTA = () => {
           </div>
 
           <div className="text-left">
-            <Label htmlFor="investmentAmount" className="text-sm font-medium mb-2 block text-gold">
+            <Label htmlFor="investmentAmount" className="text-sm font-medium mb-2 block text-text-cream">
               Which Golden Visa program are you interested in?*
             </Label>
             <Controller
@@ -256,12 +256,12 @@ const GoldenVisaApplicationCTA = () => {
               rules={{ required: "Please select an investment range" }}
               render={({ field }) => (
                 <Select onValueChange={field.onChange} value={field.value}>
-                  <SelectTrigger id="investmentAmount" className="bg-background">
+                  <SelectTrigger id="investmentAmount" className="bg-dark-teal-light border-white/20 text-white">
                     <SelectValue placeholder="Please Select" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-dark-teal-light border-white/20">
                     {investmentRanges.map((range) => (
-                      <SelectItem key={range} value={range}>
+                      <SelectItem key={range} value={range} className="text-white focus:bg-dark-teal focus:text-white">
                         {range}
                       </SelectItem>
                     ))}
@@ -277,7 +277,7 @@ const GoldenVisaApplicationCTA = () => {
           <Button 
             type="submit" 
             size="lg" 
-            className="w-full mt-8 bg-gold hover:bg-gold/90 text-primary-foreground font-medium text-base py-6"
+            className="w-full mt-8 bg-text-cream hover:bg-text-cream/90 text-dark-teal font-medium text-base py-6"
             disabled={isSubmitting}
           >
             {isSubmitting ? "SUBMITTING..." : "I WANT TO LEARN MORE"}
