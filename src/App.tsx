@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import MarketInsights from "./pages/MarketInsights";
 import FAQ from "./pages/FAQ";
+import FAQDetail from "./pages/FAQDetail";
 import Resources from "./pages/Resources";
 import Blog from "./pages/Blog";
 import Privacy from "./pages/Privacy";
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/market-insights" element={<MarketInsights />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/faq/:slug" element={<FAQDetail />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
