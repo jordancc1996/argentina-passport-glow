@@ -1,6 +1,8 @@
 import Layout from "@/components/Layout";
 import EditorialSection from "@/components/EditorialSection";
 import SEO from "@/components/SEO";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import buenosAiresCityscape from "@/assets/buenos-aires-cityscape.jpg";
 import buenosAiresChurch from "@/assets/buenos-aires-architecture-church.jpg";
 
@@ -127,14 +129,26 @@ const About = () => {
           </div>
         </EditorialSection>
 
-        <EditorialSection className="bg-secondary/30">
+        <EditorialSection>
           <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">About This Resource</h2>
           <p className="text-body text-text-secondary mb-6 tracking-wide max-w-3xl mx-auto">
             ArgentinaResidence.com is an independent, free informational resource created to help individuals learn about Argentina's residency by investment opportunities, particularly the upcoming golden visa program.
           </p>
-          <p className="text-body text-text-secondary tracking-wide max-w-3xl mx-auto">
+          <p className="text-body text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
             This website provides educational content only and is not affiliated with any government agency, immigration service provider, or investment firm. All information should be verified with official sources, and visitors are encouraged to consult with qualified legal and financial professionals for personalized advice.
           </p>
+          <div className="flex flex-wrap gap-4 justify-center mt-8">
+            <Link to="/contact">
+              <Button size="lg" className="px-12">
+                Contact Us
+              </Button>
+            </Link>
+            <Link to="/faq">
+              <Button size="lg" variant="outline" className="px-12">
+                View FAQ
+              </Button>
+            </Link>
+          </div>
         </EditorialSection>
       </div>
     </Layout>
