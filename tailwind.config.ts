@@ -51,10 +51,15 @@ export default {
           DEFAULT: "hsl(var(--gold))",
           light: "hsl(var(--gold-light))",
         },
+        "dark-teal": {
+          DEFAULT: "hsl(var(--dark-teal))",
+          light: "hsl(var(--dark-teal-light))",
+        },
         text: {
           primary: "hsl(var(--text-primary))",
           secondary: "hsl(var(--text-secondary))",
           muted: "hsl(var(--text-muted))",
+          cream: "hsl(var(--text-cream))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
