@@ -2,21 +2,95 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-muted/30 py-8 mt-16">
+    <footer className="bg-muted/30 py-12 mt-16">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground text-sm">
-            Contact us: <a href="mailto:jordan@argentinaresidence.com" className="text-primary hover:underline">jordan@argentinaresidence.com</a>
-          </p>
-          <div className="flex gap-6 text-sm">
-            <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
-              Privacy Policy
-            </Link>
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
+          {/* About */}
+          <div>
+            <h3 className="font-serif text-lg mb-4">Argentina Residence</h3>
+            <p className="text-sm text-muted-foreground">
+              Free informational resource about Argentina's golden visa and residency programs.
+            </p>
+          </div>
+          
+          {/* Quick Links */}
+          <div>
+            <h3 className="font-serif text-lg mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/program" className="text-muted-foreground hover:text-primary transition-colors">
+                  Program
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
+                  About Argentina
+                </Link>
+              </li>
+              <li>
+                <Link to="/market-insights" className="text-muted-foreground hover:text-primary transition-colors">
+                  Market Insights
+                </Link>
+              </li>
+            </ul>
+          </div>
+          
+          {/* Resources */}
+          <div>
+            <h3 className="font-serif text-lg mb-4">Resources</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/faq" className="text-muted-foreground hover:text-primary transition-colors">
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link to="/resources" className="text-muted-foreground hover:text-primary transition-colors">
+                  Guides & Resources
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+          
+          {/* Legal */}
+          <div>
+            <h3 className="font-serif text-lg mb-4">Legal</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+            </ul>
+            <div className="mt-6">
+              <p className="text-muted-foreground text-sm mb-2">Contact:</p>
+              <a href="mailto:jordan@argentinaresidence.com" className="text-primary hover:underline text-sm">
+                jordan@argentinaresidence.com
+              </a>
+            </div>
           </div>
         </div>
-        <p className="text-center text-muted-foreground text-xs mt-6">
-          © {new Date().getFullYear()} Argentina Residence. All rights reserved.
-        </p>
+        
+        <div className="border-t border-border pt-6">
+          <p className="text-center text-muted-foreground text-xs">
+            © {new Date().getFullYear()} Argentina Residence. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );

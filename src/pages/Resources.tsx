@@ -1,6 +1,8 @@
 import Layout from "@/components/Layout";
 import EditorialSection from "@/components/EditorialSection";
 import SEO from "@/components/SEO";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 
 const Resources = () => {
@@ -126,13 +128,25 @@ const Resources = () => {
           <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">
             Important Notice
           </h2>
-          <p className="text-body text-text-secondary tracking-wide max-w-3xl mx-auto">
+          <p className="text-body text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
             This website is a free informational resource about Argentina's residency programs. 
             All information provided is for educational purposes only and should not be considered 
             legal or financial advice. Immigration laws and investment requirements are subject to 
             change. Always verify current requirements with official government sources and consult 
             with qualified immigration attorneys and financial advisors before making any decisions.
           </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link to="/faq">
+              <Button size="lg" variant="outline" className="px-12">
+                View FAQ
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button size="lg" className="px-12">
+                Contact Us
+              </Button>
+            </Link>
+          </div>
         </EditorialSection>
       </div>
     </Layout>

@@ -99,6 +99,17 @@ const Program = () => {
             </p>
           </div>
         </div>
+        
+        <div className="mt-12 text-center">
+          <p className="text-body text-text-secondary mb-6 tracking-wide">
+            Ready to begin your application?
+          </p>
+          <Link to="/contact">
+            <Button size="lg" className="px-12">
+              Get Started
+            </Button>
+          </Link>
+        </div>
       </EditorialSection>
       
     </Layout>

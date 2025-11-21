@@ -76,7 +76,8 @@ const Blog = () => {
               Blog
             </h1>
             <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-              Insights, guides, and updates about Argentina residency and living as an expat
+              Insights, guides, and updates about Argentina residency and living as an expat. 
+              For detailed inquiries, please <Link to="/contact" className="text-primary hover:underline">contact us</Link>.
             </p>
           </motion.div>
         </EditorialSection>
@@ -124,10 +125,10 @@ const Blog = () => {
                         </div>
                         
                         <Link 
-                          to={`/blog/${post.slug}`}
+                          to="/contact"
                           className="flex items-center gap-2 text-primary hover:gap-3 transition-all duration-300 font-medium"
                         >
-                          Read More
+                          Contact Us
                           <ArrowRight className="w-4 h-4" />
                         </Link>
                       </div>
