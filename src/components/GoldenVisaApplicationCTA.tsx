@@ -102,7 +102,7 @@ const GoldenVisaApplicationCTA = () => {
   return (
     <section className="section-padding bg-secondary/20">
       <div className="max-w-3xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-serif tracking-wide text-[#A67C52] mb-6">
+        <h2 className="text-3xl md:text-4xl font-serif tracking-wide text-gold mb-6">
           LEARN MORE & SIGN UP FOR UPDATES
         </h2>
         <p className="text-base md:text-lg text-text-secondary mb-12 leading-relaxed">
@@ -113,7 +113,7 @@ const GoldenVisaApplicationCTA = () => {
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div className="grid md:grid-cols-2 gap-4">
             <div className="text-left">
-              <Label htmlFor="firstName" className="text-sm font-medium mb-2 block text-[#A67C52]">
+              <Label htmlFor="firstName" className="text-sm font-medium mb-2 block text-gold">
                 First Name*
               </Label>
               <Input
@@ -128,7 +128,7 @@ const GoldenVisaApplicationCTA = () => {
             </div>
 
             <div className="text-left">
-              <Label htmlFor="lastName" className="text-sm font-medium mb-2 block text-[#A67C52]">
+              <Label htmlFor="lastName" className="text-sm font-medium mb-2 block text-gold">
                 Last Name*
               </Label>
               <Input
@@ -144,7 +144,7 @@ const GoldenVisaApplicationCTA = () => {
           </div>
 
           <div className="text-left">
-            <Label htmlFor="email" className="text-sm font-medium mb-2 block text-[#A67C52]">
+            <Label htmlFor="email" className="text-sm font-medium mb-2 block text-gold">
               Email*
             </Label>
             <Input
@@ -169,7 +169,7 @@ const GoldenVisaApplicationCTA = () => {
           </div>
 
           <div className="text-left">
-            <Label htmlFor="phoneNumber" className="text-sm font-medium mb-2 block text-[#A67C52]">
+            <Label htmlFor="phoneNumber" className="text-sm font-medium mb-2 block text-gold">
               Phone Number*
             </Label>
             <div className="grid grid-cols-3 gap-3">
@@ -216,7 +216,7 @@ const GoldenVisaApplicationCTA = () => {
           </div>
 
           <div className="text-left">
-            <Label htmlFor="relocateTimeline" className="text-sm font-medium mb-2 block text-[#A67C52]">
+            <Label htmlFor="relocateTimeline" className="text-sm font-medium mb-2 block text-gold">
               Do you intend to relocate to Argentina within the next 12 months?*
             </Label>
             <p className="text-xs text-text-secondary/70 italic mb-2">
@@ -247,7 +247,7 @@ const GoldenVisaApplicationCTA = () => {
           </div>
 
           <div className="text-left">
-            <Label htmlFor="investmentAmount" className="text-sm font-medium mb-2 block text-[#A67C52]">
+            <Label htmlFor="investmentAmount" className="text-sm font-medium mb-2 block text-gold">
               Which Golden Visa program are you interested in?*
             </Label>
             <Controller
@@ -277,7 +277,7 @@ const GoldenVisaApplicationCTA = () => {
           <Button 
             type="submit" 
             size="lg" 
-            className="w-full mt-8 bg-[#A67C52] hover:bg-[#8B6844] text-white font-medium text-base py-6"
+            className="w-full mt-8 bg-gold hover:bg-gold/90 text-primary-foreground font-medium text-base py-6"
             disabled={isSubmitting}
           >
             {isSubmitting ? "SUBMITTING..." : "I WANT TO LEARN MORE"}
