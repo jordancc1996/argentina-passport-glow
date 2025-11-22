@@ -31,15 +31,14 @@ const FAQ = () => {
       <div className="pt-20">
         <EditorialSection className="relative">
           <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${faqBackground})` }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/60 to-background/80" />
           <div className="relative z-10">
-            <h1 className="font-serif text-hero mb-8 tracking-wide">
+            <h1 className="font-serif text-hero mb-8 tracking-wide text-white drop-shadow-lg">
               Frequently Asked Questions
             </h1>
-            <p className="text-editorial text-text-secondary mb-12 tracking-wide">
+            <p className="text-editorial mb-12 tracking-wide text-white/90 drop-shadow-md">
               Common questions about Argentina's residency by investment program
             </p>
           </div>
