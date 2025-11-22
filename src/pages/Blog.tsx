@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { blogPosts } from "@/data/blogData";
-import heroImage from "@/assets/buenos-aires-cityscape.jpg";
+import heroImage from "@/assets/blog-hero-argentina-mountains.jpg";
 
 const Blog = () => {
   const schema = {
