@@ -4,6 +4,7 @@ import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import resourcesBackground from "@/assets/obelisco-buenos-aires-night.jpg";
 
 const Resources = () => {
   const officialResources = [
@@ -73,13 +74,20 @@ const Resources = () => {
         schema={schema}
       />
       <div className="pt-20">
-        <EditorialSection>
-          <h1 className="font-serif text-hero mb-8 tracking-wide">
-            Resources
-          </h1>
-          <p className="text-editorial text-text-secondary mb-12 tracking-wide">
-            Essential information and official sources for Argentina residency
-          </p>
+        <EditorialSection className="relative min-h-[400px] flex items-center justify-center overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${resourcesBackground})` }}
+          />
+          <div className="absolute inset-0 bg-black/40" />
+          <div className="relative z-10">
+            <h1 className="font-serif text-hero mb-8 tracking-wide text-white drop-shadow-lg">
+              Resources
+            </h1>
+            <p className="text-editorial text-white mb-12 tracking-wide drop-shadow-lg">
+              Essential information and official sources for Argentina residency
+            </p>
+          </div>
         </EditorialSection>
 
         <EditorialSection className="bg-secondary/30">
