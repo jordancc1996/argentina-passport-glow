@@ -4,36 +4,7 @@ import EditorialSection from "@/components/EditorialSection";
 import { motion } from "framer-motion";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
-const blogPosts = [
-  {
-    id: 1,
-    title: "Understanding Argentina's Residence by Investment Program in 2025",
-    excerpt: "A comprehensive guide to the requirements, timeline, and benefits of Argentina's residence program for foreign investors.",
-    date: "2025-01-15",
-    readTime: "8 min read",
-    category: "Program Guide",
-    slug: "argentina-residence-program-2025"
-  },
-  {
-    id: 2,
-    title: "Top 5 Cities in Argentina for Foreign Residents",
-    excerpt: "Explore the best cities in Argentina for expats, from bustling Buenos Aires to scenic Mendoza and Patagonia.",
-    date: "2025-01-10",
-    readTime: "6 min read",
-    category: "Living in Argentina",
-    slug: "top-cities-argentina-expats"
-  },
-  {
-    id: 3,
-    title: "Argentina vs Uruguay: Which Residence Program is Right for You?",
-    excerpt: "Compare the investment requirements, benefits, and lifestyle of Argentina and Uruguay residency programs.",
-    date: "2025-01-05",
-    readTime: "10 min read",
-    category: "Market Insights",
-    slug: "argentina-vs-uruguay-residency"
-  }
-];
+import { blogPosts } from "@/data/blogData";
 
 const Blog = () => {
   const schema = {
@@ -110,9 +81,11 @@ const Blog = () => {
                         </div>
                       </div>
                       
-                      <h2 className="text-2xl font-serif mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
-                        {post.title}
-                      </h2>
+                      <Link to={`/blog/${post.slug}`}>
+                        <h2 className="text-2xl font-serif mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
+                          {post.title}
+                        </h2>
+                      </Link>
                       
                       <p className="text-text-secondary mb-6 flex-1">
                         {post.excerpt}
@@ -125,10 +98,10 @@ const Blog = () => {
                         </div>
                         
                         <Link 
-                          to="/contact"
+                          to={`/blog/${post.slug}`}
                           className="flex items-center gap-2 text-primary hover:gap-3 transition-all duration-300 font-medium"
                         >
-                          Contact Us
+                          Read More
                           <ArrowRight className="w-4 h-4" />
                         </Link>
                       </div>
