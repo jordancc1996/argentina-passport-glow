@@ -20,7 +20,7 @@ const EditorialSection = ({
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <motion.div 
-        className={`max-w-4xl mx-auto px-8 ${centered ? 'text-center' : ''}`}
+        className={`max-w-4xl mx-auto px-4 md:px-8 ${centered ? 'text-center' : ''}`}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
