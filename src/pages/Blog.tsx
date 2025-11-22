@@ -52,12 +52,12 @@ const Blog = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-5xl md:text-6xl font-serif mb-6 text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+              <h1 className="text-5xl md:text-6xl font-serif mb-6 text-black drop-shadow-[0_2px_8px_rgba(255,255,255,0.8)]">
                 Blog
               </h1>
-              <p className="text-xl text-white max-w-2xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+              <p className="text-xl text-black max-w-2xl mx-auto drop-shadow-[0_2px_8px_rgba(255,255,255,0.8)]">
                 Insights, guides, and updates about Argentina residency and living as an expat. 
-                For detailed inquiries, please <Link to="/contact" className="text-white underline hover:no-underline drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">contact us</Link>.
+                For detailed inquiries, please <Link to="/contact" className="text-black underline hover:no-underline drop-shadow-[0_2px_8px_rgba(255,255,255,0.8)]">contact us</Link>.
               </p>
             </motion.div>
           </div>
