@@ -35,10 +35,10 @@ const FAQ = () => {
             style={{ backgroundImage: `url(${faqBackground})` }}
           />
           <div className="relative z-10">
-            <h1 className="font-serif text-hero mb-8 tracking-wide text-white drop-shadow-lg">
+            <h1 className="font-serif text-hero mb-8 tracking-wide text-black">
               Frequently Asked Questions
             </h1>
-            <p className="text-editorial mb-12 tracking-wide text-white/90 drop-shadow-md">
+            <p className="text-editorial mb-12 tracking-wide text-black">
               Common questions about Argentina's residency by investment program
             </p>
           </div>
