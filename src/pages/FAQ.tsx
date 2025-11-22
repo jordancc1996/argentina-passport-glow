@@ -4,6 +4,7 @@ import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { faqData } from "@/data/faqData";
 import { ChevronRight } from "lucide-react";
+import faqBackground from "@/assets/faq-colombia-cityscape.jpg";
 
 const FAQ = () => {
   const schema = {
@@ -37,8 +38,13 @@ const FAQ = () => {
           </p>
         </EditorialSection>
 
-        <EditorialSection className="bg-secondary/30">
-          <div className="max-w-3xl mx-auto">
+        <EditorialSection className="relative">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+            style={{ backgroundImage: `url(${faqBackground})` }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/60 to-background/80" />
+          <div className="max-w-3xl mx-auto relative z-10">
             <div className="space-y-3">
               {faqData.map((faq) => (
                 <Link 
