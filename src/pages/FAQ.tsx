@@ -29,22 +29,24 @@ const FAQ = () => {
         schema={schema}
       />
       <div className="pt-20">
-        <EditorialSection>
-          <h1 className="font-serif text-hero mb-8 tracking-wide">
-            Frequently Asked Questions
-          </h1>
-          <p className="text-editorial text-text-secondary mb-12 tracking-wide">
-            Common questions about Argentina's residency by investment program
-          </p>
-        </EditorialSection>
-
         <EditorialSection className="relative">
           <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
             style={{ backgroundImage: `url(${faqBackground})` }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 to-background/80" />
-          <div className="max-w-3xl mx-auto relative z-10">
+          <div className="relative z-10">
+            <h1 className="font-serif text-hero mb-8 tracking-wide">
+              Frequently Asked Questions
+            </h1>
+            <p className="text-editorial text-text-secondary mb-12 tracking-wide">
+              Common questions about Argentina's residency by investment program
+            </p>
+          </div>
+        </EditorialSection>
+
+        <EditorialSection className="bg-secondary/30">
+          <div className="max-w-3xl mx-auto">
             <div className="space-y-3">
               {faqData.map((faq) => (
                 <Link 
