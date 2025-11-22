@@ -45,9 +45,6 @@ const Blog = () => {
             style={{ backgroundImage: `url(${heroImage})` }}
           />
           
-          {/* Overlay for text readability */}
-          <div className="absolute inset-0 bg-background/80" />
-          
           {/* Content */}
           <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-8 text-center section-padding">
             <motion.div
@@ -55,12 +52,12 @@ const Blog = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-5xl md:text-6xl font-serif mb-6 text-foreground">
+              <h1 className="text-5xl md:text-6xl font-serif mb-6 text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
                 Blog
               </h1>
-              <p className="text-xl text-text-secondary max-w-2xl mx-auto">
+              <p className="text-xl text-white max-w-2xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
                 Insights, guides, and updates about Argentina residency and living as an expat. 
-                For detailed inquiries, please <Link to="/contact" className="text-primary hover:underline">contact us</Link>.
+                For detailed inquiries, please <Link to="/contact" className="text-white underline hover:no-underline drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">contact us</Link>.
               </p>
             </motion.div>
           </div>
