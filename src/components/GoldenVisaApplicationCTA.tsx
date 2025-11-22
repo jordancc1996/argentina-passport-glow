@@ -40,13 +40,13 @@ const GoldenVisaApplicationCTA = () => {
     { code: "+966", country: "Saudi Arabia" },
   ];
 
-  const investmentRanges = [
-    "$50,000 to $100,000",
-    "$100,000 to $250,000",
-    "$250,000 to $500,000",
-    "$500,000 to $1,000,000",
-    "Over $1,000,000",
-    "Prefer to discuss"
+  const goldenVisaPrograms = [
+    "Argentina",
+    "Portugal",
+    "Italy",
+    "Greece",
+    "Caribbean Islands",
+    "Malta"
   ];
 
   const relocateTimelines = [
@@ -253,16 +253,16 @@ const GoldenVisaApplicationCTA = () => {
             <Controller
               name="investmentAmount"
               control={control}
-              rules={{ required: "Please select an investment range" }}
+              rules={{ required: "Please select a program" }}
               render={({ field }) => (
                 <Select onValueChange={field.onChange} value={field.value}>
                   <SelectTrigger id="investmentAmount" className="bg-dark-teal-light border-white/20 text-white">
                     <SelectValue placeholder="Please Select" />
                   </SelectTrigger>
                   <SelectContent className="bg-dark-teal-light border-white/20">
-                    {investmentRanges.map((range) => (
-                      <SelectItem key={range} value={range} className="text-white focus:bg-dark-teal focus:text-white">
-                        {range}
+                    {goldenVisaPrograms.map((program) => (
+                      <SelectItem key={program} value={program} className="text-white focus:bg-dark-teal focus:text-white">
+                        {program}
                       </SelectItem>
                     ))}
                   </SelectContent>
