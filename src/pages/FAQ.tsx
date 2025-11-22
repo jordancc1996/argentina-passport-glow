@@ -34,6 +34,7 @@ const FAQ = () => {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${faqBackground})` }}
           />
+          <div className="absolute inset-0 bg-black/40" />
           <div className="relative z-10">
             <h1 className="font-serif text-hero mb-8 tracking-wide text-white drop-shadow-lg">
               Frequently Asked Questions
