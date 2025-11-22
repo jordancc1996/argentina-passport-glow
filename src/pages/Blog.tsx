@@ -38,7 +38,7 @@ const Blog = () => {
       />
       
       <main>
-        <section className="relative min-h-[50vh] flex items-start justify-center overflow-hidden pt-2 md:pt-4">
+        <section className="relative min-h-[50vh] flex items-start justify-center overflow-hidden -mt-8 md:-mt-12">
           {/* Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
