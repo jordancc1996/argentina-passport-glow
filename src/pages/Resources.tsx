@@ -4,7 +4,7 @@ import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import resourcesBackground from "@/assets/obelisco-buenos-aires-night.jpg";
+import resourcesBackground from "@/assets/argentina-flag-resources.jpg";
 
 const Resources = () => {
   const officialResources = [
