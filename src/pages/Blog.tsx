@@ -76,6 +76,15 @@ const Blog = () => {
                   className="group"
                 >
                   <div className="bg-card border border-border rounded-lg overflow-hidden h-full flex flex-col hover:border-primary transition-colors duration-300">
+                    {post.image && (
+                      <div className="aspect-[16/9] overflow-hidden">
+                        <img 
+                          src={post.image} 
+                          alt={post.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    )}
                     <div className="p-6 flex-1 flex flex-col">
                       <div className="flex items-center gap-4 text-sm text-text-secondary mb-4">
                         <span className="text-primary font-medium">{post.category}</span>
