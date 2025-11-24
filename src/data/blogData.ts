@@ -125,8 +125,8 @@ export const blogPosts: BlogPost[] = [
     content: `
       <div class="mb-8">
         <img 
-          src="/argentina-golden-visa-2026-hero.jpg" 
-          alt="Argentina Golden Visa Program 2026 - Investment opportunities in Buenos Aires with pathways to citizenship and residency" 
+          src="/argentina-golden-visa-2026.jpg" 
+          alt="Argentina Golden Visa Program 2026 - Argentine flag flying over scenic Patagonian lake with mountains, representing investment opportunities and pathways to citizenship" 
           class="w-full h-auto rounded-lg"
           width="1920"
           height="1080"
@@ -237,7 +237,7 @@ export const blogPosts: BlogPost[] = [
     category: "Program Guide",
     slug: "argentina-golden-visa-program-introduction",
     author: "Argentina Residence Team",
-    image: "/argentina-golden-visa-2026-og.jpg",
+    image: "/argentina-golden-visa-2026.jpg",
     seoTitle: "Argentina Golden Visa Program 2026: Complete Guide",
     seoDescription: "Learn about Argentina's Golden Visa launching Q1 2026. $500K investment, visa-free travel to 160+ countries, and fast-track citizenship in 2 years",
     keywords: ["Argentina Golden Visa", "Argentina citizenship by investment", "Argentina residence permit", "golden visa 2026"]
