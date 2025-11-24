@@ -114,6 +114,37 @@ export const blogPosts: BlogPost[] = [
     category: "Market Insights",
     slug: "argentina-vs-uruguay-residency",
     author: "Argentina Residence Team"
+  },
+  {
+    id: 4,
+    title: "Argentina's Golden Visa Program : Introduction",
+    excerpt: "Argentina's Golden Visa program, set to launch in Q1 2026, offers investors a unique opportunity with visa-free access to 160+ destinations, no worldwide taxation for non-residents, and a fast-track to citizenship.",
+    content: `
+      <h2>Argentina Golden Visa Launch</h2>
+      <p>The Argentina Golden visa has plans to launch in Q1 2026 and the visa has the potential to become a significant program in the global market. Argentina intends on rejoining the U.S. visa waiver program and the golden visa will allow investors visa-free access to China and the Schengen area with favorable tax advantages for expats.</p>
+      
+      <h2>Understanding Golden Visa Programs</h2>
+      <p>Golden Visa programs allow non-nationals to gain citizenship or residency in a country through significant investment in the offering countries economy. Golden visa programs have come under criticism for potential for corruption and money laundering if due diligence isn't thorough from the country offering the program. These arguments have led to many golden visa program closures or reduced liberations across the EU. Many believe golden visa programs benefit countries by injecting money into economies that need investment and development.</p>
+      
+      <h2>Investment Requirements</h2>
+      <p>The Argentinian golden visa program is expected to ask for an investment of $500,000 in sectors like technology, business, energy or tourism in return for the immediate right to live there and start the process towards Argentinian nationality.</p>
+      
+      <h2>Program Timeline and Legal Status</h2>
+      <p>Argentina brought its citizenship by investment program into law in July 2025 and now just needs to solidify its investment amounts and establish application procedures. Argentina represents a unique opportunity for investors because it offers no worldwide taxation for non-residents, visa-free access to 160+ destinations including the Schengen Area and China and a fast-track to South American citizenship in just two years upon relocation. Argentina is also planning on rejoining the U.S. visa waiver program. The visa waiver program allows citizens of 41 countries to travel to the United States for up to 90 days without a visa for either work or pleasure. These include countries in the EU, Israel, Australia, Japan, the UK and New Zealand. As of right now, there is only one South American country currently in the Visa Waiver program and it is Chile.</p>
+      
+      <h2>Benefits for Americans</h2>
+      <p>A new study by Argentina Expat highlights just how far American dollars can go when starting an new life in South America. The rising trend of Retirement Citizenship in EU countries as a retirement arbitrage play could be even more emphasized in Latin America where USD is even more valuable.</p>
+      
+      <p>The study demonstrates that in most areas in Argentina, the average retirement savings can last decades and far exceed what would be possible in most major U.S. cities. The study explains that a $1 million nest egg might last 95 years in Cuenca and Ecuador. In Argentina, you'd get 70 years out of $1 million in Cordoba and 56 years in Buenos Aires.</p>
+      
+      <h2>Stay Updated</h2>
+      <p>Learn more at <a href="https://www.argentinaresidence.com" class="text-primary hover:underline">www.argentinaresidence.com</a> and sign up for the Argentina Residence newsletter to stay up to date on policy and Argentina Golden Visa updates.</p>
+    `,
+    date: "2025-11-24",
+    readTime: "5 min read",
+    category: "Program Guide",
+    slug: "argentina-golden-visa-program-introduction",
+    author: "Argentina Residence Team"
   }
 ];
 
