@@ -21,10 +21,11 @@ const BlogPost = () => {
 
   const schema = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": post.title,
-    "description": post.excerpt,
+    "@type": "Article",
+    "headline": post.seoTitle || post.title,
+    "description": post.seoDescription || post.excerpt,
     "datePublished": post.date,
+    "dateModified": post.date,
     "author": {
       "@type": "Organization",
       "name": post.author
@@ -32,17 +33,30 @@ const BlogPost = () => {
     "publisher": {
       "@type": "Organization",
       "name": "Argentina Residence",
-      "url": "https://www.argentinaresidence.com"
+      "url": "https://www.argentinaresidence.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.argentinaresidence.com/og-image.jpg"
+      }
     },
-    "url": `https://www.argentinaresidence.com/blog/${post.slug}`
+    "image": post.image ? `https://www.argentinaresidence.com${post.image}` : "https://www.argentinaresidence.com/og-image.jpg",
+    "url": `https://www.argentinaresidence.com/blog/${post.slug}`,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.argentinaresidence.com/blog/${post.slug}`
+    },
+    "keywords": post.keywords ? post.keywords.join(", ") : undefined,
+    "articleSection": post.category,
+    "wordCount": post.content.replace(/<[^>]*>/g, '').split(/\s+/).length
   };
 
   return (
     <Layout>
       <SEO 
-        title={`${post.title} | Argentina Residence Blog`}
-        description={post.excerpt}
+        title={post.seoTitle ? `${post.seoTitle} | Argentina Residence` : `${post.title} | Argentina Residence Blog`}
+        description={post.seoDescription || post.excerpt}
         canonical={`/blog/${post.slug}`}
+        ogImage={post.image}
         schema={schema}
       />
       
