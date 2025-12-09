@@ -134,8 +134,44 @@ const BlogPost = () => {
               </div>
             </div>
 
+            {/* Related Articles Section */}
+            {blogPosts.filter(p => p.slug !== post.slug).length > 0 && (
+              <section className="mt-12 pt-8 border-t border-border">
+                <h2 className="text-2xl font-serif mb-6 text-foreground">Related Articles</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {blogPosts
+                    .filter(p => p.slug !== post.slug)
+                    .slice(0, 3)
+                    .map((relatedPost) => (
+                      <Link 
+                        key={relatedPost.id}
+                        to={`/blog/${relatedPost.slug}`}
+                        className="group bg-card border border-border rounded-lg overflow-hidden hover:border-primary transition-colors"
+                      >
+                        {relatedPost.image && (
+                          <div className="aspect-[16/9] overflow-hidden">
+                            <img 
+                              src={relatedPost.image} 
+                              alt={relatedPost.title}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            />
+                          </div>
+                        )}
+                        <div className="p-4">
+                          <span className="text-xs text-primary font-medium">{relatedPost.category}</span>
+                          <h3 className="text-lg font-serif text-foreground group-hover:text-primary transition-colors mt-1 line-clamp-2">
+                            {relatedPost.title}
+                          </h3>
+                          <p className="text-sm text-text-secondary mt-2 line-clamp-2">{relatedPost.excerpt}</p>
+                        </div>
+                      </Link>
+                    ))}
+                </div>
+              </section>
+            )}
+
             {(previousPost || nextPost) && (
-              <nav className="mt-12 pt-8 border-t border-border">
+              <nav className="mt-8 pt-8 border-t border-border">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {previousPost && (
                     <Link 
