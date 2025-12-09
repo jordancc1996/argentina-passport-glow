@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import EditorialSection from "@/components/EditorialSection";
 import { motion } from "framer-motion";
-import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { Calendar, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { blogPosts } from "@/data/blogData";
 import heroImage from "@/assets/blog-hero-argentina-mountains.jpg";
@@ -75,7 +75,10 @@ const Blog = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="group"
                 >
-                  <div className="bg-card border border-border rounded-lg overflow-hidden h-full flex flex-col hover:border-primary transition-colors duration-300">
+                  <Link 
+                    to={`/blog/${post.slug}`}
+                    className="bg-card border border-border rounded-lg overflow-hidden h-full flex flex-col hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer block"
+                  >
                     {post.image && (
                       <div className="aspect-[16/9] overflow-hidden">
                         <img 
@@ -100,32 +103,20 @@ const Blog = () => {
                         </div>
                       </div>
                       
-                      <Link to={`/blog/${post.slug}`}>
-                        <h2 className="text-2xl font-serif mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
-                          {post.title}
-                        </h2>
-                      </Link>
+                      <h2 className="text-2xl font-serif mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
+                        {post.title}
+                      </h2>
                       
                       <p className="text-text-secondary mb-6 flex-1">
                         {post.excerpt}
                       </p>
                       
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-1 text-sm text-text-secondary">
-                          <Clock className="w-4 h-4" />
-                          <span>{post.readTime}</span>
-                        </div>
-                        
-                        <Link 
-                          to={`/blog/${post.slug}`}
-                          className="flex items-center gap-2 text-primary hover:gap-3 transition-all duration-300 font-medium"
-                        >
-                          Read More
-                          <ArrowRight className="w-4 h-4" />
-                        </Link>
+                      <div className="flex items-center gap-1 text-sm text-text-secondary">
+                        <Clock className="w-4 h-4" />
+                        <span>{post.readTime}</span>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </motion.article>
               ))}
             </div>
