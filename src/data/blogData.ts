@@ -449,8 +449,8 @@ export const blogPosts: BlogPost[] = [
     content: `
       <div class="mb-8">
         <img 
-          src="/argentina-cbi-american-investors.jpg" 
-          alt="Argentina Citizenship by Investment Program attracting American investors - Buenos Aires financial district" 
+          src="/argentina-cbi-american-investors-new.jpg" 
+          alt="Argentina Citizenship by Investment Program attracting American investors - Buenos Aires Puerto Madero skyline at night" 
           class="w-full h-auto rounded-lg"
           width="1920"
           height="1080"
@@ -539,7 +539,7 @@ export const blogPosts: BlogPost[] = [
     category: "Investment",
     slug: "argentina-citizenship-investment-american-investors",
     author: "Argentina Residence Team",
-    image: "/argentina-cbi-american-investors.jpg",
+    image: "/argentina-cbi-american-investors-new.jpg",
     seoTitle: "Argentina Citizenship by Investment Attracts American Investors 2025",
     seoDescription: "Learn why American investors are flocking to Argentina's new citizenship by investment program. $500K investment, E-2 visa benefits, and Mercosur access.",
     keywords: ["Argentina citizenship by investment", "American investors Argentina", "Argentina golden visa", "E-2 visa Argentina", "Mercosur citizenship"]
