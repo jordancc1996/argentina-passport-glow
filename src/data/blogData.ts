@@ -22,8 +22,8 @@ export const blogPosts: BlogPost[] = [
     content: `
       <div class="mb-8">
         <img 
-          src="/argentina-golden-visa-2026.jpg" 
-          alt="Argentina Residence by Investment Program 2025 - Buenos Aires cityscape showcasing investment opportunities and pathways to Argentine citizenship for foreign investors" 
+          src="/argentina-residence-investment-2025.jpg" 
+          alt="Argentina Residence by Investment Program 2025 - Argentine flag waving symbolizing investment opportunities and pathways to Argentine citizenship for foreign investors"
           class="w-full h-auto rounded-lg"
           width="1920"
           height="1080"
@@ -142,7 +142,7 @@ export const blogPosts: BlogPost[] = [
     category: "Program Guide",
     slug: "argentina-residence-program-2025",
     author: "Argentina Residence Team",
-    image: "/argentina-golden-visa-2026.jpg",
+    image: "/argentina-residence-investment-2025.jpg",
     seoTitle: "Argentina Residence by Investment Program 2025 Guide",
     seoDescription: "Complete guide to Argentina's residence by investment program. Learn about requirements, timeline, benefits, and fast-track citizenship.",
     keywords: ["Argentina residence program", "Argentina investment visa", "Argentina residency", "Argentine citizenship", "Argentina immigration"]
