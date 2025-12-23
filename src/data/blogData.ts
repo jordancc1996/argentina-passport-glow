@@ -154,8 +154,8 @@ export const blogPosts: BlogPost[] = [
     content: `
       <div class="mb-8">
         <img 
-          src="/argentina-cbi-american-investors.jpg" 
-          alt="Top cities in Argentina for foreign residents and expats - Buenos Aires, Mendoza, Córdoba showing lifestyle and living options" 
+          src="/argentina-top-cities-residents.jpg" 
+          alt="Top cities in Argentina for foreign residents - Obelisco monument in Buenos Aires aerial view showcasing expat destinations" 
           class="w-full h-auto rounded-lg"
           width="1920"
           height="1080"
@@ -313,7 +313,7 @@ export const blogPosts: BlogPost[] = [
     category: "Living in Argentina",
     slug: "top-cities-argentina-expats",
     author: "Argentina Residence Team",
-    image: "/argentina-cbi-american-investors.jpg",
+    image: "/argentina-top-cities-residents.jpg",
     seoTitle: "Top 5 Cities in Argentina for Expats & Foreign Residents",
     seoDescription: "Discover the best cities in Argentina for expats: Buenos Aires, Mendoza, Córdoba, Bariloche & Rosario. Compare lifestyle, costs & amenities.",
     keywords: ["cities in Argentina for expats", "living in Argentina", "Buenos Aires expats", "best places to live in Argentina", "Argentina expat communities"]
