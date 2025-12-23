@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     content: `
       <div class="mb-8">
         <img 
-          src="/argentina-residence-investment-program-2025.jpg" 
+          src="/argentina-golden-visa-2026.jpg" 
           alt="Argentina Residence by Investment Program 2025 - Buenos Aires cityscape showcasing investment opportunities and pathways to Argentine citizenship for foreign investors" 
           class="w-full h-auto rounded-lg"
           width="1920"
@@ -142,7 +142,7 @@ export const blogPosts: BlogPost[] = [
     category: "Program Guide",
     slug: "argentina-residence-program-2025",
     author: "Argentina Residence Team",
-    image: "/argentina-residence-investment-program-2025.jpg",
+    image: "/argentina-golden-visa-2026.jpg",
     seoTitle: "Argentina Residence by Investment Program 2025 Guide",
     seoDescription: "Complete guide to Argentina's residence by investment program. Learn about requirements, timeline, benefits, and fast-track citizenship.",
     keywords: ["Argentina residence program", "Argentina investment visa", "Argentina residency", "Argentine citizenship", "Argentina immigration"]
@@ -154,7 +154,7 @@ export const blogPosts: BlogPost[] = [
     content: `
       <div class="mb-8">
         <img 
-          src="/best-cities-argentina-expats-foreign-residents.jpg" 
+          src="/argentina-cbi-american-investors.jpg" 
           alt="Top cities in Argentina for foreign residents and expats - Buenos Aires, Mendoza, Córdoba showing lifestyle and living options" 
           class="w-full h-auto rounded-lg"
           width="1920"
@@ -313,7 +313,7 @@ export const blogPosts: BlogPost[] = [
     category: "Living in Argentina",
     slug: "top-cities-argentina-expats",
     author: "Argentina Residence Team",
-    image: "/best-cities-argentina-expats-foreign-residents.jpg",
+    image: "/argentina-cbi-american-investors.jpg",
     seoTitle: "Top 5 Cities in Argentina for Expats & Foreign Residents",
     seoDescription: "Discover the best cities in Argentina for expats: Buenos Aires, Mendoza, Córdoba, Bariloche & Rosario. Compare lifestyle, costs & amenities.",
     keywords: ["cities in Argentina for expats", "living in Argentina", "Buenos Aires expats", "best places to live in Argentina", "Argentina expat communities"]
