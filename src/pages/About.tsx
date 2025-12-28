@@ -67,9 +67,12 @@ const About = () => {
               <p className="text-body text-text-secondary mb-6 tracking-wide">
                 Argentina stands as Latin America's second-largest economy, offering diverse investment opportunities across agriculture, technology, renewable energy, and real estate sectors.
               </p>
-              <p className="text-body text-text-secondary tracking-wide">
+              <p className="text-body text-text-secondary tracking-wide mb-4">
                 The country's strategic location provides access to Mercosur markets while maintaining strong economic ties with Europe and North America.
               </p>
+              <Link to="/market-insights" className="text-primary hover:underline text-sm font-medium">
+                View market insights →
+              </Link>
             </div>
             
             <div>
@@ -77,9 +80,12 @@ const About = () => {
               <p className="text-body text-text-secondary mb-6 tracking-wide">
                 From the European elegance of Buenos Aires to the wine regions of Mendoza, Argentina offers a sophisticated lifestyle that attracts international residents.
               </p>
-              <p className="text-body text-text-secondary tracking-wide">
+              <p className="text-body text-text-secondary tracking-wide mb-4">
                 The country's rich cultural heritage, world-class cuisine, and temperate climate create an exceptional quality of life for discerning expatriates.
               </p>
+              <Link to="/blog" className="text-primary hover:underline text-sm font-medium">
+                Read our blog →
+              </Link>
             </div>
           </div>
         </EditorialSection>

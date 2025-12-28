@@ -56,20 +56,23 @@ const Program = () => {
             <p className="text-body text-text-secondary mb-6 tracking-wide">
               The Argentina Residency by Investment program requires a minimum investment of USD $500,000 in approved sectors including real estate, government bonds, or establishing a local business.
             </p>
-            <p className="text-body text-text-secondary tracking-wide">
+            <p className="text-body text-text-secondary tracking-wide mb-4">
               Investments must be maintained for a minimum period of three years, with clear pathways to permanent residency and eventual citizenship.
             </p>
+            <Link to="/faq/investment-requirements" className="text-primary hover:underline text-sm font-medium">
+              See detailed requirements →
+            </Link>
           </div>
           
           <div>
             <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">Program Benefits</h2>
-            <ul className="text-body text-text-secondary space-y-4 tracking-wide">
-              <li>• Temporary residence visa with work authorization</li>
+            <ul className="text-body text-text-secondary space-y-4 tracking-wide mb-4">
+              <li>• Temporary residence visa with <Link to="/faq/work-rights" className="text-primary hover:underline">work authorization</Link></li>
               <li>• Access to Argentina's comprehensive healthcare system</li>
-              <li>• Favorable tax treatment for foreign investors</li>
+              <li>• Favorable <Link to="/faq/tax-implications" className="text-primary hover:underline">tax treatment</Link> for foreign investors</li>
               <li>• Pathway to permanent residency after two years</li>
-              <li>• Visa-free travel to 170+ countries</li>
-              <li>• Family inclusion for spouse and dependent children</li>
+              <li>• <Link to="/faq/visa-free-travel" className="text-primary hover:underline">Visa-free travel</Link> to 170+ countries</li>
+              <li>• <Link to="/faq/family-members-residency" className="text-primary hover:underline">Family inclusion</Link> for spouse and dependent children</li>
             </ul>
           </div>
         </div>
