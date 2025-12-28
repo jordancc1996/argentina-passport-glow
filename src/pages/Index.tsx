@@ -4,7 +4,9 @@ import EditorialSection from "@/components/EditorialSection";
 import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Calendar, Clock, ArrowRight } from "lucide-react";
 import heroNightImage from "@/assets/hero-buenos-aires-night.jpg";
+import { blogPosts } from "@/data/blogData";
 
 const Index = () => {
   const schema = {
@@ -30,6 +32,9 @@ const Index = () => {
       }
     ]
   };
+
+  // Get the 3 most recent blog posts
+  const recentPosts = blogPosts.slice(0, 3);
 
   return (
     <Layout showBreadcrumbs={false}>
@@ -98,15 +103,77 @@ const Index = () => {
           </div>
         </div>
       </EditorialSection>
-      
+
+      {/* Blog Preview Section */}
       <EditorialSection>
+        <div className="text-center mb-12">
+          <h2 className="font-serif text-xl-editorial mb-4 tracking-wide">Latest Insights & Guides</h2>
+          <p className="text-body text-text-secondary max-w-2xl mx-auto">
+            Stay informed with our latest articles on Argentina residency, investment opportunities, and expat lifestyle.
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-8">
+          {recentPosts.map((post) => (
+            <Link 
+              key={post.id}
+              to={`/blog/${post.slug}`}
+              className="group bg-card border border-border rounded-lg overflow-hidden hover:border-primary hover:shadow-lg transition-all duration-300"
+            >
+              {post.image && (
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img 
+                    src={post.image} 
+                    alt={post.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              )}
+              <div className="p-6">
+                <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
+                  <span className="text-primary font-medium">{post.category}</span>
+                  <span className="flex items-center gap-1">
+                    <Calendar className="w-3 h-3" />
+                    {new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                  </span>
+                </div>
+                <h3 className="font-serif text-lg mb-3 text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                  {post.title}
+                </h3>
+                <p className="text-sm text-text-secondary mb-4 line-clamp-2">
+                  {post.excerpt}
+                </p>
+                <div className="flex items-center justify-between text-sm">
+                  <span className="flex items-center gap-1 text-muted-foreground">
+                    <Clock className="w-3 h-3" />
+                    {post.readTime}
+                  </span>
+                  <span className="text-primary font-medium group-hover:underline flex items-center gap-1">
+                    Read more <ArrowRight className="w-3 h-3" />
+                  </span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <div className="text-center mt-10">
+          <Button asChild variant="outline" size="lg">
+            <Link to="/blog" className="inline-flex items-center gap-2">
+              View All Articles <ArrowRight className="w-4 h-4" />
+            </Link>
+          </Button>
+        </div>
+      </EditorialSection>
+      
+      <EditorialSection className="bg-secondary/30">
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Your pathway to Argentine residency</h2>
         <p className="text-body text-text-secondary mb-12 max-w-3xl mx-auto tracking-wide">
           Learn about investment requirements, application procedures, and everything you need to know about Argentina's residency by investment program. Explore our comprehensive guides and resources to help you make informed decisions.
         </p>
       </EditorialSection>
 
-      <EditorialSection className="bg-secondary/30">
+      <EditorialSection>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Official Resources & Further Reading</h2>
         <p className="text-body text-text-secondary mb-8 max-w-3xl mx-auto tracking-wide">
           For official government information and comprehensive investment migration news, we recommend the following authoritative sources:
