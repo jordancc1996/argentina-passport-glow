@@ -41,13 +41,13 @@ const Hero = ({
       <motion.div 
         className="relative z-10 text-center max-w-4xl mx-auto px-4 md:px-8"
         style={{ opacity }}
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 1, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
         <motion.h1 
           className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-white mb-6 md:mb-8 tracking-wide leading-tight"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 1, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
@@ -57,7 +57,7 @@ const Hero = ({
         {subtitle && (
           <motion.h2 
             className="font-serif text-lg sm:text-xl md:text-3xl text-white/90 mb-8 md:mb-12 tracking-wide max-w-3xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
           >
@@ -68,7 +68,7 @@ const Hero = ({
         {description && (
           <motion.p 
             className="text-sm sm:text-base md:text-lg text-white/80 max-w-2xl mx-auto tracking-wide"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.9 }}
           >
