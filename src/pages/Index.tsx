@@ -40,15 +40,15 @@ const Index = () => {
         schema={schema}
       />
       <Hero
-        title="Argentina Residence"
+        title="Argentina Residence & Citizenship by Investment"
         subtitle="Live and invest in South America's most dynamic economy"
         backgroundImage={heroNightImage}
       />
       
       <EditorialSection>
-        <h1 className="font-serif text-xl-editorial mb-8 tracking-wide">
+        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
           Argentina offers unparalleled investment opportunities for global citizens seeking South American residency.
-        </h1>
+        </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide">
           A free informational resource about Argentina's upcoming golden visa program.
         </p>
