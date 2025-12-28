@@ -96,6 +96,33 @@ const Index = () => {
           Learn about investment requirements, application procedures, and everything you need to know about Argentina's residency by investment program. Explore our comprehensive guides and resources to help you make informed decisions.
         </p>
       </EditorialSection>
+
+      <EditorialSection className="bg-secondary/30">
+        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Official Resources & Further Reading</h2>
+        <p className="text-body text-text-secondary mb-8 max-w-3xl mx-auto tracking-wide">
+          For official government information and comprehensive investment migration news, we recommend the following authoritative sources:
+        </p>
+        <div className="flex flex-wrap gap-6 justify-center">
+          <a 
+            href="https://www.argentina.gob.ar/interior/migraciones" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
+          >
+            Argentina National Migration Office (DNM)
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <a 
+            href="https://www.imidaily.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
+          >
+            IMI Daily - Investment Migration News
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </EditorialSection>
     </Layout>
   );
 };
