@@ -32,7 +32,7 @@ const Index = () => {
   };
 
   return (
-    <Layout>
+    <Layout showBreadcrumbs={false}>
       <SEO 
         title="Argentina Residence by Investment | Permanent Residency Program"
         description="Obtain Argentina permanent residency through investment. Learn about requirements, process, timeline, and benefits of Argentina's residence program."
@@ -69,23 +69,32 @@ const Index = () => {
         <div className="grid md:grid-cols-3 gap-12 text-left">
           <div>
             <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Investment Program</h2>
-            <p className="text-body text-text-secondary tracking-wide">
+            <p className="text-body text-text-secondary tracking-wide mb-4">
               Secure temporary residency through strategic investments in Argentina's most promising sectors, from premium real estate to government bonds.
             </p>
+            <Link to="/program" className="text-primary hover:underline text-sm font-medium">
+              Learn about the program →
+            </Link>
           </div>
           
           <div>
             <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Strategic Location</h2>
-            <p className="text-body text-text-secondary tracking-wide">
+            <p className="text-body text-text-secondary tracking-wide mb-4">
               Access South America's second-largest economy while enjoying visa-free travel to over 170 countries worldwide.
             </p>
+            <Link to="/faq/visa-free-travel" className="text-primary hover:underline text-sm font-medium">
+              Explore travel benefits →
+            </Link>
           </div>
           
           <div>
             <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Premium Lifestyle</h2>
-            <p className="text-body text-text-secondary tracking-wide">
+            <p className="text-body text-text-secondary tracking-wide mb-4">
               Experience world-class culture, cuisine, and quality of life in one of South America's most sophisticated destinations.
             </p>
+            <Link to="/about" className="text-primary hover:underline text-sm font-medium">
+              Discover Argentina →
+            </Link>
           </div>
         </div>
       </EditorialSection>
