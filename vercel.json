@@ -11,7 +11,7 @@
         }
       ],
       "destination": "https://www.argentinaresidence.com/:path*",
-      "permanent": true
+      "statusCode": 308
     }
   ],
   "rewrites": [
