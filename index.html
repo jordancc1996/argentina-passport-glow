@@ -304,7 +304,7 @@
       
       /* Hide SSR when React loads */
       #ssr-content { display: block; }
-      #root:not(:empty) + #ssr-content { display: none; }
+      .ssr-hidden { display: none !important; }
       
       /* Responsive */
       @media (max-width: 768px) {
