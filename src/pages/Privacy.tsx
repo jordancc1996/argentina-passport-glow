@@ -353,8 +353,8 @@ const Privacy = () => {
                 <div className="pl-6 space-y-2">
                   <p className="leading-relaxed">
                     <span className="text-white font-medium">Email:</span>{" "}
-                    <a href="mailto:jordan@argentinaresidence.com" className="text-text-cream hover:text-white underline">
-                      jordan@argentinaresidence.com
+                    <a href="mailto:rachele@argentinaresidence.com" className="text-text-cream hover:text-white underline">
+                      rachele@argentinaresidence.com
                     </a>
                   </p>
                   <p className="leading-relaxed">
