@@ -11,6 +11,7 @@ import argentineFlagImage from "@/assets/argentina-flag-background.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     email: '',
     budget: '',
@@ -18,13 +19,41 @@ const Contact = () => {
     interest: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Thank you for your interest",
-      description: "We will contact you within 24 hours to discuss your residency objectives.",
-    });
-    setFormData({ email: '', budget: '', country: '', interest: '' });
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('https://formcarry.com/s/1vbKuKjPCBx', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          ...formData,
+          formType: 'contact-inquiry'
+        })
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Thank you for your interest",
+          description: "We will contact you within 24 hours to discuss your residency objectives.",
+        });
+        setFormData({ email: '', budget: '', country: '', interest: '' });
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -140,9 +169,10 @@ const Contact = () => {
               <div className="pt-4">
                 <Button
                   type="submit"
+                  disabled={isSubmitting}
                   className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-sans tracking-wider uppercase text-sm py-6"
                 >
-                  Submit Inquiry
+                  {isSubmitting ? "Submitting..." : "Submit Inquiry"}
                 </Button>
               </div>
             </form>
