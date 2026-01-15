@@ -14,9 +14,10 @@ const Privacy = () => {
     <Layout>
       <SEO 
         title="Privacy Policy | Argentina Residence"
-        description="Learn how Argentina Residence protects your personal information and privacy when you use our website or submit application forms."
+        description="Argentina Residence privacy policy. Learn how we protect your data and handle your information securely."
         canonical="/privacy"
         schema={schema}
+        noindex={true}
       />
       
       <div className="min-h-screen bg-dark-teal py-20">

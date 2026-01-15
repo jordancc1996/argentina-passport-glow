@@ -29,8 +29,8 @@ const Program = () => {
   return (
     <Layout>
       <SEO 
-        title="Argentina Residence Program 2025 | Investment Residency Details"
-        description="Complete details about Argentina's residence by investment program. Learn about investment options, benefits, timeline, and requirements."
+        title="Argentina Golden Visa Program | Argentina Residence"
+        description="Invest $100K+ for Argentina residency. Get work rights, tax benefits, and pathway to citizenship. Full program details inside."
         canonical="/program"
         schema={schema}
       />

@@ -79,8 +79,8 @@ const Contact = () => {
   return (
     <Layout>
       <SEO 
-        title="Contact Us | Argentina Residency Consultation"
-        description="Schedule a free consultation about Argentina residency. Contact our team for personalized guidance on your residency application."
+        title="Free Consultation | Argentina Residence"
+        description="Schedule your free Argentina residency consultation. Get expert guidance on investment options and application process."
         canonical="/contact"
         schema={schema}
       />

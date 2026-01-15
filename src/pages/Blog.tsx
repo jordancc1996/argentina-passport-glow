@@ -31,8 +31,8 @@ const Blog = () => {
   return (
     <Layout>
       <SEO 
-        title="Blog | Argentina Residence Insights & Guides"
-        description="Read the latest insights, guides, and updates about Argentina residency by investment, living in Argentina, market trends, and expat lifestyle."
+        title="Argentina Residency Blog | Argentina Residence"
+        description="Expert insights on Argentina golden visa, real estate investment, and expat life. Stay updated with the latest immigration news."
         canonical="/blog"
         schema={schema}
       />

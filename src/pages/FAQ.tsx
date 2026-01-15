@@ -23,8 +23,8 @@ const FAQ = () => {
   return (
     <Layout>
       <SEO 
-        title="Argentina Residency FAQ | Common Questions Answered"
-        description="Answers to frequently asked questions about Argentina residency by investment. Learn about requirements, timeline, costs, and process."
+        title="Argentina Residency FAQ | Argentina Residence"
+        description="Get answers about Argentina golden visa requirements, costs, timeline, and citizenship pathway. Expert FAQ for investors."
         canonical="/faq"
         schema={schema}
       />

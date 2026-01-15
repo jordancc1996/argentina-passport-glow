@@ -37,8 +37,8 @@ const MarketInsights = () => {
   return (
     <Layout>
       <SEO 
-        title="Argentina Market Insights | Real Estate & Investment Updates"
-        description="Latest market insights, trends, and analysis for Argentina investment and real estate opportunities. Stay informed about the Argentine market."
+        title="Argentina Investment Trends | Argentina Residence"
+        description="Latest Argentina real estate and investment trends. Expert market analysis for foreign investors seeking opportunities."
         canonical="/market-insights"
         schema={schema}
       />

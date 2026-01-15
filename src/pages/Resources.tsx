@@ -68,8 +68,8 @@ const Resources = () => {
   return (
     <Layout>
       <SEO 
-        title="Argentina Residency Resources | Guides & Documents"
-        description="Free resources, guides, and tools for obtaining Argentina residency. Download checklists, templates, and helpful information."
+        title="Argentina Residency Resources | Argentina Residence"
+        description="Free guides, checklists, and official links for Argentina residency. Download essential documents for your application."
         canonical="/resources"
         schema={schema}
       />
