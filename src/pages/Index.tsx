@@ -39,8 +39,8 @@ const Index = () => {
   return (
     <Layout showBreadcrumbs={false}>
       <SEO 
-        title="Argentina Residence by Investment | Permanent Residency Program"
-        description="Obtain Argentina permanent residency through investment. Learn about requirements, process, timeline, and benefits of Argentina's residence program."
+        title="Argentina Golden Visa 2026 | Argentina Residence"
+        description="Get Argentina residency through investment. $100K minimum. Fast-track to citizenship with visa-free travel to 170+ countries."
         canonical="/"
         schema={schema}
       />

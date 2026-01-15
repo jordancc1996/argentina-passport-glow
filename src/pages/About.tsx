@@ -26,8 +26,8 @@ const About = () => {
   return (
     <Layout>
       <SEO 
-        title="Living in Argentina | Guide for Foreign Residents & Expats"
-        description="Discover Argentina's lifestyle, culture, economy, and benefits for foreign residents. Complete guide to living in Argentina as an expat."
+        title="Living in Argentina Guide | Argentina Residence"
+        description="Discover Argentina's world-class lifestyle, culture, and economy. Your complete guide to living as an expat in Buenos Aires and beyond."
         canonical="/about"
         schema={schema}
       />
