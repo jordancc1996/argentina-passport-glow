@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { getBlogPostBySlug, blogPosts } from "@/data/blogData";
 import { Button } from "@/components/ui/button";
+import ShareButtons from "@/components/ShareButtons";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -119,6 +120,15 @@ const BlogPost = () => {
                 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
+
+            {/* Share Buttons Section */}
+            <div className="mt-12 pt-8 border-t border-border">
+              <ShareButtons
+                url={`https://www.argentinaresidence.com/blog/${post.slug}`}
+                title={post.title}
+                excerpt={post.excerpt}
+              />
+            </div>
 
             <div className="border-t border-border mt-12 pt-8">
               <div className="bg-card border border-border rounded-lg p-6 md:p-8">
