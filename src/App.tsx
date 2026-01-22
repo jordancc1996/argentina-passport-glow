@@ -7,6 +7,9 @@ import { HelmetProvider } from 'react-helmet-async';
 import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import Program from "./pages/Program";
+import GoldenVisaProgram from "./pages/GoldenVisaProgram";
+import RealEstateInvestment from "./pages/RealEstateInvestment";
+import InvestorEligibility from "./pages/InvestorEligibility";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import MarketInsights from "./pages/MarketInsights";
@@ -31,6 +34,9 @@ const App = () => (
           <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/program" element={<Program />} />
+          <Route path="/guides/argentina-golden-visa-program" element={<GoldenVisaProgram />} />
+          <Route path="/guides/argentina-real-estate-investment" element={<RealEstateInvestment />} />
+          <Route path="/tools/investor-eligibility-check" element={<InvestorEligibility />} />
           <Route path="/about" element={<About />} />
           <Route path="/market-insights" element={<MarketInsights />} />
           <Route path="/faq" element={<FAQ />} />
