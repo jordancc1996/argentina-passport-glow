@@ -13,7 +13,7 @@ const Layout = ({ children, showBreadcrumbs = true }: LayoutProps) => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <main className="pt-14 md:pt-20">
+      <main>
         {showBreadcrumbs && <Breadcrumbs />}
         {children}
       </main>
