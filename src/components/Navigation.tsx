@@ -20,10 +20,7 @@ const Navigation = () => {
     { path: "/", label: "home" },
     { path: "/program", label: "program" },
     { type: "dropdown", label: "the golden visa", items: goldenVisaItems },
-    { path: "/about", label: "about" },
     { path: "/market-insights", label: "market insights" },
-    { path: "/faq", label: "faq" },
-    { path: "/resources", label: "resources" },
     { path: "/blog", label: "blog" },
     { path: "/contact", label: "contact" },
   ];
