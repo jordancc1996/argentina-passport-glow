@@ -8,7 +8,17 @@ const Navigation = () => {
   const isMobile = useIsMobile();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [goldenVisaOpen, setGoldenVisaOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Handle scroll for transparent -> solid transition
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   
   const goldenVisaItems = [
     { path: "/guides/argentina-golden-visa-program", label: "Program Details (2026)" },
@@ -39,13 +49,19 @@ const Navigation = () => {
   const isGoldenVisaActive = goldenVisaItems.some(item => location.pathname.startsWith(item.path));
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled || mobileMenuOpen
+        ? "bg-background/95 backdrop-blur-sm border-b border-border"
+        : "bg-transparent border-b border-transparent"
+    }`}>
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6">
         <div className="flex items-center justify-between md:gap-12">
           {/* Brand */}
           <Link 
             to="/" 
-            className="text-base md:text-xl font-serif tracking-widest text-primary hover:text-text-secondary transition-colors duration-300 cursor-pointer whitespace-nowrap"
+            className={`text-base md:text-xl font-serif tracking-widest transition-colors duration-300 cursor-pointer whitespace-nowrap ${
+              isScrolled ? "text-primary hover:text-text-secondary" : "text-white hover:text-white/80"
+            }`}
             onClick={() => setMobileMenuOpen(false)}
           >
             ARGENTINA RESIDENCE
@@ -55,7 +71,7 @@ const Navigation = () => {
           {isMobile && (
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-primary p-2"
+              className={`p-2 transition-colors duration-300 ${isScrolled ? "text-primary" : "text-white"}`}
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -72,9 +88,9 @@ const Navigation = () => {
                       <button
                         onClick={() => setGoldenVisaOpen(!goldenVisaOpen)}
                         className={`flex items-center gap-1 text-sm font-sans tracking-wider uppercase transition-colors duration-300 whitespace-nowrap ${
-                          isGoldenVisaActive
-                            ? "text-primary"
-                            : "text-text-secondary hover:text-primary"
+                          isScrolled
+                            ? isGoldenVisaActive ? "text-primary" : "text-text-secondary hover:text-primary"
+                            : isGoldenVisaActive ? "text-white" : "text-white/80 hover:text-white"
                         }`}
                         aria-expanded={goldenVisaOpen}
                         aria-haspopup="true"
@@ -113,9 +129,9 @@ const Navigation = () => {
                     key={item.path}
                     to={item.path!}
                     className={`text-sm font-sans tracking-wider uppercase transition-colors duration-300 whitespace-nowrap ${
-                      location.pathname === item.path
-                        ? "text-primary"
-                        : "text-text-secondary hover:text-primary"
+                      isScrolled
+                        ? location.pathname === item.path ? "text-primary" : "text-text-secondary hover:text-primary"
+                        : location.pathname === item.path ? "text-white" : "text-white/80 hover:text-white"
                     }`}
                   >
                     {item.label}
