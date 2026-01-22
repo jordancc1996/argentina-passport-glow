@@ -58,13 +58,13 @@ const Index = () => {
           A free informational resource about Argentina's upcoming golden visa program.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-8">
-          <Button asChild variant="default" size="lg">
+          <Button asChild variant="outline" size="lg" className="bg-white hover:bg-white/90">
             <Link to="/about">About This Resource</Link>
           </Button>
-          <Button asChild variant="outline" size="lg">
+          <Button asChild variant="outline" size="lg" className="bg-white hover:bg-white/90">
             <Link to="/faq">FAQ</Link>
           </Button>
-          <Button asChild variant="outline" size="lg">
+          <Button asChild variant="outline" size="lg" className="bg-white hover:bg-white/90">
             <Link to="/resources">Resources</Link>
           </Button>
         </div>
