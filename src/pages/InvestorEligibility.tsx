@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Link } from "react-router-dom";
 import { CheckCircle, ArrowRight, Star, Clock, Shield, Sparkles } from "lucide-react";
-import patagoniaLandscape from "@/assets/patagonia-landscape.jpg";
+import eligibilityBackground from "@/assets/argentina-golden-visa-eligibility.jpg";
 
 type Step = 1 | 2 | 3 | 4;
 type InvestmentBudget = "$100k-$249k" | "$250k-$499k" | "$500k+" | "";
@@ -229,7 +229,7 @@ const InvestorEligibility = () => {
       <Hero
         title="Eligibility Checker"
         subtitle="Assess your investor profile in 2 minutes"
-        backgroundImage={patagoniaLandscape}
+        backgroundImage={eligibilityBackground}
       />
       
       <EditorialSection>
