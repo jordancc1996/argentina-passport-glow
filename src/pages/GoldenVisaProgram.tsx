@@ -60,7 +60,7 @@ const GoldenVisaProgram = () => {
           with streamlined processing and exceptional benefits.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Link to="/tools/investor-eligibility-check">
+          <Link to="/argentina-golden-visa-eligibility-checker">
             <Button size="lg" className="px-8">
               Check Your Eligibility
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -209,7 +209,7 @@ const GoldenVisaProgram = () => {
             Be among the first to apply when Argentina's Golden Visa launches. 
             Complete our eligibility assessment to join the priority waitlist.
           </p>
-          <Link to="/tools/investor-eligibility-check">
+          <Link to="/argentina-golden-visa-eligibility-checker">
             <Button size="lg" className="bg-gold hover:bg-gold/90 text-primary px-10">
               Check Eligibility Now
               <ArrowRight className="ml-2 h-4 w-4" />

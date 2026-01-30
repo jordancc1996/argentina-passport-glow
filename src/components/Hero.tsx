@@ -7,6 +7,7 @@ interface HeroProps {
   subtitle?: string;
   description?: string;
   backgroundImage?: string;
+  imageAlt?: string;
   overlay?: boolean;
 }
 
@@ -15,6 +16,7 @@ const Hero = ({
   subtitle, 
   description, 
   backgroundImage = heroImage,
+  imageAlt = "Argentina landscape",
   overlay = true 
 }: HeroProps) => {
   const parallaxY = useParallax(-0.3);
@@ -29,7 +31,7 @@ const Hero = ({
       >
         <img
           src={backgroundImage}
-          alt="Argentina landscape"
+          alt={imageAlt}
           className="w-full h-full object-cover"
         />
         {overlay && (
