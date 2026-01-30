@@ -1,6 +1,5 @@
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import GoldenVisaApplicationCTA from "./GoldenVisaApplicationCTA";
 import ConsultationCTA from "./ConsultationCTA";
 import Breadcrumbs from "./Breadcrumbs";
 
@@ -18,7 +17,6 @@ const Layout = ({ children, showBreadcrumbs = true }: LayoutProps) => {
         {children}
       </main>
       <ConsultationCTA />
-      <GoldenVisaApplicationCTA />
       <Footer />
     </div>
   );
