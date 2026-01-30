@@ -27,7 +27,7 @@ const Program = () => {
   };
 
   return (
-    <Layout>
+    <Layout showBreadcrumbs={false}>
       <SEO 
         title="Argentina Golden Visa Program | Argentina Residence"
         description="Invest $100K+ for Argentina residency. Get work rights, tax benefits, and pathway to citizenship. Full program details inside."
