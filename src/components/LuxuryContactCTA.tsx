@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import { ChevronDown } from "lucide-react";
 
 const countryCodes = [
   { code: "+1", country: "US" },
@@ -98,13 +97,28 @@ const LuxuryContactCTA = () => {
   };
 
   const inputBaseClasses =
-    "w-full bg-transparent text-white/90 placeholder:text-white/40 py-4 border-0 border-b border-white/20 focus:border-[#C9A962] focus:outline-none transition-colors duration-300 text-base";
+    "w-full bg-transparent text-white/90 placeholder:text-white/40 py-4 pb-2 border-0 border-b border-white/20 focus:border-[#C9A962] focus:outline-none transition-colors duration-300 text-base";
 
   const selectBaseClasses =
-    "w-full bg-transparent text-white/90 py-4 border-0 border-b border-white/20 focus:border-[#C9A962] focus:outline-none transition-colors duration-300 text-base appearance-none cursor-pointer";
+    "w-full bg-transparent text-white/90 py-4 pb-2 border-0 border-b border-white/20 focus:border-[#C9A962] focus:outline-none transition-colors duration-300 text-base appearance-none cursor-pointer";
 
   const labelClasses =
     "block text-white/60 text-sm font-sans tracking-wide mb-2";
+
+  // Custom thin gold chevron for luxury feel
+  const GoldChevron = () => (
+    <svg 
+      className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none"
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="#C9A962" 
+      strokeWidth="1.5"
+      strokeLinecap="round" 
+      strokeLinejoin="round"
+    >
+      <path d="m6 9 6 6 6-6"/>
+    </svg>
+  );
 
   return (
     <section
@@ -223,7 +237,7 @@ const LuxuryContactCTA = () => {
                         </option>
                       ))}
                     </select>
-                    <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 text-white/40 pointer-events-none" />
+                    <GoldChevron />
                   </div>
                   <input
                     type="tel"
@@ -266,7 +280,7 @@ const LuxuryContactCTA = () => {
                       No, just gathering information
                     </option>
                   </select>
-                  <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 text-white/40 pointer-events-none" />
+                  <GoldChevron />
                 </div>
               </div>
 
@@ -298,16 +312,16 @@ const LuxuryContactCTA = () => {
                       </option>
                     ))}
                   </select>
-                  <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 text-white/40 pointer-events-none" />
+                  <GoldChevron />
                 </div>
               </div>
 
-              {/* Submit Button - Ghost Style */}
+              {/* Submit Button - Ghost Style with Dramatic Hover */}
               <div className="pt-4">
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 px-8 border border-white/40 text-white text-sm tracking-[0.2em] uppercase font-sans bg-transparent hover:bg-white hover:text-[#0B1215] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-4 px-8 border border-white/50 text-white text-sm tracking-[0.2em] uppercase font-sans bg-transparent hover:bg-[#C9A962] hover:border-[#C9A962] hover:text-[#0B1215] transition-all duration-300 ease-out disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-[0_0_30px_rgba(201,169,98,0.3)]"
                 >
                   {isSubmitting ? "Submitting..." : "INQUIRE NOW"}
                 </button>
