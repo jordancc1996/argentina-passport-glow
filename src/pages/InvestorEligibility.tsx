@@ -589,24 +589,6 @@ const InvestorEligibility = () => {
         </div>
       </EditorialSection>
       
-      {/* Trust Indicators */}
-      <EditorialSection className="bg-secondary/30">
-        <div className="grid md:grid-cols-3 gap-8 text-center">
-          <div>
-            <p className="text-3xl font-serif text-gold mb-2">2,500+</p>
-            <p className="text-text-secondary text-sm">Investors on waitlist</p>
-          </div>
-          <div>
-            <p className="text-3xl font-serif text-gold mb-2">60 Days</p>
-            <p className="text-text-secondary text-sm">Projected approval time</p>
-          </div>
-          <div>
-            <p className="text-3xl font-serif text-gold mb-2">$100K</p>
-            <p className="text-text-secondary text-sm">Minimum investment</p>
-          </div>
-        </div>
-      </EditorialSection>
-      
       {/* Internal Linking */}
       <EditorialSection>
         <h2 className="font-serif text-lg-editorial mb-8 tracking-wide text-center">
