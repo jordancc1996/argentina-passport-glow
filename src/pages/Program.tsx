@@ -4,7 +4,7 @@ import EditorialSection from "@/components/EditorialSection";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import buenosAiresArchitecture from "@/assets/buenos-aires-architecture.jpg";
+import goldenVisaHero from "@/assets/argentina-golden-visa-2026.jpg";
 
 const Program = () => {
   const schema = {
@@ -37,7 +37,7 @@ const Program = () => {
       <Hero
         title="Residency Program"
         subtitle="Your pathway to South American residency"
-        backgroundImage={buenosAiresArchitecture}
+        backgroundImage={goldenVisaHero}
       />
       
       <EditorialSection>
