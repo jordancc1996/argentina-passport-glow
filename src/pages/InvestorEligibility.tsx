@@ -131,7 +131,7 @@ const InvestorEligibility = () => {
         <SEO 
           title="Eligibility Confirmed | Argentina Golden Visa"
           description="Your eligibility for Argentina's Golden Visa program has been assessed."
-          canonical="/tools/investor-eligibility-check"
+          canonical="/argentina-golden-visa-eligibility-checker"
         />
         <div className="min-h-screen flex items-center justify-center py-24 px-4">
           <div className="max-w-2xl mx-auto text-center">
@@ -221,18 +221,29 @@ const InvestorEligibility = () => {
   return (
     <Layout>
       <SEO 
-        title="Investor Eligibility Check | Argentina Golden Visa Tool"
-        description="Free eligibility assessment for Argentina's Golden Visa. Check your investor profile and join the priority waitlist in 2 minutes."
-        canonical="/tools/investor-eligibility-check"
+        title="Argentina Golden Visa Eligibility Assessment | Argentina Residence"
+        description="Find out if you qualify for the Argentina Golden Visa or Citizenship by Investment. Take our free 2-minute assessment for investors and retirees."
+        canonical="/argentina-golden-visa-eligibility-checker"
         schema={schema}
       />
       <Hero
-        title="Eligibility Checker"
-        subtitle="Assess your investor profile in 2 minutes"
+        title="Argentina Golden Visa Eligibility Assessment"
+        subtitle="Discover your path to residency and citizenship through investment."
         backgroundImage={eligibilityBackground}
+        imageAlt="Patagonia landscape representing freedom and Argentina citizenship by investment"
       />
       
       <EditorialSection>
+        <p className="text-text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">
+          Argentina offers one of the world's most accessible Citizenship by Investment opportunities. 
+          Whether you are interested in the Rentista Visa for passive income earners or the upcoming 
+          Golden Visa for investors, this tool analyzes your profile against current government requirements. 
+          In just 2 minutes, determine if you qualify for instant Permanent Residency via investment, 
+          future Citizenship, and a powerful Mercosur Passport.
+        </p>
+      </EditorialSection>
+
+      <EditorialSection className="pt-0">
         <div className="max-w-2xl mx-auto">
           {/* Progress Bar */}
           <div className="mb-12">

@@ -23,7 +23,7 @@ const Navigation = () => {
   const goldenVisaItems = [
     { path: "/guides/argentina-golden-visa-program", label: "Program Details (2026)" },
     { path: "/guides/argentina-real-estate-investment", label: "Investment Options" },
-    { path: "/tools/investor-eligibility-check", label: "Eligibility Checker (Tool)" },
+    { path: "/argentina-golden-visa-eligibility-checker", label: "Eligibility Assessment" },
   ];
 
   const navItems = [

@@ -52,7 +52,7 @@ export default defineConfig(({ mode }) => ({
         // Golden Visa Hub pages
         guideGoldenVisa: path.resolve(__dirname, "guides/argentina-golden-visa-program/index.html"),
         guideRealEstate: path.resolve(__dirname, "guides/argentina-real-estate-investment/index.html"),
-        toolEligibility: path.resolve(__dirname, "tools/investor-eligibility-check/index.html"),
+        eligibilityChecker: path.resolve(__dirname, "argentina-golden-visa-eligibility-checker/index.html"),
       },
     },
   },

@@ -81,7 +81,7 @@ const RealEstateInvestment = () => {
           residency through strategic investment.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Link to="/tools/investor-eligibility-check">
+          <Link to="/argentina-golden-visa-eligibility-checker">
             <Button size="lg" className="px-8">
               Check Your Eligibility
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -322,7 +322,7 @@ const RealEstateInvestment = () => {
             Complete our eligibility assessment to receive personalized investment 
             recommendations and join our priority investor waitlist.
           </p>
-          <Link to="/tools/investor-eligibility-check">
+          <Link to="/argentina-golden-visa-eligibility-checker">
             <Button size="lg" className="bg-gold hover:bg-gold/90 text-primary px-10">
               Start Eligibility Check
               <ArrowRight className="ml-2 h-4 w-4" />

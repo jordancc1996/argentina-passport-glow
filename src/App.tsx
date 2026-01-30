@@ -36,7 +36,7 @@ const App = () => (
           <Route path="/program" element={<Program />} />
           <Route path="/guides/argentina-golden-visa-program" element={<GoldenVisaProgram />} />
           <Route path="/guides/argentina-real-estate-investment" element={<RealEstateInvestment />} />
-          <Route path="/tools/investor-eligibility-check" element={<InvestorEligibility />} />
+          <Route path="/argentina-golden-visa-eligibility-checker" element={<InvestorEligibility />} />
           <Route path="/about" element={<About />} />
           <Route path="/market-insights" element={<MarketInsights />} />
           <Route path="/faq" element={<FAQ />} />
