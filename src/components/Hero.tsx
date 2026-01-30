@@ -21,7 +21,7 @@ const Hero = ({
   const opacity = useScrollOpacity(600);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-0">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-[72px] pt-[72px] md:-mt-[88px] md:pt-[88px]">
       {/* Parallax Background Image */}
       <motion.div 
         className="absolute inset-0 z-0 scale-110"
