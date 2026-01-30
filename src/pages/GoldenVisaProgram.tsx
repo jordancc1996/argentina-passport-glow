@@ -5,7 +5,7 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Clock, Shield, Globe, TrendingUp, CheckCircle, ArrowRight } from "lucide-react";
-import casaRosada from "@/assets/casa-rosada-program.jpg";
+import goldenVisaHero from "@/assets/argentina-golden-visa-flag-hero.jpg";
 
 const GoldenVisaProgram = () => {
   const schema = {
@@ -37,7 +37,7 @@ const GoldenVisaProgram = () => {
       <Hero
         title="Argentina's Golden Visa"
         subtitle="The 2026 Investor Guide"
-        backgroundImage={casaRosada}
+        backgroundImage={goldenVisaHero}
       />
       
       {/* Program Status Banner */}
