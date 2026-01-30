@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
+import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
@@ -77,28 +78,18 @@ const Contact = () => {
   };
 
   return (
-    <Layout>
+    <Layout showBreadcrumbs={false}>
       <SEO 
         title="Free Consultation | Argentina Residence"
         description="Schedule your free Argentina residency consultation. Get expert guidance on investment options and application process."
         canonical="/contact"
         schema={schema}
       />
-      <div className="pt-20">
-        <div 
-          className="relative bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${argentineFlagImage})` }}
-        >
-          <div className="absolute inset-0 bg-black/50"></div>
-          <EditorialSection className="relative z-10 text-white">
-            <h1 className="font-serif text-hero mb-8 tracking-wide">
-              Take the First Step
-            </h1>
-            <p className="text-editorial text-white/90 mb-12 tracking-wide max-w-3xl mx-auto">
-              Begin your journey toward Argentine residency. Our team provides personalized guidance for discerning investors seeking South American opportunities.
-            </p>
-          </EditorialSection>
-        </div>
+      <Hero
+        title="Take the First Step"
+        description="Begin your journey toward Argentine residency. Our team provides personalized guidance for discerning investors seeking South American opportunities."
+        backgroundImage={argentineFlagImage}
+      />
         
         <EditorialSection className="bg-secondary/30">
           <div className="max-w-2xl mx-auto">
@@ -209,7 +200,6 @@ const Contact = () => {
             </div>
           </div>
         </EditorialSection>
-      </div>
     </Layout>
   );
 };
