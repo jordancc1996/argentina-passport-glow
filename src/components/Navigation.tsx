@@ -51,7 +51,7 @@ const Navigation = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled || mobileMenuOpen
-        ? "bg-[#74ACDF] backdrop-blur-sm border-b border-[#74ACDF]/50 shadow-md"
+        ? "bg-background/95 backdrop-blur-sm border-b border-border"
         : "bg-transparent border-b border-transparent"
     }`}>
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6">
@@ -60,7 +60,7 @@ const Navigation = () => {
           <Link 
             to="/" 
             className={`text-base md:text-xl font-serif tracking-widest transition-colors duration-300 cursor-pointer whitespace-nowrap ${
-              isScrolled ? "text-white hover:text-white/80" : "text-white hover:text-white/80"
+              isScrolled ? "text-primary hover:text-text-secondary" : "text-white hover:text-white/80"
             }`}
             onClick={() => setMobileMenuOpen(false)}
           >
@@ -71,7 +71,7 @@ const Navigation = () => {
           {isMobile && (
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`p-2 transition-colors duration-300 ${isScrolled ? "text-white" : "text-white"}`}
+              className={`p-2 transition-colors duration-300 ${isScrolled ? "text-primary" : "text-white"}`}
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -89,7 +89,7 @@ const Navigation = () => {
                         onClick={() => setGoldenVisaOpen(!goldenVisaOpen)}
                         className={`flex items-center gap-1 text-sm font-sans tracking-wider uppercase transition-colors duration-300 whitespace-nowrap ${
                           isScrolled
-                            ? isGoldenVisaActive ? "text-white" : "text-white/90 hover:text-white"
+                            ? isGoldenVisaActive ? "text-primary" : "text-text-secondary hover:text-primary"
                             : isGoldenVisaActive ? "text-white" : "text-white/80 hover:text-white"
                         }`}
                         aria-expanded={goldenVisaOpen}
@@ -130,7 +130,7 @@ const Navigation = () => {
                     to={item.path!}
                     className={`text-sm font-sans tracking-wider uppercase transition-colors duration-300 whitespace-nowrap ${
                       isScrolled
-                        ? location.pathname === item.path ? "text-white" : "text-white/90 hover:text-white"
+                        ? location.pathname === item.path ? "text-primary" : "text-text-secondary hover:text-primary"
                         : location.pathname === item.path ? "text-white" : "text-white/80 hover:text-white"
                     }`}
                   >
@@ -153,8 +153,8 @@ const Navigation = () => {
                       onClick={() => setGoldenVisaOpen(!goldenVisaOpen)}
                       className={`flex items-center gap-2 text-sm font-sans tracking-wider uppercase transition-colors duration-300 ${
                         isGoldenVisaActive
-                          ? "text-white"
-                          : "text-white/90 hover:text-white"
+                          ? "text-primary"
+                          : "text-text-secondary hover:text-primary"
                       }`}
                     >
                       {item.label}
@@ -165,7 +165,7 @@ const Navigation = () => {
                     </button>
                     
                     {goldenVisaOpen && (
-                        <div className="pl-4 space-y-2 border-l-2 border-white/30">
+                      <div className="pl-4 space-y-2 border-l-2 border-gold/30">
                         {item.items.map((subItem) => (
                           <Link
                             key={subItem.path}
@@ -176,8 +176,8 @@ const Navigation = () => {
                             }}
                             className={`block text-sm font-sans tracking-wide transition-colors duration-200 ${
                               location.pathname === subItem.path
-                                ? "text-white"
-                                : "text-white/80 hover:text-white"
+                                ? "text-primary"
+                                : "text-text-secondary hover:text-primary"
                             }`}
                           >
                             {subItem.label}
@@ -196,8 +196,8 @@ const Navigation = () => {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`text-sm font-sans tracking-wider uppercase transition-colors duration-300 ${
                     location.pathname === item.path
-                      ? "text-white"
-                      : "text-white/90 hover:text-white"
+                      ? "text-primary"
+                      : "text-text-secondary hover:text-primary"
                   }`}
                 >
                   {item.label}
