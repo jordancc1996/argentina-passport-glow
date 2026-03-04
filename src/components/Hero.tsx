@@ -35,7 +35,7 @@ const Hero = ({
           className="w-full h-full object-cover"
         />
         {overlay && (
-          <div className="absolute inset-0 bg-black/20" />
+          <div className="absolute inset-0 bg-black/40" />
         )}
       </motion.div>
       
