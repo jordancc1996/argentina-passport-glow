@@ -44,6 +44,8 @@ const Blog = () => {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${heroImage})` }}
           />
+          {/* Top gradient for nav readability */}
+          <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/50 to-transparent z-[1]" />
           
           {/* Content */}
           <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-8 text-center section-padding">
