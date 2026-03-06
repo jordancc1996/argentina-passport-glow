@@ -34,7 +34,7 @@ const SEO = ({
       <link rel="canonical" href={fullCanonical} />
       
       {/* Robots */}
-      <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
+      <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
       
       {/* Open Graph */}
       <meta property="og:type" content={article ? 'article' : 'website'} />
