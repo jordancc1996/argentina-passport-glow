@@ -60,8 +60,8 @@ const RealEstateInvestment = () => {
   return (
     <Layout>
       <SEO 
-        title="Argentina Golden Visa Investments | Real Estate & Funds Guide"
-        description="Explore qualifying investments for Argentina residency: luxury real estate in Palermo, Puerto Madero & approved funds. From $100K minimum."
+        title="Argentina Golden Visa Investments"
+        description="Explore real estate and fund options for Argentina residency. Luxury properties in Palermo, Puerto Madero and approved funds from $100K."
         canonical="/guides/argentina-real-estate-investment"
         schema={schema}
       />
@@ -72,9 +72,9 @@ const RealEstateInvestment = () => {
       />
       
       <EditorialSection>
-        <h1 className="font-serif text-xl-editorial mb-8 tracking-wide">
+        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
           Where to Invest: Real Estate & Funds for Argentina Residency
-        </h1>
+        </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
           Argentina's Golden Visa program accepts investments in qualified real estate and approved 
           financial instruments. This guide covers the best opportunities for investors seeking 

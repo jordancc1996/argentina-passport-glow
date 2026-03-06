@@ -54,8 +54,8 @@ const BlogPost = () => {
   return (
     <Layout>
       <SEO 
-        title={post.seoTitle ? `${post.seoTitle} | Argentina Residence` : `${post.title} | Argentina Residence Blog`}
-        description={post.seoDescription || post.excerpt}
+        title={post.seoTitle || post.title}
+        description={(post.seoDescription || post.excerpt).substring(0, 155) + ((post.seoDescription || post.excerpt).length > 155 ? '...' : '')}
         canonical={`/blog/${post.slug}`}
         ogImage={post.image}
         schema={schema}

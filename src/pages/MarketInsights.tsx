@@ -50,7 +50,7 @@ const MarketInsights = () => {
       />
       
       <EditorialSection>
-        <h1 className="font-serif text-2xl-editorial mb-8 tracking-wide">Argentina Investment Landscape</h1>
+        <h2 className="font-serif text-2xl-editorial mb-8 tracking-wide">Argentina Investment Landscape</h2>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Economic Overview</h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide">
           Argentina's economy presents unique opportunities for savvy investors. With a diverse industrial base, 
