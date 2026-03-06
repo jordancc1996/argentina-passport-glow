@@ -21,15 +21,15 @@ const FAQDetail = () => {
 
   const schema = {
     "@context": "https://schema.org",
-    "@type": "QAPage",
-    "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [{
       "@type": "Question",
       "name": currentFAQ.question,
       "acceptedAnswer": {
         "@type": "Answer",
         "text": currentFAQ.answer
       }
-    }
+    }]
   };
 
   return (
