@@ -168,8 +168,8 @@ export const blogPosts: BlogPost[] = [
     slug: "buenos-aires-real-estate-bull-market-analysis",
     author: "Argentina Residence Team",
     image: "/buenos-aires-real-estate-bull-market.jpg",
-    seoTitle: "Buenos Aires Real Estate Bull Market Analysis 2026 | Investment Guide",
-    seoDescription: "Comprehensive analysis of the Buenos Aires real estate market in 2026. Discover investment opportunities in Palermo, Recoleta, San Telmo and Monserrat neighborhoods.",
+    seoTitle: "Buenos Aires Real Estate Bull Market 2026",
+    seoDescription: "Analysis of the Buenos Aires real estate market in 2026. Investment opportunities in Palermo, Recoleta, San Telmo and Monserrat.",
     keywords: ["Buenos Aires real estate", "Argentina property investment", "Palermo real estate", "San Telmo apartments", "Argentina Golden Visa", "real estate bull market"]
   },
   {
@@ -263,8 +263,8 @@ export const blogPosts: BlogPost[] = [
     slug: "american-dream-argentina-golden-visa-solution",
     author: "Argentina Residence Team",
     image: "/american-dream-argentina-golden-visa.jpg",
-    seoTitle: "The $5M American Dream vs Argentina Golden Visa Solution 2026",
-    seoDescription: "Discover why the American Dream now costs $5M+ and how Argentina's Golden Visa offers Americans a better quality of life at a fraction of the cost.",
+    seoTitle: "American Dream vs Argentina Golden Visa 2026",
+    seoDescription: "The American Dream costs $5M+. Argentina's Golden Visa offers better quality of life at a fraction of the cost for Americans.",
     keywords: ["American Dream cost", "Argentina Golden Visa", "retire abroad", "cost of living Argentina", "American expats Argentina", "investment migration"]
   },
   {
@@ -365,8 +365,8 @@ export const blogPosts: BlogPost[] = [
     slug: "argentina-citizenship-investment-american-investors",
     author: "Argentina Residence Team",
     image: "/argentina-cbi-american-investors-new.jpg",
-    seoTitle: "Argentina Citizenship by Investment Attracts American Investors 2025",
-    seoDescription: "Learn why American investors are flocking to Argentina's new citizenship by investment program. $500K investment, E-2 visa benefits, and Mercosur access.",
+    seoTitle: "Argentina Citizenship by Investment for Americans",
+    seoDescription: "Why American investors are choosing Argentina's new citizenship by investment program. $500K investment with Mercosur access.",
     keywords: ["Argentina citizenship by investment", "American investors Argentina", "Argentina golden visa", "E-2 visa Argentina", "Mercosur citizenship"]
   },
   {
@@ -475,8 +475,8 @@ export const blogPosts: BlogPost[] = [
     slug: "argentina-golden-visa-american-investors-2026",
     author: "Argentina Residence Team",
     image: "/argentina-golden-visa-2026.jpg",
-    seoTitle: "The New Argentine Dream: Why American Investors Are Turning to Argentina's Golden Visa in 2026",
-    seoDescription: "Discover why American investors are expected to flock to Argentina's Golden Visa program in 2026-2027. Learn about Milei's economic reforms, MERCOSUR benefits, and E-2 visa access.",
+    seoTitle: "Argentina Golden Visa 2026: Why Americans Are Investing",
+    seoDescription: "Why American investors are turning to Argentina's Golden Visa in 2026. Milei's reforms, MERCOSUR benefits, and E-2 visa access.",
     keywords: ["Argentina golden visa 2026", "American investors Argentina", "Argentina citizenship by investment", "Milei economic reforms", "MERCOSUR benefits", "E-2 visa Argentina"]
   }
 ];

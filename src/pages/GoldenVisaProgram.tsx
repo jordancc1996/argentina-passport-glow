@@ -51,9 +51,9 @@ const GoldenVisaProgram = () => {
       </div>
       
       <EditorialSection>
-        <h1 className="font-serif text-xl-editorial mb-8 tracking-wide">
+        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
           Argentina's New Golden Visa: The 2026 Investor Guide
-        </h1>
+        </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
           Argentina is set to launch one of South America's most attractive investor visa programs. 
           The proposed Golden Visa offers a fast-track pathway to residency for qualified investors, 

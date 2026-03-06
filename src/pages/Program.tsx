@@ -41,9 +41,9 @@ const Program = () => {
       />
       
       <EditorialSection>
-        <h1 className="font-serif text-xl-editorial mb-8 tracking-wide">
+        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
           Argentina's Residency by Investment Program offers unparalleled opportunities for global investors seeking South American residency.
-        </h1>
+        </h2>
         <p className="text-editorial text-text-secondary mb-12 tracking-wide">
           Our program is synonymous with exceptional value and strategic advantage.
         </p>

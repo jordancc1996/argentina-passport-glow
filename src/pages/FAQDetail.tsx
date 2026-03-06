@@ -35,8 +35,8 @@ const FAQDetail = () => {
   return (
     <Layout>
       <SEO 
-        title={`${currentFAQ.question} | Argentina Residency FAQ`}
-        description={currentFAQ.answer}
+        title={`${currentFAQ.question} | Argentina Residence`}
+        description={currentFAQ.answer.substring(0, 155) + (currentFAQ.answer.length > 155 ? '...' : '')}
         canonical={`/faq/${slug}`}
         schema={schema}
       />

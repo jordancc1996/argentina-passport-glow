@@ -221,8 +221,8 @@ const InvestorEligibility = () => {
   return (
     <Layout>
       <SEO 
-        title="Argentina Golden Visa Eligibility Assessment | Argentina Residence"
-        description="Find out if you qualify for the Argentina Golden Visa or Citizenship by Investment. Take our free 2-minute assessment for investors and retirees."
+        title="Argentina Golden Visa Eligibility | Free Assessment"
+        description="Check if you qualify for Argentina's Golden Visa. Free 2-minute eligibility assessment for investors and retirees."
         canonical="/argentina-golden-visa-eligibility-checker"
         schema={schema}
       />
