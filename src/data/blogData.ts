@@ -157,9 +157,9 @@ export const blogPosts: BlogPost[] = [
       <h2 class="text-3xl font-serif mb-6 mt-12">Sources</h2>
       
       <ul class="mb-6 ml-6 list-disc space-y-2">
-        <li>"The Escalating Price of the American Dream and Why Investors Should Look to the Argentina Golden Visa for the Solution," Argentina Residence, January 6, 2026, <a href="https://argentinaresidence.com/blog/american-dream-argentina-golden-visa-solution" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
-        <li>"The New Argentine Dream: Why we expect American Investors to Turn to Argentina's Golden Visa in 2026 and 2027," Argentina Residence, January 1, 2026, <a href="https://argentinaresidence.com/blog/argentina-golden-visa-american-investors-2026" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
-        <li>"Argentina's New Citizenship By Investment Program is Attracting American Investors," Argentina Residence, <a href="https://argentinaresidence.com/blog/argentina-citizenship-investment-american-investors" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
+        <li>"The Escalating Price of the American Dream and Why Investors Should Look to the Argentina Golden Visa for the Solution," Argentina Residence, January 6, 2026, <a href="https://www.argentinaresidence.com/blog/american-dream-argentina-golden-visa-solution" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
+        <li>"The New Argentine Dream: Why we expect American Investors to Turn to Argentina's Golden Visa in 2026 and 2027," Argentina Residence, January 1, 2026, <a href="https://www.argentinaresidence.com/blog/argentina-golden-visa-american-investors-2026" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
+        <li>"Argentina's New Citizenship By Investment Program is Attracting American Investors," Argentina Residence, <a href="https://www.argentinaresidence.com/blog/argentina-citizenship-investment-american-investors" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
       </ul>
     `,
     date: "2026-01-13",
