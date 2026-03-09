@@ -39,7 +39,7 @@ const Index = () => {
   return (
     <Layout showBreadcrumbs={false}>
       <SEO 
-        title="Argentina Golden Visa 2026 | Argentina Residence"
+        title="Argentina Residency by Investment | Golden Visa 2026"
         description="Get Argentina residency through investment. $100K minimum. Fast-track to citizenship with visa-free travel to 170+ countries."
         canonical="/"
         schema={schema}
