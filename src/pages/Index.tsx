@@ -104,6 +104,36 @@ const Index = () => {
         </div>
       </EditorialSection>
 
+      {/* Trust & Credibility Section */}
+      <EditorialSection className="bg-secondary/30">
+        <h2 className="font-serif text-xl-editorial mb-4 tracking-wide">
+          Guided by Legal Excellence
+        </h2>
+        <p className="text-body text-text-secondary mb-12 max-w-2xl mx-auto tracking-wide">
+          Our content and guidance are developed in close partnership with licensed immigration attorneys who specialize in Argentine residency and citizenship law.
+        </p>
+        <div className="grid md:grid-cols-3 gap-10 text-left">
+          <div className="border-l-2 border-gold pl-6">
+            <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">Attorney-Reviewed Content</h3>
+            <p className="text-sm text-text-secondary tracking-wide">
+              Every guide and resource is reviewed by qualified immigration professionals to ensure accuracy and compliance with current Argentine law.
+            </p>
+          </div>
+          <div className="border-l-2 border-gold pl-6">
+            <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">Licensed Legal Network</h3>
+            <p className="text-sm text-text-secondary tracking-wide">
+              We work exclusively with Buenos Aires–based attorneys who hold active matriculation with the Colegio Público de Abogados and specialize in migration law.
+            </p>
+          </div>
+          <div className="border-l-2 border-gold pl-6">
+            <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">Transparent & Independent</h3>
+            <p className="text-sm text-text-secondary tracking-wide">
+              Argentina Residence is a free, independent resource — we provide unbiased information to help you make informed decisions about your residency journey.
+            </p>
+          </div>
+        </div>
+      </EditorialSection>
+
       {/* Blog Preview Section */}
       <EditorialSection>
         <div className="text-center mb-12">
