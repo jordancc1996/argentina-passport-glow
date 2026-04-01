@@ -55,7 +55,7 @@ const Index = () => {
           Argentina offers unparalleled investment opportunities for global citizens seeking South American residency.
         </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide">
-          A free informational resource about Argentina's upcoming golden visa program.
+          A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-8">
           <Button asChild variant="outline" size="lg" className="bg-white hover:bg-white/90">
