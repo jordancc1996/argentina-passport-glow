@@ -2,108 +2,123 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Argentina Residence Design System - Sophisticated Editorial Style 
-Inspired by Millier Interiors with premium typography and minimal elegance.
-All colors MUST be HSL.
+/* Argentina Residence Design System — Patagonian Obsidian & Malbec
+   Inspired by HoldenFamilyOffices.com's institutional depth,
+   adapted with Argentine identity. All colors in HSL.
 */
 
 @layer base {
   :root {
-    /* Core Colors - Minimal & Sophisticated */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 8%;
-    
-    /* Card & Popover */
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
-    
-    /* Primary - Deep Elegant Black */
-    --primary: 0 0% 8%;
-    --primary-foreground: 0 0% 98%;
-    
-    /* Secondary - Warm Neutral */
-    --secondary: 35 8% 95%;
-    --secondary-foreground: 0 0% 8%;
-    
-    /* Muted - Sophisticated Gray */
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
-    
-    /* Accent - Subtle Gold */
-    --accent: 35 15% 92%;
-    --accent-foreground: 0 0% 8%;
-    
-    /* Gold Accent for Premium Elements */
+    /* === FOUNDATION: PATAGONIAN OBSIDIAN === */
+    --background: 150 5% 6%;           /* #0F1110 Obsidian */
+    --foreground: 0 0% 92%;            /* #EAEAEA Platinum */
+
+    /* Card & Popover — elevated surfaces */
+    --card: 150 4% 10%;                /* #1A1C1B Charcoal */
+    --card-foreground: 0 0% 92%;       /* Platinum */
+    --popover: 150 4% 10%;
+    --popover-foreground: 0 0% 92%;
+
+    /* Primary — Malbec Reserve accent */
+    --primary: 353 42% 32%;            /* #722F37 Malbec */
+    --primary-foreground: 0 0% 92%;    /* Platinum on Malbec */
+
+    /* Secondary — Charcoal surfaces */
+    --secondary: 150 4% 10%;           /* #1A1C1B */
+    --secondary-foreground: 0 0% 92%;
+
+    /* Muted — Dark Ash */
+    --muted: 150 3% 14%;              /* #222524 Elevated Charcoal */
+    --muted-foreground: 145 3% 44%;   /* #6B726E Dark Ash */
+
+    /* Accent — Malbec subtle tint */
+    --accent: 353 42% 32%;
+    --accent-foreground: 0 0% 92%;
+
+    /* Gold — retained for premium highlights */
     --gold: 45 29% 65%;
     --gold-light: 45 20% 85%;
-    
-    /* Dark Teal/Forest Green for Moody Sections */
-    --dark-teal: 180 20% 12%;
-    --dark-teal-light: 180 15% 18%;
-    
-    /* Navigation Dark Background */
-    --nav-bg-dark: 150 5% 7%;
-    --nav-border: 150 4% 17%;
-    
-    /* CTA Malbec Reserve */
-    --cta-primary: 350 41% 32%;
-    
-    /* Editorial Text Colors */
-    --text-primary: 0 0% 8%;
-    --text-secondary: 0 0% 25%;
-    --text-muted: 0 0% 45%;
-    --text-cream: 40 30% 92%;
-    
+
+    /* Dark Teal — moody section backgrounds */
+    --dark-teal: 150 5% 6%;
+    --dark-teal-light: 150 4% 10%;
+
+    /* Navigation */
+    --nav-bg-dark: 150 5% 6%;
+    --nav-border: 150 3% 17%;
+
+    /* === CTA SYSTEM === */
+    --cta-primary: 353 42% 32%;        /* Malbec Reserve */
+    --cta-primary-hover: 353 41% 39%;  /* #8B3A45 Bright Malbec */
+    --cta-text: 0 0% 92%;             /* Platinum */
+    --cta-secondary-border: 0 0% 92%;
+    --cta-secondary-text: 0 0% 92%;
+
+    /* === TEXT HIERARCHY === */
+    --text-primary: 0 0% 92%;          /* #EAEAEA Platinum */
+    --text-secondary: 145 3% 63%;      /* #9CA39F Ash */
+    --text-muted: 145 3% 44%;          /* #6B726E Dark Ash */
+    --text-dark: 0 0% 8%;              /* #141414 Near Black — for light sections */
+    --text-cream: 0 0% 92%;            /* Mapped to Platinum */
+
+    /* === BACKGROUNDS (semantic aliases) === */
+    --color-bg-primary: 150 5% 6%;
+    --color-bg-secondary: 150 4% 10%;
+    --color-bg-elevated: 150 3% 14%;
+    --color-bg-light: 38 30% 95%;      /* #F5F3EE Warm Parchment */
+
+    /* === ACCENT VARIANTS === */
+    --color-accent: 353 42% 32%;
+    --color-accent-hover: 353 41% 39%;
+    --color-accent-light: 353 36% 45%;
+
     /* Destructive */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    
-    /* Borders & Inputs */
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 8%;
-    
-    --radius: 0.375rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* === BORDERS & INPUTS === */
+    --border: 150 3% 17%;              /* #2A2C2B */
+    --border-light: 150 3% 13%;        /* #1F2120 subtle */
+    --border-accent: 353 42% 32%;      /* Malbec accent border */
+    --input: 150 3% 17%;
+    --ring: 353 42% 32%;               /* Malbec focus ring */
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --radius: 4px;                     /* Sharp corners — precision */
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Sidebar (shadcn) */
+    --sidebar-background: 150 5% 6%;
+    --sidebar-foreground: 0 0% 92%;
+    --sidebar-primary: 353 42% 32%;
+    --sidebar-primary-foreground: 0 0% 92%;
+    --sidebar-accent: 150 3% 14%;
+    --sidebar-accent-foreground: 0 0% 92%;
+    --sidebar-border: 150 3% 17%;
+    --sidebar-ring: 353 42% 32%;
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    /* === TYPOGRAPHY === */
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Montserrat', -apple-system, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Montserrat', -apple-system, sans-serif;
 
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-
-    /* Typography Scale - Editorial Style */
-    --font-serif: 'Playfair Display', serif;
-    --font-sans: 'Inter', sans-serif;
-    
-    /* Sophisticated Spacing */
+    /* Spacing */
     --section-padding: 6rem;
     --container-padding: 2rem;
-    
-    /* Editorial Typography Scale */
+    --container-max: 1200px;
+
+    /* Typography Scale */
     --text-hero: 3.5rem;
     --text-xl: 2.25rem;
     --text-lg: 1.5rem;
     --text-base: 1.125rem;
     --text-sm: 1rem;
-    
-    /* Letter Spacing for Premium Feel */
+
+    /* Letter Spacing */
     --tracking-wide: 0.02em;
     --tracking-wider: 0.05em;
     --tracking-widest: 0.1em;
-    
-    /* Line Heights for Readability */
+
+    /* Line Heights */
     --leading-tight: 1.2;
     --leading-normal: 1.6;
     --leading-relaxed: 1.8;
@@ -116,7 +131,8 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
     font-feature-settings: "kern" 1, "liga" 1;
     text-rendering: optimizeLegibility;
   }
@@ -124,40 +140,40 @@ All colors MUST be HSL.
   html {
     scroll-behavior: smooth;
   }
-  
+
   /* Editorial Typography Styles */
   .font-serif {
     font-family: var(--font-serif);
   }
-  
+
   .font-sans {
     font-family: var(--font-sans);
   }
-  
+
   /* Premium Text Styles */
   .text-hero {
     font-size: var(--text-hero);
     line-height: var(--leading-tight);
     letter-spacing: var(--tracking-wide);
   }
-  
+
   .text-editorial {
     font-size: var(--text-lg);
     line-height: var(--leading-relaxed);
     letter-spacing: var(--tracking-wide);
   }
-  
+
   .text-body {
     font-size: var(--text-base);
     line-height: var(--leading-normal);
   }
-  
+
   /* Sophisticated Layouts */
   .section-padding {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
   }
-  
+
   .container-padding {
     padding-left: var(--container-padding);
     padding-right: var(--container-padding);
