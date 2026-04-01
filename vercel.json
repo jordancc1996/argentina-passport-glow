@@ -28,11 +28,6 @@
       "destination": "/contact",
       "statusCode": 301
     },
-    {
-      "source": "/research",
-      "destination": "/market-insights",
-      "statusCode": 301
-    }
   ],
   "rewrites": [
     {

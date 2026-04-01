@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <title>Research &amp; Intelligence | Argentina Residence</title>
+    <!-- meta description managed by React Helmet -->
+    <meta name="author" content="Argentina Residence" />
+    <link rel="canonical" href="https://www.argentinaresidence.com/research" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Argentina golden visa, Argentina residency by investment, Argentina citizenship, Argentina permanent residency, invest in Argentina" />
+
+    <meta property="og:title" content="Argentina Golden Visa 2026 | Residency by Investment" />
+    <meta property="og:description" content="Get Argentina residency through investment. $100K minimum. Fast-track to citizenship with visa-free travel to 170+ countries." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.argentinaresidence.com/og-image.jpg" />
+    <meta property="og:url" content="https://www.argentinaresidence.com/" />
+    <meta property="og:site_name" content="Argentina Residence" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Argentina Golden Visa 2026 | Residency by Investment" />
+    <meta name="twitter:description" content="Get Argentina residency through investment. $100K minimum. Fast-track to citizenship." />
+    <meta name="twitter:image" content="https://www.argentinaresidence.com/og-image.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="U5p3QWN6cwWml7hdiLpW7g" async></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Argentina Residence",
+          "url": "https://www.argentinaresidence.com",
+          "logo": "https://www.argentinaresidence.com/og-image.jpg",
+          "description": "A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina"
+        },
+        {
+          "@type": "WebSite",
+          "url": "https://www.argentinaresidence.com",
+          "name": "Argentina Residence",
+          "description": "Live and invest in South America's most dynamic economy",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Argentina Residence"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+      :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 8%;
+        --primary: 0 0% 8%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 35 8% 95%;
+        --muted: 0 0% 96%;
+        --muted-foreground: 0 0% 45%;
+        --border: 0 0% 90%;
+        --text-secondary: 0 0% 25%;
+        --gold: 45 29% 65%;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { 
+        font-family: 'Inter', sans-serif; 
+        background: hsl(var(--background)); 
+        color: hsl(var(--foreground));
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-serif { font-family: 'Playfair Display', serif; }
+      
+      /* Navigation */
+      .nav { 
+        position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+        background: hsla(var(--background), 0.95);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid hsl(var(--border));
+      }
+      .nav-container { 
+        max-width: 80rem; margin: 0 auto; 
+        padding: 1.5rem 2rem;
+        display: flex; align-items: center; justify-content: space-between;
+      }
+      .nav-brand { 
+        font-family: 'Playfair Display', serif;
+        font-size: 1.25rem; letter-spacing: 0.1em;
+        color: hsl(var(--primary));
+        text-decoration: none;
+      }
+      .nav-links { display: flex; gap: 2rem; }
+      .nav-link { 
+        font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;
+        color: hsl(var(--text-secondary));
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .nav-link:hover, .nav-link.active { color: hsl(var(--primary)); }
+      
+      /* Hero */
+      .hero {
+        position: relative;
+        min-height: 80vh;
+        display: flex; align-items: center; justify-content: center;
+        background-image: url('/src/assets/hero-buenos-aires-night.jpg');
+        background-size: cover; background-position: center;
+        margin-top: 0;
+      }
+      .hero::before {
+        content: '';
+        position: absolute; inset: 0;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+      }
+      .hero-content {
+        position: relative; z-index: 10;
+        text-align: center; color: white;
+        padding: 2rem;
+        max-width: 800px;
+      }
+      .hero h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      }
+      .hero p {
+        font-size: 1.5rem;
+        opacity: 0.9;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+      }
+      
+      /* Sections */
+      .section { padding: 6rem 2rem; text-align: center; }
+      .section-alt { background: hsl(35 8% 95% / 0.3); }
+      .section-content { max-width: 1200px; margin: 0 auto; }
+      .section h2 { 
+        font-family: 'Playfair Display', serif;
+        font-size: 2.25rem; margin-bottom: 2rem;
+        letter-spacing: 0.02em;
+      }
+      .section p { 
+        font-size: 1.5rem; 
+        color: hsl(var(--text-secondary));
+        margin-bottom: 2rem;
+        line-height: 1.8;
+      }
+      .section .text-body {
+        font-size: 1.125rem;
+        line-height: 1.6;
+      }
+      
+      /* Buttons */
+      .btn {
+        display: inline-block;
+        padding: 0.75rem 2rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 0.375rem;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+      .btn-primary {
+        background: hsl(var(--primary));
+        color: hsl(var(--primary-foreground));
+      }
+      .btn-primary:hover { opacity: 0.9; }
+      .btn-outline {
+        background: transparent;
+        border: 1px solid hsl(var(--border));
+        color: hsl(var(--foreground));
+      }
+      .btn-outline:hover { border-color: hsl(var(--primary)); }
+      .btn-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+      
+      /* Grid */
+      .grid-3 { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem; 
+        text-align: left;
+      }
+      .grid-3 h2 { 
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem; margin-bottom: 1rem;
+      }
+      .grid-3 p { font-size: 1.125rem; margin-bottom: 1rem; }
+      .grid-3 a { 
+        color: hsl(var(--primary)); 
+        font-size: 0.875rem; font-weight: 500;
+        text-decoration: none;
+      }
+      .grid-3 a:hover { text-decoration: underline; }
+      
+      /* Blog Cards */
+      .blog-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      .blog-card {
+        background: hsl(var(--background));
+        border: 1px solid hsl(var(--border));
+        border-radius: 0.5rem;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.3s;
+      }
+      .blog-card:hover {
+        border-color: hsl(var(--primary));
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      }
+      .blog-card img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+      }
+      .blog-card-content { padding: 1.5rem; }
+      .blog-card-meta { 
+        display: flex; gap: 1rem; 
+        font-size: 0.75rem;
+        color: hsl(var(--muted-foreground));
+        margin-bottom: 0.75rem;
+      }
+      .blog-card-category { color: hsl(var(--primary)); font-weight: 500; }
+      .blog-card h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.125rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.4;
+      }
+      .blog-card p {
+        font-size: 0.875rem;
+        color: hsl(var(--text-secondary));
+        margin-bottom: 1rem;
+        line-height: 1.5;
+      }
+      .blog-card-footer {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.875rem;
+        color: hsl(var(--muted-foreground));
+      }
+      .blog-card-link { color: hsl(var(--primary)); font-weight: 500; }
+      
+      /* External Links */
+      .external-links { 
+        display: flex; flex-wrap: wrap; 
+        gap: 1.5rem; justify-content: center;
+      }
+      .external-link {
+        display: inline-flex; align-items: center; gap: 0.5rem;
+        color: hsl(var(--primary));
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+      .external-link:hover { opacity: 0.8; }
+      
+      /* Footer */
+      .footer { 
+        background: hsl(var(--muted) / 0.3);
+        padding: 3rem 2rem 2rem;
+        margin-top: 4rem;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto 2rem;
+      }
+      .footer h3 { 
+        font-family: 'Playfair Display', serif;
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+      }
+      .footer p, .footer li, .footer a { 
+        font-size: 0.875rem;
+        color: hsl(var(--muted-foreground));
+        line-height: 1.6;
+      }
+      .footer ul { list-style: none; }
+      .footer li { margin-bottom: 0.5rem; }
+      .footer a { text-decoration: none; transition: color 0.3s; }
+      .footer a:hover { color: hsl(var(--primary)); }
+      .footer-bottom {
+        border-top: 1px solid hsl(var(--border));
+        padding-top: 1.5rem;
+        text-align: center;
+        font-size: 0.75rem;
+        color: hsl(var(--muted-foreground));
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      /* Hide SSR when React loads */
+      #ssr-content { display: block; }
+      .ssr-hidden { display: none !important; }
+      
+      /* Responsive */
+      @media (max-width: 768px) {
+        .nav-links { display: none; }
+        .hero h1 { font-size: 2.5rem; }
+        .hero p { font-size: 1.125rem; }
+        .section { padding: 4rem 1.5rem; }
+        .section h2 { font-size: 1.75rem; }
+        .section p { font-size: 1.125rem; }
+        .grid-3 { gap: 2rem; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    
+    <!-- SSR Content - Matches React version exactly -->
+    <div id="ssr-content">
+      <!-- Navigation -->
+      <nav class="nav">
+        <div class="nav-container">
+          <a href="/" class="nav-brand">ARGENTINA RESIDENCE</a>
+          <div class="nav-links">
+            <a href="/" class="nav-link active">home</a>
+            <a href="/program" class="nav-link">program</a>
+            <a href="/about" class="nav-link">about</a>
+            <a href="/market-insights" class="nav-link">market insights</a>
+            <a href="/faq" class="nav-link">faq</a>
+            <a href="/resources" class="nav-link">resources</a>
+            <a href="/blog" class="nav-link">blog</a>
+            <a href="/contact" class="nav-link">contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <header class="hero">
+        <div class="hero-content">
+          <h1 class="font-serif">Argentina Residence & Citizenship by Investment</h1>
+          <p>Live and invest in South America's most dynamic economy</p>
+        </div>
+      </header>
+
+      <!-- Main Editorial Section -->
+      <main>
+        <section class="section">
+          <div class="section-content">
+            <h2 class="font-serif">Argentina offers unparalleled investment opportunities for global citizens seeking South American residency.</h2>
+            <p>A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina.</p>
+            <div class="btn-group">
+              <a href="/about" class="btn btn-primary">About This Resource</a>
+              <a href="/faq" class="btn btn-outline">FAQ</a>
+              <a href="/resources" class="btn btn-outline">Resources</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Three Column Features -->
+        <section class="section section-alt">
+          <div class="section-content">
+            <div class="grid-3">
+              <div>
+                <h2 class="font-serif">Investment Program</h2>
+                <p class="text-body">Secure temporary residency through strategic investments in Argentina's most promising sectors, from premium real estate to government bonds.</p>
+                <a href="/program">Access Program Intelligence →</a>
+              </div>
+              <div>
+                <h2 class="font-serif">Strategic Location</h2>
+                <p class="text-body">Access South America's second-largest economy while enjoying visa-free travel to over 170 countries worldwide.</p>
+                <a href="/faq/visa-free-travel">Review Jurisdictional Advantages →</a>
+              </div>
+              <div>
+                <h2 class="font-serif">Premium Lifestyle</h2>
+                <p class="text-body">Experience world-class culture, cuisine, and quality of life in one of South America's most sophisticated destinations.</p>
+                <a href="/about">Review Investment Thesis →</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Latest Blog Posts -->
+        <section class="section">
+          <div class="section-content">
+            <div style="text-align: center; margin-bottom: 3rem;">
+              <h2 class="font-serif">Latest Insights & Guides</h2>
+              <p class="text-body" style="max-width: 700px; margin: 0 auto;">Stay informed with our latest articles on Argentina residency, investment opportunities, and expat lifestyle.</p>
+            </div>
+            
+            <div class="blog-grid">
+              <!-- Blog Post 1 -->
+              <a href="/blog/buenos-aires-real-estate-bull-market-analysis" class="blog-card">
+                <img src="/buenos-aires-real-estate-bull-market.jpg" alt="Buenos Aires Real Estate Bull Market Analysis 2026" loading="lazy" />
+                <div class="blog-card-content">
+                  <div class="blog-card-meta">
+                    <span class="blog-card-category">Real Estate</span>
+                    <span>Jan 13, 2026</span>
+                  </div>
+                  <h3 class="font-serif">The Buenos Aires Real Estate Bull Market Analysis</h3>
+                  <p>The Buenos Aires real estate market is experiencing a dramatic transformation. Discover investment opportunities in Palermo, Recoleta, San Telmo and Monserrat.</p>
+                  <div class="blog-card-footer">
+                    <span>12 min read</span>
+                    <span class="blog-card-link">Read more →</span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Blog Post 2 -->
+              <a href="/blog/argentina-citizenship-investment-american-investors" class="blog-card">
+                <img src="/argentina-cbi-american-investors-new.jpg" alt="Argentina Citizenship by Investment for American Investors" loading="lazy" />
+                <div class="blog-card-content">
+                  <div class="blog-card-meta">
+                    <span class="blog-card-category">Investment</span>
+                    <span>Dec 20, 2025</span>
+                  </div>
+                  <h3 class="font-serif">Argentina's New Citizenship by Investment Program is Attracting American Investors</h3>
+                  <p>Argentina has officially entered the competitive global investment migration market. The proposed Golden Visa is already attracting considerable attention.</p>
+                  <div class="blog-card-footer">
+                    <span>10 min read</span>
+                    <span class="blog-card-link">Read more →</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div style="text-align: center; margin-top: 2.5rem;">
+              <a href="/blog" class="btn btn-outline">View All Articles →</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pathway Section -->
+        <section class="section section-alt">
+          <div class="section-content">
+            <h2 class="font-serif">Your pathway to Argentine residency</h2>
+            <p class="text-body" style="max-width: 900px; margin: 0 auto;">Learn about investment requirements, application procedures, and everything you need to know about Argentina's residency by investment program. Explore our comprehensive guides and resources to help you make informed decisions.</p>
+          </div>
+        </section>
+
+        <!-- External Resources -->
+        <section class="section">
+          <div class="section-content">
+            <h2 class="font-serif">Official Resources & Further Reading</h2>
+            <p class="text-body" style="max-width: 900px; margin: 0 auto 2rem;">For official government information and comprehensive investment migration news, we recommend the following authoritative sources:</p>
+            <div class="external-links">
+              <a href="https://www.argentina.gob.ar/interior/migraciones" target="_blank" rel="noopener noreferrer" class="external-link">
+                Argentina National Migration Office (DNM)
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://www.imidaily.com" target="_blank" rel="noopener noreferrer" class="external-link">
+                IMI Daily - Investment Migration News
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-grid">
+          <div>
+            <h3 class="font-serif">Argentina Residence</h3>
+            <p>A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina.</p>
+          </div>
+          <div>
+            <h3 class="font-serif">Quick Links</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/program">Program</a></li>
+              <li><a href="/about">About Argentina</a></li>
+              <li><a href="/market-insights">Market Insights</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-serif">Resources</h3>
+            <ul>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/resources">Guides & Resources</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-serif">Legal</h3>
+            <ul>
+              <li><a href="/privacy">Privacy Policy</a></li>
+            </ul>
+            <p style="margin-top: 1.5rem;">Contact:</p>
+            <a href="mailto:rachele@argentinaresidence.com" style="color: hsl(var(--primary));">rachele@argentinaresidence.com</a>
+            <p style="margin-top: 1.5rem;">External Resources:</p>
+            <ul>
+              <li><a href="https://www.argentina.gob.ar/interior/migraciones" target="_blank" rel="noopener noreferrer">Argentina Migration Office ↗</a></li>
+              <li><a href="https://www.imidaily.com" target="_blank" rel="noopener noreferrer">IMI Daily ↗</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Argentina Residence. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
