@@ -13,6 +13,7 @@ import InvestorEligibility from "./pages/InvestorEligibility";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import MarketInsights from "./pages/MarketInsights";
+import Research from "./pages/Research";
 import FAQ from "./pages/FAQ";
 import FAQDetail from "./pages/FAQDetail";
 import Resources from "./pages/Resources";
