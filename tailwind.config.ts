@@ -58,10 +58,12 @@ export default {
         "nav-bg-dark": "hsl(var(--nav-bg-dark))",
         "nav-border": "hsl(var(--nav-border))",
         "cta-primary": "hsl(var(--cta-primary))",
+        "cta-primary-hover": "hsl(var(--cta-primary-hover))",
         text: {
           primary: "hsl(var(--text-primary))",
           secondary: "hsl(var(--text-secondary))",
           muted: "hsl(var(--text-muted))",
+          dark: "hsl(var(--text-dark))",
           cream: "hsl(var(--text-cream))",
         },
         sidebar: {
@@ -76,9 +78,11 @@ export default {
         },
       },
       fontFamily: {
-        serif: ['Playfair Display', 'serif'],
-        sans: ['Inter', 'sans-serif'],
-        nav: ['Montserrat', 'Inter', 'sans-serif'],
+        serif: ['Playfair Display', 'Georgia', 'serif'],
+        sans: ['Montserrat', '-apple-system', 'sans-serif'],
+        nav: ['Montserrat', '-apple-system', 'sans-serif'],
+        body: ['Montserrat', '-apple-system', 'sans-serif'],
+        heading: ['Playfair Display', 'Georgia', 'serif'],
       },
       fontSize: {
         'hero': ['3.5rem', { lineHeight: '1.2', letterSpacing: '0.02em' }],
