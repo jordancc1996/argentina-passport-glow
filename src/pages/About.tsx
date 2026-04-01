@@ -13,7 +13,7 @@ const About = () => {
     "mainEntity": {
       "@type": "Organization",
       "name": "Argentina Residence",
-      "description": "A free informational resource for individuals interested in Argentina's upcoming golden visa program",
+      "description": "A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina",
       "url": "https://www.argentinaresidence.com"
     },
     "about": {
