@@ -103,7 +103,7 @@ const GoldenVisaApplicationCTA = () => {
     <section className="section-padding bg-dark-teal">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-serif tracking-wide text-white mb-6">
-          LEARN MORE & SIGN UP FOR UPDATES
+          ACCESS INTELLIGENCE & SIGN UP FOR UPDATES
         </h2>
         <p className="text-base md:text-lg text-white/80 mb-12 leading-relaxed">
           The goal of our website is to be a lead magnet and offer value in the form of guides and 
@@ -280,7 +280,7 @@ const GoldenVisaApplicationCTA = () => {
             className="w-full mt-8 bg-text-cream hover:bg-text-cream/90 text-dark-teal font-medium text-base py-6"
             disabled={isSubmitting}
           >
-            {isSubmitting ? "SUBMITTING..." : "I WANT TO LEARN MORE"}
+            {isSubmitting ? "SUBMITTING..." : "REQUEST ACCESS"}
           </Button>
         </form>
       </div>

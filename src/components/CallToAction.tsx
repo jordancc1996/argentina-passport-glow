@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const CallToAction = () => {
   return (
     <EditorialSection className="bg-secondary/30">
-      <h3 className="font-serif text-xl-editorial mb-8 tracking-wide">Ready to Learn More?</h3>
+      <h3 className="font-serif text-xl-editorial mb-8 tracking-wide">Ready to Review Details?</h3>
       <p className="text-editorial text-text-secondary mb-12 tracking-wide max-w-2xl mx-auto">
         Explore our comprehensive resources and guides to learn everything you need to know about Argentina's golden visa program.
       </p>

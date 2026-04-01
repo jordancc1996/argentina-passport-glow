@@ -603,7 +603,7 @@ const InvestorEligibility = () => {
       {/* Internal Linking */}
       <EditorialSection>
         <h2 className="font-serif text-lg-editorial mb-8 tracking-wide text-center">
-          Learn More About the Program
+          Review Program Details
         </h2>
         <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           <Link 
