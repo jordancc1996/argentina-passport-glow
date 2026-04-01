@@ -11,13 +11,13 @@ const ConsultationCTA = () => {
           Schedule Your Free Consultation
         </h3>
         <p className="text-text-secondary mb-6 max-w-2xl mx-auto">
-          Have questions about Argentina's residency program? Book a complimentary consultation 
+          Have questions about Argentina's residency program? Schedule a principal consultation 
           with our team to discuss your eligibility and next steps.
         </p>
         <Button asChild size="lg" className="px-8">
           <Link to="/contact">
             <Calendar className="w-4 h-4 mr-2" />
-            Book Free Consultation
+            Schedule a Principal Consultation
           </Link>
         </Button>
       </div>

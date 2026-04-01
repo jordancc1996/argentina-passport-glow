@@ -78,7 +78,7 @@ const Index = () => {
               Secure temporary residency through strategic investments in Argentina's most promising sectors, from premium real estate to government bonds.
             </p>
             <Link to="/program" className="text-primary hover:underline text-sm font-medium">
-              Learn about the program →
+              Access Program Intelligence →
             </Link>
           </div>
           
@@ -88,7 +88,7 @@ const Index = () => {
               Access South America's second-largest economy while enjoying visa-free travel to over 170 countries worldwide.
             </p>
             <Link to="/faq/visa-free-travel" className="text-primary hover:underline text-sm font-medium">
-              Explore travel benefits →
+              Review Jurisdictional Advantages →
             </Link>
           </div>
           
@@ -98,7 +98,7 @@ const Index = () => {
               Experience world-class culture, cuisine, and quality of life in one of South America's most sophisticated destinations.
             </p>
             <Link to="/about" className="text-primary hover:underline text-sm font-medium">
-              Discover Argentina →
+              Review Investment Thesis →
             </Link>
           </div>
         </div>
