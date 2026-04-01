@@ -59,7 +59,7 @@ const Blog = () => {
               </h1>
               <p className="text-xl text-black max-w-2xl mx-auto drop-shadow-[0_2px_8px_rgba(255,255,255,0.8)]">
                 Insights, guides, and updates about Argentina residency and living as an expat. 
-                For detailed inquiries, please <Link to="/contact" className="text-black underline hover:no-underline drop-shadow-[0_2px_8px_rgba(255,255,255,0.8)]">contact us</Link>.
+                For institutional inquiries, please <Link to="/contact" className="text-black underline hover:no-underline drop-shadow-[0_2px_8px_rgba(255,255,255,0.8)]">request a principal consultation</Link>.
               </p>
             </motion.div>
           </div>

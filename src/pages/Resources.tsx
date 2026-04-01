@@ -137,7 +137,7 @@ const Resources = () => {
             Important Notice
           </h2>
           <p className="text-body text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
-            This website is a free informational resource about Argentina's residency programs. 
+            Argentina Residence provides proprietary market intelligence and execution advisory for international investors and family offices. 
             All information provided is for educational purposes only and should not be considered 
             legal or financial advice. Immigration laws and investment requirements are subject to 
             change. Always verify current requirements with official government sources and consult 

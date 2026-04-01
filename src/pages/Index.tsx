@@ -128,7 +128,7 @@ const Index = () => {
           <div className="border-l-2 border-gold pl-6">
             <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">Transparent & Independent</h3>
             <p className="text-sm text-text-secondary tracking-wide">
-              Argentina Residence is a free, independent resource — we provide unbiased information to help you make informed decisions about your residency journey.
+              Argentina Residence is an independent advisory practice — we provide unbiased intelligence to help you make informed decisions about your residency journey.
             </p>
           </div>
         </div>
