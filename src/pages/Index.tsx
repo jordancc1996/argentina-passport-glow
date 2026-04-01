@@ -17,7 +17,7 @@ const Index = () => {
         "name": "Argentina Residence",
         "url": "https://www.argentinaresidence.com",
         "logo": "https://www.argentinaresidence.com/og-image.jpg",
-        "description": "Free informational resource about Argentina's golden visa and residency by investment program",
+        "description": "A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina",
         "sameAs": []
       },
       {
