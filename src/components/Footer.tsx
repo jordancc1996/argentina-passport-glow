@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="font-serif text-lg mb-4">Argentina Residence</h3>
             <p className="text-sm text-muted-foreground">
-              Free informational resource about Argentina's golden visa and residency programs.
+              A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina.
             </p>
           </div>
           

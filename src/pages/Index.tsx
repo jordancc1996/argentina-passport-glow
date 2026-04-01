@@ -17,7 +17,7 @@ const Index = () => {
         "name": "Argentina Residence",
         "url": "https://www.argentinaresidence.com",
         "logo": "https://www.argentinaresidence.com/og-image.jpg",
-        "description": "Free informational resource about Argentina's golden visa and residency by investment program",
+        "description": "A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina",
         "sameAs": []
       },
       {
@@ -55,7 +55,7 @@ const Index = () => {
           Argentina offers unparalleled investment opportunities for global citizens seeking South American residency.
         </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide">
-          A free informational resource about Argentina's upcoming golden visa program.
+          A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-8">
           <Button asChild variant="outline" size="lg" className="bg-white hover:bg-white/90">
@@ -128,7 +128,7 @@ const Index = () => {
           <div className="border-l-2 border-gold pl-6">
             <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">Transparent & Independent</h3>
             <p className="text-sm text-text-secondary tracking-wide">
-              Argentina Residence is a free, independent resource — we provide unbiased information to help you make informed decisions about your residency journey.
+              Argentina Residence is an independent advisory practice — we provide unbiased intelligence to help you make informed decisions about your residency journey.
             </p>
           </div>
         </div>

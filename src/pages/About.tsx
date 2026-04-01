@@ -13,7 +13,7 @@ const About = () => {
     "mainEntity": {
       "@type": "Organization",
       "name": "Argentina Residence",
-      "description": "A free informational resource for individuals interested in Argentina's upcoming golden visa program",
+      "description": "A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina",
       "url": "https://www.argentinaresidence.com"
     },
     "about": {
@@ -37,7 +37,7 @@ const About = () => {
             About Argentina Residence
           </h1>
           <p className="text-editorial text-text-secondary mb-12 tracking-wide">
-            A free informational resource for individuals interested in Argentina's upcoming golden visa program.
+            A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina.
           </p>
         </EditorialSection>
         
@@ -138,7 +138,7 @@ const About = () => {
         <EditorialSection>
           <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">About This Resource</h2>
           <p className="text-body text-text-secondary mb-6 tracking-wide max-w-3xl mx-auto">
-            ArgentinaResidence.com is an independent, free informational resource created to help individuals learn about Argentina's residency by investment opportunities, particularly the upcoming golden visa program.
+            Argentina Residence provides proprietary market intelligence and execution advisory for international investors and family offices seeking Argentine residency by investment opportunities.
           </p>
           <p className="text-body text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
             This website provides educational content only and is not affiliated with any government agency, immigration service provider, or investment firm. All information should be verified with official sources, and visitors are encouraged to consult with qualified legal and financial professionals for personalized advice.

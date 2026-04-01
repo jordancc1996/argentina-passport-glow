@@ -100,7 +100,7 @@ const FAQDetail = () => {
 
         <EditorialSection>
           <p className="text-body text-text-secondary tracking-wide">
-            Have more questions? This is a free informational resource. Please conduct your own research and consult with qualified immigration and legal professionals for personalized advice.
+            Have more questions? We advise a select number of sophisticated investors on Argentine capital deployment and residency acquisition. For personalized guidance, please request a principal consultation.
           </p>
         </EditorialSection>
       </div>
