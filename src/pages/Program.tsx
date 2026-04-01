@@ -109,7 +109,7 @@ const Program = () => {
           </p>
           <Link to="/contact">
             <Button size="lg" className="px-12">
-              Get Started
+              Request an Advisory Briefing
             </Button>
           </Link>
         </div>

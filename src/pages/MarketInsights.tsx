@@ -100,7 +100,7 @@ const MarketInsights = () => {
       <EditorialSection className="bg-secondary/30">
         <FormCarryForm
           formType="market-insights"
-          buttonText="Download Market Report"
+          buttonText="Access the 2026 Investment Thesis"
           title="Get Detailed Market Insights Report"
           description="Receive our comprehensive Argentina market analysis report delivered directly to your inbox. This exclusive report includes investment opportunities, risk assessments, and strategic recommendations."
         />

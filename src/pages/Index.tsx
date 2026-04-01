@@ -98,7 +98,7 @@ const Index = () => {
               Experience world-class culture, cuisine, and quality of life in one of South America's most sophisticated destinations.
             </p>
             <Link to="/about" className="text-primary hover:underline text-sm font-medium">
-              Discover Argentina →
+              Review Investment Thesis →
             </Link>
           </div>
         </div>

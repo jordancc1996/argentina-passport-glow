@@ -323,7 +323,7 @@ const LuxuryContactCTA = () => {
                   disabled={isSubmitting}
                   className="w-full py-4 px-8 border border-white/50 text-white text-sm tracking-[0.2em] uppercase font-sans bg-transparent hover:bg-[#C9A962] hover:border-[#C9A962] hover:text-[#0B1215] transition-all duration-300 ease-out disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-[0_0_30px_rgba(201,169,98,0.3)]"
                 >
-                  {isSubmitting ? "Submitting..." : "INQUIRE NOW"}
+                  {isSubmitting ? "Submitting..." : "Request Consultation"}
                 </button>
               </div>
             </form>
