@@ -55,6 +55,9 @@ export default {
           DEFAULT: "hsl(var(--dark-teal))",
           light: "hsl(var(--dark-teal-light))",
         },
+        "nav-bg-dark": "hsl(var(--nav-bg-dark))",
+        "nav-border": "hsl(var(--nav-border))",
+        "cta-primary": "hsl(var(--cta-primary))",
         text: {
           primary: "hsl(var(--text-primary))",
           secondary: "hsl(var(--text-secondary))",
@@ -75,6 +78,7 @@ export default {
       fontFamily: {
         serif: ['Playfair Display', 'serif'],
         sans: ['Inter', 'sans-serif'],
+        nav: ['Montserrat', 'Inter', 'sans-serif'],
       },
       fontSize: {
         'hero': ['3.5rem', { lineHeight: '1.2', letterSpacing: '0.02em' }],
