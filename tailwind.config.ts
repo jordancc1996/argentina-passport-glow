@@ -55,6 +55,9 @@ export default {
           DEFAULT: "hsl(var(--dark-teal))",
           light: "hsl(var(--dark-teal-light))",
         },
+        "nav-bg-dark": "hsl(var(--nav-bg-dark))",
+        "nav-border": "hsl(var(--nav-border))",
+        "cta-primary": "hsl(var(--cta-primary))",
         text: {
           primary: "hsl(var(--text-primary))",
           secondary: "hsl(var(--text-secondary))",
