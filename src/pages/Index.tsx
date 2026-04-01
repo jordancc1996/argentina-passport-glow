@@ -88,7 +88,7 @@ const Index = () => {
               Access South America's second-largest economy while enjoying visa-free travel to over 170 countries worldwide.
             </p>
             <Link to="/faq/visa-free-travel" className="text-primary hover:underline text-sm font-medium">
-              Explore travel benefits →
+              Review Jurisdictional Advantages →
             </Link>
           </div>
           
