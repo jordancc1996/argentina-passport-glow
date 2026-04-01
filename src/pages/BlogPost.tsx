@@ -136,7 +136,7 @@ const BlogPost = () => {
                   Ready to Start Your Argentina Residency Journey?
                 </h3>
                 <p className="text-text-secondary mb-4">
-                  Contact us today to learn more about the Argentina residence program and how we can help guide you through the process.
+                  Request a principal consultation to discuss the Argentina residence program and how we can guide you through the process.
                 </p>
                 <Button asChild>
                   <Link to="/contact">Get in Touch</Link>

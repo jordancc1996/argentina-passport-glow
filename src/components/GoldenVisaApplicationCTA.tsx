@@ -280,7 +280,7 @@ const GoldenVisaApplicationCTA = () => {
             className="w-full mt-8 bg-text-cream hover:bg-text-cream/90 text-dark-teal font-medium text-base py-6"
             disabled={isSubmitting}
           >
-            {isSubmitting ? "SUBMITTING..." : "I WANT TO LEARN MORE"}
+            {isSubmitting ? "SUBMITTING..." : "REQUEST ACCESS"}
           </Button>
         </form>
       </div>
