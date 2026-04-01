@@ -37,7 +37,7 @@ const About = () => {
             About Argentina Residence
           </h1>
           <p className="text-editorial text-text-secondary mb-12 tracking-wide">
-            A free informational resource for individuals interested in Argentina's upcoming golden visa program.
+            A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina.
           </p>
         </EditorialSection>
         
