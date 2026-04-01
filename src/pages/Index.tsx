@@ -78,7 +78,7 @@ const Index = () => {
               Secure temporary residency through strategic investments in Argentina's most promising sectors, from premium real estate to government bonds.
             </p>
             <Link to="/program" className="text-primary hover:underline text-sm font-medium">
-              Learn about the program →
+              Access Program Intelligence →
             </Link>
           </div>
           
