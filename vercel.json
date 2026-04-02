@@ -27,7 +27,7 @@
       "source": "/contact-us",
       "destination": "/contact",
       "statusCode": 301
-    },
+    }
   ],
   "rewrites": [
     {
