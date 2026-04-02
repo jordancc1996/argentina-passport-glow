@@ -38,6 +38,8 @@ const Program = () => {
         title="Argentina Residency by Investment: The Fastest Path to a Global Passport"
         subtitle="Secure permanent residency in one of South America's most vibrant economies. With a strategic investment, you can qualify for Argentine citizenship in as little as two years, gaining visa-free access to over 170 destinations and a gateway to the MERCOSUR region."
         backgroundImage={goldenVisaHero}
+        ctaText="Request Program Details"
+        ctaLink="/contact"
       />
       
       <EditorialSection>
