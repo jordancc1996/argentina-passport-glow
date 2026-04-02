@@ -1,6 +1,7 @@
 import heroImage from "@/assets/hero-aerial-buenos-aires.jpg";
 import { motion } from 'framer-motion';
 import { useParallax, useScrollOpacity } from '@/hooks/useParallax';
+import { Link } from 'react-router-dom';
 
 interface HeroProps {
   title: string;
@@ -9,6 +10,8 @@ interface HeroProps {
   backgroundImage?: string;
   imageAlt?: string;
   overlay?: boolean;
+  ctaText?: string;
+  ctaLink?: string;
 }
 
 const Hero = ({ 
@@ -17,7 +20,9 @@ const Hero = ({
   description, 
   backgroundImage = heroImage,
   imageAlt = "Argentina landscape",
-  overlay = true 
+  overlay = true,
+  ctaText,
+  ctaLink,
 }: HeroProps) => {
   const parallaxY = useParallax(-0.3);
   const opacity = useScrollOpacity(600);
@@ -76,6 +81,22 @@ const Hero = ({
           >
             {description}
           </motion.p>
+        )}
+
+        {ctaText && ctaLink && (
+          <motion.div
+            className="mt-8"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.1 }}
+          >
+            <Link
+              to={ctaLink}
+              className="inline-block font-sans font-semibold text-[0.85rem] tracking-widest uppercase bg-primary text-primary-foreground px-10 py-4 hover:bg-[hsl(353,41%,39%)] hover:-translate-y-0.5 transition-all duration-300"
+            >
+              {ctaText}
+            </Link>
+          </motion.div>
         )}
       </motion.div>
     </section>
