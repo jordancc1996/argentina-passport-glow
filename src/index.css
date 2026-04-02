@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Argentina Residence Design System — Patagonian Obsidian & Malbec
+/* Argentina Residence Design System — Institutional Navy
    Inspired by HoldenFamilyOffices.com's institutional depth,
    adapted with Argentine identity. All colors in HSL.
 */
@@ -17,7 +17,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 353 42% 32%;            /* Malbec Reserve */
+    --primary: 209 71% 29%;            /* Institutional Navy */
     --primary-foreground: 0 0% 98%;
 
     --secondary: 240 4.8% 95.9%;
@@ -38,8 +38,8 @@
     --nav-bg-dark: 150 5% 6%;
     --nav-border: 150 3% 17%;
 
-    --cta-primary: 353 42% 32%;
-    --cta-primary-hover: 353 41% 39%;
+    --cta-primary: 209 71% 29%;
+    --cta-primary-hover: 209 70% 22%;
     --cta-text: 0 0% 92%;
     --cta-secondary-border: 240 5.9% 10%;
     --cta-secondary-text: 240 5.9% 10%;
@@ -55,27 +55,27 @@
     --color-bg-elevated: 0 0% 100%;
     --color-bg-light: 38 30% 95%;
 
-    --color-accent: 353 42% 32%;
-    --color-accent-hover: 353 41% 39%;
-    --color-accent-light: 353 36% 45%;
+    --color-accent: 209 71% 29%;
+    --color-accent-hover: 209 70% 22%;
+    --color-accent-light: 209 55% 40%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 353 42% 32%;
+    --ring: 209 71% 29%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 353 42% 32%;
+    --sidebar-primary: 209 71% 29%;
     --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 353 42% 32%;
+    --sidebar-ring: 209 71% 29%;
 
     /* === TYPOGRAPHY === */
     --font-heading: 'Playfair Display', Georgia, serif;
