@@ -74,34 +74,40 @@ const Index = () => {
       
       <EditorialSection className="bg-secondary/30">
         <div className="grid md:grid-cols-3 gap-12 text-left">
-          <div>
+          <div className="flex flex-col">
             <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Investment Program</h2>
-            <p className="text-body text-text-secondary tracking-wide mb-4">
+            <p className="text-body text-text-secondary tracking-wide mb-4 flex-1">
               Secure temporary residency through strategic investments in Argentina's most promising sectors, from premium real estate to government bonds.
             </p>
-            <Link to="/program" className="text-primary hover:underline text-sm font-medium">
-              Access Program Intelligence →
-            </Link>
+            <div className="mt-6">
+              <Link to="/program" className="inline-block font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase border-2 border-primary text-foreground px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                Access Program Intelligence
+              </Link>
+            </div>
           </div>
           
-          <div>
+          <div className="flex flex-col">
             <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Strategic Location</h2>
-            <p className="text-body text-text-secondary tracking-wide mb-4">
+            <p className="text-body text-text-secondary tracking-wide mb-4 flex-1">
               Access South America's second-largest economy while enjoying visa-free travel to over 170 countries worldwide.
             </p>
-            <Link to="/faq/visa-free-travel" className="text-primary hover:underline text-sm font-medium">
-              Review Jurisdictional Advantages →
-            </Link>
+            <div className="mt-6">
+              <Link to="/faq/visa-free-travel" className="inline-block font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase border-2 border-primary text-foreground px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                Review Jurisdictional Advantages
+              </Link>
+            </div>
           </div>
           
-          <div>
+          <div className="flex flex-col">
             <h2 className="font-serif text-lg-editorial mb-4 tracking-wide">Premium Lifestyle</h2>
-            <p className="text-body text-text-secondary tracking-wide mb-4">
+            <p className="text-body text-text-secondary tracking-wide mb-4 flex-1">
               Experience world-class culture, cuisine, and quality of life in one of South America's most sophisticated destinations.
             </p>
-            <Link to="/about" className="text-primary hover:underline text-sm font-medium">
-              Review Investment Thesis →
-            </Link>
+            <div className="mt-6">
+              <Link to="/about" className="inline-block font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase border-2 border-primary text-foreground px-6 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                Review Investment Thesis
+              </Link>
+            </div>
           </div>
         </div>
       </EditorialSection>
