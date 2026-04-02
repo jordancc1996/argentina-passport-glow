@@ -130,18 +130,17 @@ const BlogPost = () => {
               />
             </div>
 
-            <div className="border-t border-border mt-12 pt-8">
-              <div className="bg-card border border-border rounded-lg p-6 md:p-8">
-                <h3 className="text-xl font-serif mb-3 text-foreground">
-                  Ready to Start Your Argentina Residency Journey?
-                </h3>
-                <p className="text-text-secondary mb-4">
-                  Request a principal consultation to discuss the Argentina residence program and how we can guide you through the process.
-                </p>
-                <Button asChild>
-                  <Link to="/contact">Get in Touch</Link>
-                </Button>
-              </div>
+            {/* Article Footer Conversion Block */}
+            <div className="mt-12 bg-[hsl(var(--nav-bg-dark))] text-primary-foreground rounded-lg p-8 md:p-12 text-center">
+              <h3 className="text-2xl md:text-3xl font-serif mb-4">
+                Discuss Your Strategy
+              </h3>
+              <p className="font-sans text-primary-foreground/80 max-w-xl mx-auto mb-8 leading-relaxed">
+                Speak directly with our advisory team to understand how these market dynamics impact your specific residency and investment goals.
+              </p>
+              <Button asChild className="bg-primary hover:bg-primary/80 text-primary-foreground font-sans font-semibold text-[0.85rem] tracking-widest uppercase px-10 py-4 h-auto">
+                <Link to="/contact">Request an Advisory Briefing</Link>
+              </Button>
             </div>
 
             {/* Related Articles Section */}
