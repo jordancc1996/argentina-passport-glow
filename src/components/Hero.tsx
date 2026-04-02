@@ -92,7 +92,7 @@ const Hero = ({
           >
             <Link
               to={ctaLink}
-              className="inline-block font-sans font-semibold text-[0.85rem] tracking-widest uppercase bg-primary text-primary-foreground px-10 py-4 hover:bg-[hsl(353,41%,39%)] hover:-translate-y-0.5 transition-all duration-300"
+              className="inline-block font-sans font-semibold text-[0.85rem] tracking-widest uppercase bg-primary text-primary-foreground px-10 py-4 hover:bg-primary/80 hover:-translate-y-0.5 transition-all duration-300"
             >
               {ctaText}
             </Link>
