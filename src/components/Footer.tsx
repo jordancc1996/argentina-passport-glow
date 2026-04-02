@@ -72,6 +72,11 @@ const Footer = () => {
             <h3 className="font-serif text-lg mb-4">Legal</h3>
             <ul className="space-y-2 text-sm">
               <li>
+                <Link to="/compliance" className="text-muted-foreground hover:text-primary transition-colors">
+                  Compliance & Disclosures
+                </Link>
+              </li>
+              <li>
                 <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
                 </Link>
@@ -112,11 +117,34 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
-        <div className="border-t border-border pt-6">
-          <p className="text-center text-muted-foreground text-xs">
-            © {new Date().getFullYear()} Argentina Residence. All rights reserved.
+
+        {/* Compliance Disclaimer */}
+        <div className="border-t border-border pt-6 pb-6">
+          <p className="text-center text-muted-foreground font-body text-[0.7rem] leading-relaxed max-w-[800px] mx-auto">
+            Argentina Residence Advisory provides market intelligence and program advisory services. We are not licensed immigration attorneys, tax advisors, or investment advisors. All information provided is for informational purposes only and does not constitute legal, tax, or investment advice. Prospective investors should consult with qualified legal and tax counsel before making any investment or residency decision. Past program conditions are not indicative of future availability or terms.
           </p>
+        </div>
+        
+        {/* Bottom Bar */}
+        <div className="border-t border-border pt-6">
+          <div className="flex flex-col items-center gap-3">
+            <div className="flex items-center gap-2 flex-wrap justify-center font-body text-[0.7rem]">
+              <Link to="/compliance" className="text-muted-foreground hover:text-foreground/70 transition-colors">
+                Compliance &amp; Disclosures
+              </Link>
+              <span className="text-muted-foreground">|</span>
+              <Link to="/privacy" className="text-muted-foreground hover:text-foreground/70 transition-colors">
+                Privacy Policy
+              </Link>
+              <span className="text-muted-foreground">|</span>
+              <Link to="/compliance#terms" className="text-muted-foreground hover:text-foreground/70 transition-colors">
+                Terms of Service
+              </Link>
+            </div>
+            <p className="text-center text-muted-foreground text-xs">
+              © {new Date().getFullYear()} Argentina Residence. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
