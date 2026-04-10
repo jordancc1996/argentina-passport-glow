@@ -32,11 +32,14 @@ const FAQDetail = () => {
     }]
   };
 
+  const metaTitle = currentFAQ.metaTitle || `${currentFAQ.question} | Argentina Residence`;
+  const metaDesc = currentFAQ.metaDescription || (currentFAQ.answer.substring(0, 155) + (currentFAQ.answer.length > 155 ? '...' : ''));
+
   return (
     <Layout>
       <SEO 
-        title={`${currentFAQ.question} | Argentina Residence`}
-        description={currentFAQ.answer.substring(0, 155) + (currentFAQ.answer.length > 155 ? '...' : '')}
+        title={metaTitle}
+        description={metaDesc}
         canonical={`/faq/${slug}`}
         schema={schema}
       />
@@ -50,13 +53,22 @@ const FAQDetail = () => {
               </Button>
             </Link>
             
-            <h1 className="font-serif text-2xl-editorial md:text-3xl-editorial mb-8 tracking-wide text-left">
-              {currentFAQ.question}
-            </h1>
-            
-            <div className="text-body text-text-secondary tracking-wide text-left leading-relaxed">
-              {currentFAQ.answer}
-            </div>
+            {currentFAQ.richContent ? (
+              <div 
+                className="faq-rich-content text-left"
+                dangerouslySetInnerHTML={{ __html: currentFAQ.richContent }}
+              />
+            ) : (
+              <>
+                <h1 className="font-serif text-2xl-editorial md:text-3xl-editorial mb-8 tracking-wide text-left">
+                  {currentFAQ.question}
+                </h1>
+                
+                <div className="text-body text-text-secondary tracking-wide text-left leading-relaxed">
+                  {currentFAQ.answer}
+                </div>
+              </>
+            )}
           </div>
         </EditorialSection>
 
