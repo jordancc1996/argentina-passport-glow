@@ -139,7 +139,7 @@ const BlogPost = () => {
                 Speak directly with our advisory team to understand how these market dynamics impact your specific residency and investment goals.
               </p>
               <Button asChild className="bg-primary hover:bg-primary/80 text-primary-foreground font-sans font-semibold text-[0.85rem] tracking-widest uppercase px-10 py-4 h-auto">
-                <Link to="/contact">Request an Advisory Briefing</Link>
+                <Link to="/contact">Schedule a Consultation</Link>
               </Button>
             </div>
 
