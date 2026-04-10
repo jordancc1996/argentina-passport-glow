@@ -50,6 +50,7 @@ const Index = () => {
         backgroundImage={heroNightImage}
         ctaText="Explore Your Options"
         ctaLink="/contact"
+        ctaSubline="Confidential guidance for qualified investors"
       />
       
       <EditorialSection>

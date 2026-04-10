@@ -98,6 +98,11 @@ const Hero = ({
             >
               {ctaText}
             </Link>
+            {ctaSubline && (
+              <p className="mt-3 text-sm text-white/70 font-sans tracking-wide">
+                {ctaSubline}
+              </p>
+            )}
           </motion.div>
         )}
       </motion.div>
