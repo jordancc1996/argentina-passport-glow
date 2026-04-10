@@ -48,8 +48,9 @@ const Index = () => {
         title="Argentina Residence & Citizenship by Investment"
         subtitle="Live and invest in South America's most dynamic economy"
         backgroundImage={heroNightImage}
-        ctaText="Request an Advisory Briefing"
+        ctaText="Explore Your Options"
         ctaLink="/contact"
+        ctaSubline="Confidential guidance for qualified investors"
       />
       
       <EditorialSection>

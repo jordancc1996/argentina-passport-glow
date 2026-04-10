@@ -111,7 +111,7 @@ const Program = () => {
           </p>
           <Link to="/contact">
             <Button size="lg" className="px-12">
-              Request an Advisory Briefing
+              Schedule a Consultation
             </Button>
           </Link>
         </div>

@@ -201,7 +201,7 @@ const Navigation = () => {
                 textDecoration: "none",
               }}
             >
-              Request an Advisory Briefing
+              Explore Your Options
             </Link>
           </div>
         </div>

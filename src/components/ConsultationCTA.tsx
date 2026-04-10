@@ -17,7 +17,7 @@ const ConsultationCTA = () => {
         <Button asChild size="lg" className="px-8">
           <Link to="/contact">
             <Calendar className="w-4 h-4 mr-2" />
-            Schedule a Principal Consultation
+            Schedule a Consultation
           </Link>
         </Button>
       </div>
