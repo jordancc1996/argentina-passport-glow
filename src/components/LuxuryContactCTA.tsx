@@ -18,13 +18,12 @@ const countryCodes = [
   { code: "+852", country: "HK" },
 ];
 
-const goldenVisaPrograms = [
-  "Argentina",
-  "Portugal",
-  "Italy",
-  "Greece",
-  "Caribbean Islands",
-  "Malta",
+const investmentInterests = [
+  "Real Estate Investment",
+  "Government Bonds (BOPREAL)",
+  "Business or Startup Venture",
+  "Residency Only — No Investment",
+  "Not Sure Yet — Need Guidance",
 ];
 
 const LuxuryContactCTA = () => {
@@ -150,14 +149,12 @@ const LuxuryContactCTA = () => {
               className="text-3xl md:text-4xl lg:text-5xl text-white mb-6 leading-tight"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
-              Argentina Residency:{" "}
-              <span className="text-[#C9A962]">A New Standard</span> of Living
+              Let's Find the{" "}
+              <span className="text-[#C9A962]">Right Path</span> for You
             </h2>
 
-            {/* Subhead */}
             <p className="text-white/60 text-base md:text-lg mb-12 leading-relaxed font-sans">
-              Gain exclusive access to our comprehensive residency planning
-              resources, investment guides, and private consultations.
+              Book a free, no-obligation 15-minute call with our advisory team. We'll answer your questions about Argentine residency and help you understand your best options.
             </p>
 
             {/* Form */}
@@ -287,7 +284,7 @@ const LuxuryContactCTA = () => {
               {/* Golden Visa Program Dropdown */}
               <div>
                 <label htmlFor="goldenVisaProgram" className={labelClasses}>
-                  Which Golden Visa program are you interested in?
+                  What type of investment interests you?
                 </label>
                 <div className="relative">
                   <select
@@ -302,13 +299,13 @@ const LuxuryContactCTA = () => {
                     <option value="" disabled style={{ backgroundColor: "#0B1215" }}>
                       Please Select
                     </option>
-                    {goldenVisaPrograms.map((program) => (
+                    {investmentInterests.map((interest) => (
                       <option
-                        key={program}
-                        value={program.toLowerCase()}
+                        key={interest}
+                        value={interest.toLowerCase()}
                         style={{ backgroundColor: "#0B1215" }}
                       >
-                        {program}
+                        {interest}
                       </option>
                     ))}
                   </select>
@@ -323,7 +320,7 @@ const LuxuryContactCTA = () => {
                   disabled={isSubmitting}
                   className="w-full py-4 px-8 border border-white/50 text-white text-sm tracking-[0.2em] uppercase font-sans bg-transparent hover:bg-[#C9A962] hover:border-[#C9A962] hover:text-[#0B1215] transition-all duration-300 ease-out disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-[0_0_30px_rgba(201,169,98,0.3)]"
                 >
-                  {isSubmitting ? "Submitting..." : "Request Consultation"}
+                  {isSubmitting ? "Submitting..." : "Book My Free Call"}
                 </button>
               </div>
             </form>
