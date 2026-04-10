@@ -55,10 +55,10 @@ const Index = () => {
       
       <EditorialSection>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
-          Argentina offers unparalleled investment opportunities for global citizens seeking South American residency.
+          Your roadmap to Argentine residency, citizenship, and long-term investment — in one place.
         </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide">
-          A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina.
+          Argentina Residence is an independent advisory resource built with licensed immigration attorneys. We help qualified investors understand the program, evaluate their options, and take the right next step.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-8">
           <Button asChild variant="outline" size="lg" className="bg-white hover:bg-white/90">
