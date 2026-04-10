@@ -40,13 +40,12 @@ const GoldenVisaApplicationCTA = () => {
     { code: "+966", country: "Saudi Arabia" },
   ];
 
-  const goldenVisaPrograms = [
-    "Argentina",
-    "Portugal",
-    "Italy",
-    "Greece",
-    "Caribbean Islands",
-    "Malta"
+  const investmentInterests = [
+    "Real Estate Investment",
+    "Government Bonds (BOPREAL)",
+    "Business or Startup Venture",
+    "Residency Only — No Investment",
+    "Not Sure Yet — Need Guidance",
   ];
 
   const relocateTimelines = [
@@ -248,7 +247,7 @@ const GoldenVisaApplicationCTA = () => {
 
           <div className="text-left">
             <Label htmlFor="investmentAmount" className="text-sm font-medium mb-2 block text-text-cream">
-              Which Golden Visa program are you interested in?*
+              What type of investment interests you?*
             </Label>
             <Controller
               name="investmentAmount"
@@ -260,9 +259,9 @@ const GoldenVisaApplicationCTA = () => {
                     <SelectValue placeholder="Please Select" />
                   </SelectTrigger>
                   <SelectContent className="bg-dark-teal-light border-white/20">
-                    {goldenVisaPrograms.map((program) => (
-                      <SelectItem key={program} value={program} className="text-white focus:bg-dark-teal focus:text-white">
-                        {program}
+                    {investmentInterests.map((interest) => (
+                      <SelectItem key={interest} value={interest} className="text-white focus:bg-dark-teal focus:text-white">
+                        {interest}
                       </SelectItem>
                     ))}
                   </SelectContent>
