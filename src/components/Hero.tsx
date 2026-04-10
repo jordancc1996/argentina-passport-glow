@@ -12,6 +12,7 @@ interface HeroProps {
   overlay?: boolean;
   ctaText?: string;
   ctaLink?: string;
+  ctaSubline?: string;
 }
 
 const Hero = ({ 
@@ -23,6 +24,7 @@ const Hero = ({
   overlay = true,
   ctaText,
   ctaLink,
+  ctaSubline,
 }: HeroProps) => {
   const parallaxY = useParallax(-0.3);
   const opacity = useScrollOpacity(600);
