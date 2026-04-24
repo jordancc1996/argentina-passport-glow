@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
+import ScrollytellingSteps from "@/components/ScrollytellingSteps";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -238,8 +239,8 @@ const RealEstateInvestment = () => {
       
       {/* Why Invest Section */}
       <EditorialSection className="bg-secondary/30">
-        <div className="grid md:grid-cols-2 gap-16 text-left">
-          <div>
+        <div className="text-left">
+          <div className="max-w-2xl">
             <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">
               Why Buenos Aires Real Estate?
             </h2>
@@ -278,38 +279,48 @@ const RealEstateInvestment = () => {
               </div>
             </div>
           </div>
-          
-          <div>
-            <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">
-              Investment Process
-            </h2>
-            <div className="space-y-6">
-              <div className="border-l-2 border-gold pl-6">
-                <p className="text-sm text-gold font-semibold uppercase tracking-wider mb-1">Step 1</p>
-                <h4 className="font-semibold mb-1">Eligibility Assessment</h4>
-                <p className="text-text-secondary text-sm">
-                  Complete our quick assessment to confirm your investor profile.
-                </p>
-              </div>
-              
-              <div className="border-l-2 border-border pl-6">
-                <p className="text-sm text-text-muted font-semibold uppercase tracking-wider mb-1">Step 2</p>
-                <h4 className="font-semibold mb-1">Property Selection</h4>
-                <p className="text-text-secondary text-sm">
-                  Review curated properties that qualify for the Golden Visa.
-                </p>
-              </div>
-              
-              <div className="border-l-2 border-border pl-6">
-                <p className="text-sm text-text-muted font-semibold uppercase tracking-wider mb-1">Step 3</p>
-                <h4 className="font-semibold mb-1">Investment & Application</h4>
-                <p className="text-text-secondary text-sm">
-                  Complete your investment and submit your residency application.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
+      </EditorialSection>
+
+      {/* Investment Process — Scrollytelling */}
+      <EditorialSection centered={false}>
+        <ScrollytellingSteps
+          eyebrow="A Bespoke Process"
+          heading="From eligibility to keys in hand"
+          intro="A guided five-step process for qualified investors deploying capital into Argentine real estate as a route to residency."
+          steps={[
+            {
+              label: "Step 1",
+              title: "Eligibility Assessment",
+              description:
+                "Complete our quick assessment to confirm your investor profile and clarify the residency pathway best suited to your objectives.",
+            },
+            {
+              label: "Step 2",
+              title: "Property Shortlist",
+              description:
+                "Review a curated shortlist of properties in Palermo, Puerto Madero, and other premium neighborhoods that qualify for the Golden Visa.",
+            },
+            {
+              label: "Step 3",
+              title: "Due Diligence",
+              description:
+                "Independent legal and title due diligence on the selected asset, coordinated with licensed Argentine counsel and a notary public.",
+            },
+            {
+              label: "Step 4",
+              title: "Investment & Closing",
+              description:
+                "Funds are transferred through compliant banking channels and the deed is executed at the notary, with proof of investment prepared for migration filing.",
+            },
+            {
+              label: "Step 5",
+              title: "Residency Application",
+              description:
+                "Your residency application is filed with Migraciones, with case management through to approval and issuance of your DNI.",
+            },
+          ]}
+        />
       </EditorialSection>
       
       {/* CTA Section */}

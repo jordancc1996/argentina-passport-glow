@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
+import ScrollytellingSteps from "@/components/ScrollytellingSteps";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -124,8 +125,8 @@ const GoldenVisaProgram = () => {
       
       {/* Investment Requirements */}
       <EditorialSection>
-        <div className="grid md:grid-cols-2 gap-16 text-left">
-          <div>
+        <div className="text-left">
+          <div className="max-w-2xl">
             <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">
               Investment Minimums
             </h2>
@@ -165,38 +166,36 @@ const GoldenVisaProgram = () => {
               </Link>
             </p>
           </div>
-          
-          <div>
-            <h2 className="font-serif text-xl-editorial mb-6 tracking-wide">
-              Program Timeline
-            </h2>
-            <div className="space-y-6">
-              <div className="border-l-2 border-gold pl-6">
-                <p className="text-sm text-gold font-semibold uppercase tracking-wider mb-1">Now</p>
-                <h3 className="font-serif text-lg mb-2">Early Registration Open</h3>
-                <p className="text-text-secondary text-sm">
-                  Join the priority waitlist for first-mover advantages when the program launches.
-                </p>
-              </div>
-              
-              <div className="border-l-2 border-border pl-6">
-                <p className="text-sm text-text-muted font-semibold uppercase tracking-wider mb-1">Q1 2026</p>
-                <h3 className="font-serif text-lg mb-2">Final Legislation</h3>
-                <p className="text-text-secondary text-sm">
-                  Expected passage of enabling legislation and regulatory framework.
-                </p>
-              </div>
-              
-              <div className="border-l-2 border-border pl-6">
-                <p className="text-sm text-text-muted font-semibold uppercase tracking-wider mb-1">Q2 2026</p>
-                <h3 className="font-serif text-lg mb-2">Applications Open</h3>
-                <p className="text-text-secondary text-sm">
-                  Official program launch with priority processing for waitlist members.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
+      </EditorialSection>
+
+      {/* Program Timeline — Scrollytelling */}
+      <EditorialSection centered={false} className="bg-secondary/30">
+        <ScrollytellingSteps
+          eyebrow="Program Timeline"
+          heading="A short window to position early"
+          intro="The Argentina Golden Visa is moving from announcement to active program. Each milestone unlocks specific advantages for early-positioned investors."
+          steps={[
+            {
+              label: "Now",
+              title: "Early Registration Open",
+              description:
+                "Join the priority waitlist for first-mover advantages when the program launches.",
+            },
+            {
+              label: "Q1 2026",
+              title: "Final Legislation",
+              description:
+                "Expected passage of enabling legislation and regulatory framework (subject to final regulation).",
+            },
+            {
+              label: "Q2 2026",
+              title: "Applications Open",
+              description:
+                "Official program launch with priority processing for waitlist members.",
+            },
+          ]}
+        />
       </EditorialSection>
       
       {/* CTA Section */}
