@@ -4,9 +4,12 @@ import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import { motion } from "framer-motion";
+import { useParallax } from "@/hooks/useParallax";
 import resourcesBackground from "@/assets/argentina-flag-resources.jpg";
 
 const Resources = () => {
+  const parallaxY = useParallax(-0.3);
   const officialResources = [
     {
       title: "Argentine Immigration Office (Dirección Nacional de Migraciones)",
@@ -75,9 +78,9 @@ const Resources = () => {
       />
       <div className="pt-20">
         <EditorialSection className="relative min-h-[400px] flex items-center justify-center overflow-hidden">
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${resourcesBackground})` }}
+          <motion.div
+            className="absolute inset-0 scale-110 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${resourcesBackground})`, y: parallaxY }}
           />
           <div className="absolute inset-0 bg-black/60" />
           <div className="relative z-10">

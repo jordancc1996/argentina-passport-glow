@@ -4,9 +4,12 @@ import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { faqData } from "@/data/faqData";
 import { ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { useParallax } from "@/hooks/useParallax";
 import faqBackground from "@/assets/faq-colombia-cityscape.jpg";
 
 const FAQ = () => {
+  const parallaxY = useParallax(-0.3);
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -29,10 +32,10 @@ const FAQ = () => {
         schema={schema}
       />
       <div className="pt-20">
-        <EditorialSection className="relative">
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${faqBackground})` }}
+        <EditorialSection className="relative overflow-hidden">
+          <motion.div
+            className="absolute inset-0 scale-110 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${faqBackground})`, y: parallaxY }}
           />
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative z-10">
