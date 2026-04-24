@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import Hero from "@/components/Hero";
 import EditorialSection from "@/components/EditorialSection";
 import SEO from "@/components/SEO";
+import ScrollytellingSteps from "@/components/ScrollytellingSteps";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import goldenVisaHero from "@/assets/argentina-golden-visa-2026.jpg";
