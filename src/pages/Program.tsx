@@ -80,32 +80,46 @@ const Program = () => {
         </div>
       </EditorialSection>
       
-      <EditorialSection>
-        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Application Process</h2>
-        <div className="max-w-3xl mx-auto text-left space-y-8">
-          <div className="border-l-2 border-gold pl-8">
-            <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Initial Consultation</h3>
-            <p className="text-body text-text-secondary tracking-wide">
-              Comprehensive assessment of your investment objectives and residency goals. Our team provides detailed guidance on investment options and program requirements.
-            </p>
-          </div>
-          
-          <div className="border-l-2 border-gold pl-8">
-            <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Documentation & Investment</h3>
-            <p className="text-body text-text-secondary tracking-wide">
-              Complete preparation of required documentation and facilitation of your investment. We handle all legal requirements and coordinate with local authorities.
-            </p>
-          </div>
-          
-          <div className="border-l-2 border-gold pl-8">
-            <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Residency Approval</h3>
-            <p className="text-body text-text-secondary tracking-wide">
-              Final review and approval process typically completed within 6-8 months. Upon approval, receive your temporary residence visa and begin your Argentine residency journey.
-            </p>
-          </div>
-        </div>
-        
-        <div className="mt-12 text-center">
+      <EditorialSection centered={false}>
+        <ScrollytellingSteps
+          eyebrow="A Bespoke Process"
+          heading="From first conversation to approved residency"
+          intro="Our advisory team guides qualified investors through every stage — discreetly, methodically, and in close coordination with licensed immigration counsel."
+          steps={[
+            {
+              label: "Step 1",
+              title: "Initial Consultation",
+              description:
+                "Comprehensive assessment of your investment objectives and residency goals. Our team provides detailed guidance on investment options and program requirements.",
+            },
+            {
+              label: "Step 2",
+              title: "Eligibility & Strategy",
+              description:
+                "We evaluate your profile against the program's qualifying criteria and design an investment route tailored to your timeline, family situation, and risk tolerance.",
+            },
+            {
+              label: "Step 3",
+              title: "Documentation & Investment",
+              description:
+                "Complete preparation of required documentation and facilitation of your investment. We handle all legal requirements and coordinate with local authorities.",
+            },
+            {
+              label: "Step 4",
+              title: "Application Filing",
+              description:
+                "Your dossier is filed with the Dirección Nacional de Migraciones by licensed immigration counsel, with full ongoing case management until decision.",
+            },
+            {
+              label: "Step 5",
+              title: "Residency Approval",
+              description:
+                "Final review and approval process typically completed within 6-8 months. Upon approval, receive your temporary residence visa and begin your Argentine residency journey.",
+            },
+          ]}
+        />
+
+        <div className="mt-16 text-center">
           <p className="text-body text-text-secondary mb-6 tracking-wide">
             Ready to begin your application?
           </p>
