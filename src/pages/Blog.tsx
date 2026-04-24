@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 import { Calendar, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { blogPosts } from "@/data/blogData";
+import { useParallax } from "@/hooks/useParallax";
 import heroImage from "@/assets/blog-hero-argentina-mountains.jpg";
 
 const Blog = () => {
+  const parallaxY = useParallax(-0.3);
   const schema = {
     "@context": "https://schema.org",
     "@type": "Blog",
@@ -39,10 +41,10 @@ const Blog = () => {
       
       <main>
         <section className="relative min-h-[50vh] flex items-start justify-center overflow-hidden -mt-10 md:-mt-14">
-          {/* Background Image */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${heroImage})` }}
+          {/* Background Image with parallax */}
+          <motion.div
+            className="absolute inset-0 scale-110 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${heroImage})`, y: parallaxY }}
           />
           {/* Top gradient for nav readability */}
           <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/50 to-transparent z-[1]" />
