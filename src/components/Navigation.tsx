@@ -6,6 +6,7 @@ const navLinks = [
   { path: "/about", label: "About" },
   { path: "/program", label: "The Program" },
   { path: "/research", label: "Research & Intelligence" },
+  { path: "/industry-news", label: "Industry News" },
   { path: "/contact", label: "Contact Us" },
 ];
 
