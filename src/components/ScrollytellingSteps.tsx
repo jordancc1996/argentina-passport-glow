@@ -37,7 +37,7 @@ const ScrollytellingSteps = ({
   steps,
   className = "",
 }: ScrollytellingStepsProps) => {
-  const stepRefs = useRef<Array<HTMLDivElement | null>>([]);
+  const stepRefs = useRef<Array<HTMLLIElement | null>>([]);
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
