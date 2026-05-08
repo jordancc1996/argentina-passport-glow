@@ -6,7 +6,7 @@ const Compliance = () => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Compliance & Disclosures",
+    name: "Compliance and Disclosures",
     description: "Compliance disclosures, AML/KYC policy, and terms of service for Argentina Residence Advisory.",
     publisher: {
       "@type": "Organization",
@@ -17,7 +17,7 @@ const Compliance = () => {
   return (
     <Layout>
       <SEO
-        title="Compliance & Disclosures | Argentina Residence"
+        title="Compliance and Disclosures | Argentina Residence"
         description="Compliance disclosures, AML/KYC policy, and terms of service for Argentina Residence Advisory."
         canonical="/compliance"
         schema={schema}
@@ -25,7 +25,7 @@ const Compliance = () => {
 
       <main className="section-padding">
         <div className="max-w-[800px] mx-auto px-4 md:px-8">
-          <h1 className="font-serif text-3xl md:text-4xl mb-4">Compliance & Disclosures</h1>
+          <h1 className="font-serif text-3xl md:text-4xl mb-4">Compliance and Disclosures</h1>
           <p className="text-muted-foreground text-sm mb-10">
             Last updated: {new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
           </p>
@@ -50,7 +50,7 @@ const Compliance = () => {
 
           {/* Professional Network */}
           <section className="mb-12">
-            <h2 className="font-serif text-2xl mb-4">Professional Network & Referral Relationships</h2>
+            <h2 className="font-serif text-2xl mb-4">Professional Network and Referral Relationships</h2>
             <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
               <p>
                 ARA maintains relationships with independent immigration attorneys, tax advisors, real estate professionals, and other service providers in Argentina and internationally. When we refer clients to these professionals, we may receive referral fees or commissions. Any such arrangements will be disclosed to clients prior to engagement.
@@ -63,12 +63,12 @@ const Compliance = () => {
 
           {/* AML/KYC Policy */}
           <section className="mb-12">
-            <h2 className="font-serif text-2xl mb-4">Anti-Money Laundering (AML) & Know Your Client (KYC) Policy</h2>
+            <h2 className="font-serif text-2xl mb-4">Anti-Money Laundering (AML) and Know Your Client (KYC) Policy</h2>
             <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
               <p>
                 ARA is committed to the highest standards of anti-money laundering compliance and adheres to applicable Argentine and international AML/KYC regulations. We implement the following measures:
               </p>
-              <h3 className="font-serif text-lg text-foreground mt-6 mb-2">Client Identification & Verification</h3>
+              <h3 className="font-serif text-lg text-foreground mt-6 mb-2">Client Identification and Verification</h3>
               <ul className="list-disc pl-6 space-y-2">
                 <li>All prospective clients must provide valid government-issued identification before engagement.</li>
                 <li>We verify the identity of all principals, beneficial owners, and authorized representatives.</li>

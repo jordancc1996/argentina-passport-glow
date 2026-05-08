@@ -95,13 +95,13 @@ const Program = () => {
             },
             {
               label: "Step 2",
-              title: "Eligibility & Strategy",
+              title: "Eligibility and Strategy",
               description:
                 "We evaluate your profile against the program's qualifying criteria and design an investment route tailored to your timeline, family situation, and risk tolerance.",
             },
             {
               label: "Step 3",
-              title: "Documentation & Investment",
+              title: "Documentation and Investment",
               description:
                 "Complete preparation of required documentation and facilitation of your investment. We handle all legal requirements and coordinate with local authorities.",
             },

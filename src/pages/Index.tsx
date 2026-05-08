@@ -45,7 +45,7 @@ const Index = () => {
         schema={schema}
       />
       <Hero
-        title="Argentina Residence & Citizenship by Investment"
+        title="Argentina Residence and Citizenship by Investment"
         subtitle="Live and invest in South America's most dynamic economy"
         backgroundImage={heroNightImage}
         ctaText="Explore Your Options"
@@ -113,7 +113,7 @@ const Index = () => {
         </div>
       </EditorialSection>
 
-      {/* Trust & Credibility Section */}
+      {/* Trust and Credibility Section */}
       <EditorialSection className="bg-secondary/30">
         <h2 className="font-serif text-xl-editorial mb-4 tracking-wide">
           Guided by Legal Excellence
@@ -135,7 +135,7 @@ const Index = () => {
             </p>
           </div>
           <div className="border-l-2 border-gold pl-6">
-            <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">Transparent & Independent</h3>
+            <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">Transparent and Independent</h3>
             <p className="text-sm text-text-secondary tracking-wide">
               Argentina Residence is an independent advisory practice — we provide unbiased intelligence to help you make informed decisions about your residency journey.
             </p>
@@ -146,7 +146,7 @@ const Index = () => {
       {/* Blog Preview Section */}
       <EditorialSection>
         <div className="text-center mb-12">
-          <h2 className="font-serif text-xl-editorial mb-4 tracking-wide">Latest Insights & Guides</h2>
+          <h2 className="font-serif text-xl-editorial mb-4 tracking-wide">Latest Insights and Guides</h2>
           <p className="text-body text-text-secondary max-w-2xl mx-auto">
             Stay informed with our latest articles on Argentina residency, investment opportunities, and expat lifestyle.
           </p>
@@ -213,7 +213,7 @@ const Index = () => {
       </EditorialSection>
 
       <EditorialSection>
-        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Official Resources & Further Reading</h2>
+        <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Official Resources and Further Reading</h2>
         <p className="text-body text-text-secondary mb-8 max-w-3xl mx-auto tracking-wide">
           For official government information and comprehensive investment migration news, we recommend the following authoritative sources:
         </p>

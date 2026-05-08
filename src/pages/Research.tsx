@@ -51,7 +51,7 @@ const Research = () => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Research & Intelligence",
+    name: "Research and Intelligence",
     description: "Argentina Residence Advisory research, market intelligence, and investment analysis.",
     publisher: {
       "@type": "Organization",
@@ -64,7 +64,7 @@ const Research = () => {
   return (
     <Layout>
       <SEO
-        title="Research & Intelligence | Argentina Residence"
+        title="Research and Intelligence | Argentina Residence"
         description="In-depth research and market intelligence on Argentine investment, residency programs, and real estate opportunities."
         canonical="/research"
         schema={schema}
@@ -79,7 +79,7 @@ const Research = () => {
 
         <motion.div className="relative z-10 text-center max-w-4xl mx-auto px-4 md:px-8 py-20" style={{ opacity }}>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-8 tracking-wide leading-tight">
-            Argentina Residence Advisory —<br />Research & Intelligence
+            Argentina Residence Advisory —<br />Research and Intelligence
           </h1>
           <Separator className="mx-auto max-w-[120px] bg-primary h-[1px]" />
         </motion.div>

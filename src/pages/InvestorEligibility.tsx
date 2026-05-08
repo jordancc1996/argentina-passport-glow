@@ -314,7 +314,7 @@ const InvestorEligibility = () => {
                       <RadioGroupItem value="$250k-$499k" id="budget-2" />
                       <div>
                         <p className="font-semibold">$250,000 - $499,000</p>
-                        <p className="text-sm text-text-secondary">Bonds & funds eligible</p>
+                        <p className="text-sm text-text-secondary">Bonds and funds eligible</p>
                       </div>
                     </div>
                     <span className="text-xs bg-gold/20 text-gold px-2 py-1 rounded-full">Priority</span>
@@ -331,7 +331,7 @@ const InvestorEligibility = () => {
                       <RadioGroupItem value="$500k+" id="budget-3" />
                       <div>
                         <p className="font-semibold">$500,000+</p>
-                        <p className="text-sm text-text-secondary">Business creation & VIP track</p>
+                        <p className="text-sm text-text-secondary">Business creation and VIP track</p>
                       </div>
                     </div>
                     <span className="text-xs bg-gold text-primary px-2 py-1 rounded-full">VIP</span>

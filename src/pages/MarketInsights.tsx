@@ -67,14 +67,14 @@ const MarketInsights = () => {
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Key Investment Sectors</h2>
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Agriculture & Agribusiness</h3>
+            <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Agriculture and Agribusiness</h3>
             <p className="text-editorial text-text-secondary mb-6 tracking-wide">
               Argentina is one of the world's leading agricultural producers, offering opportunities in 
               crop production, livestock, and food processing technologies.
             </p>
           </div>
           <div>
-            <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Technology & Innovation</h3>
+            <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Technology and Innovation</h3>
             <p className="text-editorial text-text-secondary mb-6 tracking-wide">
               Buenos Aires has emerged as a major tech hub in Latin America, with a thriving startup 
               ecosystem and world-class software development talent.
@@ -88,7 +88,7 @@ const MarketInsights = () => {
             </p>
           </div>
           <div>
-            <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Energy & Mining</h3>
+            <h3 className="font-serif text-lg-editorial mb-4 tracking-wide">Energy and Mining</h3>
             <p className="text-editorial text-text-secondary mb-6 tracking-wide">
               With vast shale oil reserves and renewable energy potential, Argentina presents 
               significant opportunities in the energy sector.
