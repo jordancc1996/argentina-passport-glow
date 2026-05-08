@@ -96,7 +96,8 @@ export default {
         'widest': '0.1em',
       },
       spacing: {
-        'section': '6rem',
+        'section': '8rem',
+        'section-sm': '5rem',
         'container': '2rem',
       },
       borderRadius: {
