@@ -48,14 +48,15 @@ const Hero = ({
       
       {/* Content with Parallax Effects */}
       <motion.div 
-        className="relative z-10 text-center max-w-4xl mx-auto px-4 md:px-8"
+        className="relative z-10 text-center max-w-3xl mx-auto px-6 md:px-10"
         style={{ opacity }}
         initial={{ opacity: 1, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
         <motion.h1 
-          className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-white mb-6 md:mb-8 tracking-wide leading-tight"
+          className="font-serif font-light text-[2.25rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] mb-7 md:mb-10 leading-[1.1]"
+          style={{ color: "rgba(255,255,255,0.94)", letterSpacing: "0.005em" }}
           initial={{ opacity: 1, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
@@ -65,7 +66,8 @@ const Hero = ({
         
         {subtitle && (
           <motion.h2 
-            className="font-serif text-lg sm:text-xl md:text-3xl text-white/90 mb-8 md:mb-12 tracking-wide max-w-3xl mx-auto"
+            className="font-serif font-light italic text-base sm:text-lg md:text-2xl mb-10 md:mb-14 max-w-2xl mx-auto leading-[1.4]"
+            style={{ color: "rgba(255,255,255,0.78)", letterSpacing: "0.01em" }}
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
@@ -76,7 +78,8 @@ const Hero = ({
         
         {description && (
           <motion.p 
-            className="text-sm sm:text-base md:text-lg text-white/80 max-w-2xl mx-auto tracking-wide"
+            className="font-sans text-sm md:text-base max-w-xl mx-auto leading-[1.7]"
+            style={{ color: "rgba(255,255,255,0.72)", letterSpacing: "0.01em", fontWeight: 300 }}
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.9 }}
@@ -87,19 +90,19 @@ const Hero = ({
 
         {ctaText && ctaLink && (
           <motion.div
-            className="mt-8"
+            className="mt-12 md:mt-14"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.1 }}
           >
             <Link
               to={ctaLink}
-              className="inline-block font-sans font-semibold text-[0.85rem] tracking-widest uppercase bg-primary text-primary-foreground px-10 py-4 hover:bg-primary/80 hover:-translate-y-0.5 transition-all duration-300"
+              className="inline-block font-sans font-medium text-[0.7rem] tracking-[0.22em] uppercase bg-primary text-primary-foreground px-11 py-[14px] hover:bg-primary/80 hover:-translate-y-0.5 transition-all duration-300"
             >
               {ctaText}
             </Link>
             {ctaSubline && (
-              <p className="mt-3 text-sm text-white/70 font-sans tracking-wide">
+              <p className="mt-4 text-xs font-sans tracking-[0.08em]" style={{ color: "rgba(255,255,255,0.6)" }}>
                 {ctaSubline}
               </p>
             )}
