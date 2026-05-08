@@ -84,7 +84,8 @@
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
 
     /* Spacing */
-    --section-padding: 6rem;
+    --section-padding: 8rem;
+    --section-padding-sm: 5rem;
     --container-padding: 2rem;
     --container-max: 1200px;
 
@@ -178,8 +179,15 @@
 
   /* Sophisticated Layouts */
   .section-padding {
-    padding-top: var(--section-padding);
-    padding-bottom: var(--section-padding);
+    padding-top: var(--section-padding-sm);
+    padding-bottom: var(--section-padding-sm);
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: var(--section-padding);
+      padding-bottom: var(--section-padding);
+    }
   }
 
   .container-padding {
