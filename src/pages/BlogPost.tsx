@@ -69,11 +69,11 @@ const BlogPost = () => {
             transition={{ duration: 0.6 }}
           >
             <Link 
-              to="/blog"
+              to="/research"
               className="inline-flex items-center gap-2 text-primary hover:underline mb-8"
             >
               <ArrowLeft className="w-4 h-4" />
-              Back to Blog
+              Back to Research and Intelligence
             </Link>
 
             <div className="mb-6">
