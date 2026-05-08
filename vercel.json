@@ -27,6 +27,11 @@
       "source": "/contact-us",
       "destination": "/contact",
       "statusCode": 301
+    },
+    {
+      "source": "/blog",
+      "destination": "/research",
+      "statusCode": 301
     }
   ],
   "rewrites": [
