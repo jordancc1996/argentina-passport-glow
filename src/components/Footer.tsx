@@ -51,7 +51,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/resources" className="text-muted-foreground hover:text-primary transition-colors">
-                  Guides & Resources
+                  Guides and Resources
                 </Link>
               </li>
               <li>
@@ -73,7 +73,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link to="/compliance" className="text-muted-foreground hover:text-primary transition-colors">
-                  Compliance & Disclosures
+                  Compliance and Disclosures
                 </Link>
               </li>
               <li>
