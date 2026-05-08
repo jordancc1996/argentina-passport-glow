@@ -24,7 +24,7 @@ export const blogPosts: BlogPost[] = [
     category: "Market Intelligence",
     slug: "argentine-investment-landscape-golden-visa-value-proposition",
     author: "Argentina Residence Advisory",
-    image: "/placeholder.svg",
+    image: "/argentine-investment-landscape.jpg",
     seoTitle: "The Argentine Investment Landscape & Golden Visa Value Proposition | Argentina Residence",
     seoDescription: "An in-depth analysis of Argentina's macroeconomic stabilization, structural assets, and how the upcoming Golden Visa program creates a strategic entry point for global investors.",
     keywords: ["Argentina investment", "Argentina Golden Visa", "Vaca Muerta", "Lithium Triangle", "RIGI", "Buenos Aires investment"],
