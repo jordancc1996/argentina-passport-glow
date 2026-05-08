@@ -260,3 +260,73 @@
     opacity: 0.8;
   }
 }
+
+/* === Quiet Luxury Refinements ===
+   Subtle, global polish — no structural change.
+   Inspired by private wealth firms and editorial publications.
+*/
+@layer base {
+  /* Calmer body weight and refined rendering */
+  body {
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Headings: editorial restraint */
+  h1 { font-weight: 500; letter-spacing: 0.003em; }
+  h2 { font-weight: 500; letter-spacing: 0.005em; }
+  h3, h4 { font-weight: 500; letter-spacing: 0.008em; }
+
+  /* Refined paragraph rhythm in long-form content */
+  .prose p,
+  article p {
+    color: hsl(var(--muted-foreground));
+  }
+
+  /* Hairline dividers — feels more institutional */
+  hr,
+  .border-t,
+  .border-b,
+  .border-border {
+    border-color: hsl(var(--border) / 0.6);
+  }
+
+  /* Calmer focus ring */
+  :focus-visible {
+    outline: 1px solid hsl(var(--primary) / 0.5);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  /* Eyebrow / kicker label — small caps, wide tracking */
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+  }
+
+  /* Editorial body — for long-form prose */
+  .text-editorial-body {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    letter-spacing: 0.005em;
+    color: hsl(var(--text-secondary));
+  }
+
+  /* Soft luxury shadow — barely there */
+  .shadow-quiet {
+    box-shadow: 0 1px 2px hsl(var(--foreground) / 0.04),
+                0 8px 24px -12px hsl(var(--foreground) / 0.08);
+  }
+
+  /* Hairline border helper */
+  .border-hairline {
+    border-width: 1px;
+    border-color: hsl(var(--border) / 0.6);
+  }
+}
