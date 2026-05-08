@@ -118,95 +118,111 @@ const Navigation = () => {
         </div>
       </nav>
 
-      {/* ── Full-screen overlay ── */}
+      {/* ── Backdrop ── */}
       <div
-        className="fixed inset-0 z-[9999] flex flex-col transition-all duration-[400ms] ease-in-out"
+        onClick={() => setIsOpen(false)}
+        aria-hidden="true"
+        className="fixed inset-0 z-[9998] transition-opacity duration-[250ms] ease-in-out"
         style={{
-          backgroundColor: "hsla(150, 5%, 6%, 0.98)",
+          backgroundColor: "hsla(150, 5%, 4%, 0.55)",
+          backdropFilter: "blur(6px)",
+          WebkitBackdropFilter: "blur(6px)",
           opacity: isOpen ? 1 : 0,
           visibility: isOpen ? "visible" : "hidden",
           pointerEvents: isOpen ? "auto" : "none",
+        }}
+      />
+
+      {/* ── Left slide-out sidebar ── */}
+      <aside
+        role="dialog"
+        aria-modal="true"
+        aria-label="Main navigation"
+        className="fixed top-0 left-0 h-full z-[9999] flex flex-col transition-transform duration-[250ms] ease-in-out"
+        style={{
+          width: "min(340px, 88vw)",
+          backgroundColor: "hsla(150, 5%, 6%, 0.98)",
+          backdropFilter: "blur(12px)",
+          WebkitBackdropFilter: "blur(12px)",
+          borderRight: "1px solid hsla(45, 29%, 65%, 0.18)",
+          transform: isOpen ? "translateX(0)" : "translateX(-100%)",
+          boxShadow: isOpen ? "0 0 60px rgba(0,0,0,0.5)" : "none",
         }}
       >
         {/* Spacer for top bar */}
         <div style={{ height: 72, flexShrink: 0 }} />
 
+        {/* Gold hairline divider */}
+        <div
+          style={{
+            height: 1,
+            background:
+              "linear-gradient(to right, transparent, hsla(45, 29%, 65%, 0.35), transparent)",
+            marginInline: 32,
+          }}
+        />
+
         {/* Nav links */}
-        <div className="flex-1 flex flex-col justify-center px-8 md:px-16 lg:px-24">
-          <ul className="list-none p-0 m-0 flex flex-col gap-2 md:gap-4">
-            {navLinks.map((item, i) => {
+        <nav className="flex-1 flex flex-col px-8 pt-10">
+          <ul className="list-none p-0 m-0 flex flex-col">
+            {navLinks.map((item) => {
               const isActive = location.pathname === item.path;
               return (
-                <li
-                  key={item.path}
-                  className="transition-all duration-500 ease-out"
-                  style={{
-                    opacity: isOpen ? 1 : 0,
-                    transform: isOpen ? "translateY(0)" : "translateY(20px)",
-                    transitionDelay: isOpen ? `${i * 50}ms` : "0ms",
-                  }}
-                >
+                <li key={item.path} className="py-1">
                   <Link
                     to={item.path}
                     onClick={() => setIsOpen(false)}
-                    className="inline-block transition-colors duration-300"
+                    className="block transition-opacity duration-[250ms] ease-in-out hover:opacity-70"
                     style={{
                       fontFamily: "'Playfair Display', Georgia, serif",
-                      fontSize: "clamp(36px, 5vw, 56px)",
+                      fontSize: 22,
                       fontWeight: 400,
+                      letterSpacing: "0.01em",
                       color: isActive
                         ? "hsl(45, 29%, 65%)"
-                        : "#ffffff",
-                      lineHeight: 1.2,
+                        : "rgba(255,255,255,0.92)",
+                      lineHeight: 1.4,
                       textDecoration: "none",
+                      paddingBlock: 10,
                     }}
-                    onMouseEnter={(e) =>
-                      (e.currentTarget.style.color = "hsl(45, 29%, 65%)")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.currentTarget.style.color = isActive
-                        ? "hsl(45, 29%, 65%)"
-                        : "#ffffff")
-                    }
                   >
                     {item.label}
                   </Link>
+                  <div
+                    style={{
+                      height: 1,
+                      backgroundColor: "hsla(45, 29%, 65%, 0.14)",
+                    }}
+                  />
                 </li>
               );
             })}
           </ul>
 
           {/* Bottom CTA */}
-          <div
-            className="mt-12 transition-all duration-500 ease-out"
-            style={{
-              opacity: isOpen ? 1 : 0,
-              transform: isOpen ? "translateY(0)" : "translateY(20px)",
-              transitionDelay: isOpen ? `${navLinks.length * 50 + 100}ms` : "0ms",
-            }}
-          >
+          <div className="mt-auto pb-10 pt-12">
             <Link
               to="/contact"
               onClick={() => setIsOpen(false)}
-              className="inline-block transition-all duration-300 hover:bg-white hover:text-foreground"
+              className="inline-block w-full text-center transition-all duration-[250ms] ease-in-out hover:bg-white hover:text-foreground"
               style={{
                 fontFamily: "'Montserrat', sans-serif",
-                fontWeight: 600,
-                fontSize: "0.85rem",
-                letterSpacing: "1.4px",
+                fontWeight: 500,
+                fontSize: "0.72rem",
+                letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#ffffff",
-                border: "1px solid #ffffff",
+                color: "rgba(255,255,255,0.92)",
+                border: "1px solid hsla(45, 29%, 65%, 0.5)",
                 backgroundColor: "transparent",
-                padding: "16px 40px",
+                padding: "14px 28px",
                 textDecoration: "none",
               }}
             >
               Explore Your Options
             </Link>
           </div>
-        </div>
-      </div>
+        </nav>
+      </aside>
     </>
   );
 };
