@@ -19,30 +19,30 @@ const NewsCard = ({ article, index = 0 }: NewsCardProps) => {
     >
       <Link
         to={`/industry-news/${article.slug}`}
-        className="bg-card border border-border rounded-lg overflow-hidden h-full flex flex-col hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer block"
+        className="bg-card border border-border/60 rounded-xl overflow-hidden h-full flex flex-col shadow-[0_1px_2px_rgba(0,0,0,0.04)] hover:shadow-[0_24px_48px_-24px_rgba(0,0,0,0.18)] hover:-translate-y-1 hover:border-border transition-all duration-500 ease-out cursor-pointer block"
       >
-        <div className="p-6 flex-1 flex flex-col">
-          <div className="flex items-center gap-4 text-sm text-text-secondary mb-4">
+        <div className="px-8 md:px-10 pt-10 pb-12 flex-1 flex flex-col">
+          <div className="flex items-center gap-3 text-[0.7rem] uppercase tracking-[0.16em] text-muted-foreground mb-7">
             {article.source && (
-              <span className="text-primary font-medium">{article.source}</span>
+              <>
+                <span className="text-primary font-medium">{article.source}</span>
+                <span className="text-border">·</span>
+              </>
             )}
-            <div className="flex items-center gap-1">
-              <Calendar className="w-4 h-4" />
-              <time dateTime={article.date}>
+            <time dateTime={article.date}>
                 {new Date(article.date).toLocaleDateString("en-US", {
                   year: "numeric",
-                  month: "short",
+                  month: "long",
                   day: "numeric",
                 })}
-              </time>
-            </div>
+            </time>
           </div>
 
-          <h2 className="text-2xl font-serif mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
+          <h2 className="text-2xl md:text-[1.75rem] font-serif font-light leading-[1.25] tracking-[0.005em] mb-6 text-foreground group-hover:text-primary transition-colors duration-300">
             {article.title}
           </h2>
 
-          <p className="text-text-secondary flex-1">{article.summary}</p>
+          <p className="text-text-secondary leading-[1.8] font-light flex-1">{article.summary}</p>
         </div>
       </Link>
     </motion.article>
