@@ -86,32 +86,32 @@ const Research = () => {
       </section>
 
       {/* Article Grid */}
-      <section className="bg-background py-20 md:py-28">
-        <div className="max-w-[1200px] mx-auto px-4 md:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+      <section className="bg-background py-28 md:py-40">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-20 md:gap-y-24">
             {sortedPosts.map((post) => (
               <Link
                 key={post.id}
                 to={`/blog/${post.slug}`}
                 className="group block"
               >
-                <div className="overflow-hidden rounded-sm mb-5">
-                  <AspectRatio ratio={16 / 9}>
+                <div className="overflow-hidden rounded-md mb-8">
+                  <AspectRatio ratio={3 / 2}>
                     <img
                       src={post.image || "/placeholder.svg"}
                       alt={post.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 brightness-90"
+                      className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]"
                       loading="lazy"
                     />
                   </AspectRatio>
                 </div>
-                <p className="font-body text-xs uppercase tracking-[0.08em] text-muted-foreground mb-2">
+                <p className="font-body text-[0.7rem] uppercase tracking-[0.16em] text-muted-foreground mb-5">
                   {new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
                 </p>
-                <h2 className="font-serif text-lg md:text-xl text-foreground mb-3 leading-snug group-hover:text-primary transition-colors duration-300">
+                <h2 className="font-serif font-light text-xl md:text-2xl text-foreground mb-5 leading-[1.3] tracking-[0.005em] group-hover:text-primary transition-colors duration-300">
                   {post.title}
                 </h2>
-                <p className="font-body text-sm text-muted-foreground leading-relaxed line-clamp-2">
+                <p className="font-body text-[0.95rem] text-muted-foreground leading-[1.8] font-light line-clamp-3">
                   {post.excerpt}
                 </p>
               </Link>
