@@ -24,11 +24,21 @@ export const blogPosts: BlogPost[] = [
     category: "Market Intelligence",
     slug: "argentine-investment-landscape-golden-visa-value-proposition",
     author: "Argentina Residence Advisory",
-    image: "/placeholder.svg",
+    image: "/argentine-investment-landscape.jpg",
     seoTitle: "The Argentine Investment Landscape & Golden Visa Value Proposition | Argentina Residence",
     seoDescription: "An in-depth analysis of Argentina's macroeconomic stabilization, structural assets, and how the upcoming Golden Visa program creates a strategic entry point for global investors.",
     keywords: ["Argentina investment", "Argentina Golden Visa", "Vaca Muerta", "Lithium Triangle", "RIGI", "Buenos Aires investment"],
     content: `
+      <div class="mb-8">
+        <img
+          src="/argentine-investment-landscape.jpg"
+          alt="Patagonia mountains and lake — Argentine investment landscape"
+          class="w-full h-auto rounded-lg"
+          width="1280"
+          height="1920"
+        />
+      </div>
+
       <p class="mb-6">For the past two decades, the Argentine economy has been defined by volatility, capital controls and fiscal deficits. This historical pattern is well documented with brief periods of stabilization followed by rapid inflation and currency devaluation. However, new dynamics and policy shifts indicate a departure from this historical cycle for Argentina. The current alignment of fiscal discipline, monetary tightening and deregulation presents an incredible opportunity ripe for foreign direct investment. The Argentinian Golden Visa also aims to help facilitate this capital injection and deliver Argentina into a new period of economic growth.</p>
 
       <p class="mb-6">The case for capital deployment in Argentina is no longer based solely on speculative asset pricing. It is grounded in a fundamental restructuring of the state's economic role, the removal of capital barriers and the leveraging of significant human capital assets. This shift is not rhetorical. It is evidenced by key macroeconomic indicators, legislative reforms and a renewed focus on sectors where Argentina holds a comparative global advantage. Argentina is set to introduce its Golden Visa program in the second half of 2026 — a program that will create unique opportunities for investors who are paying attention to the country now.</p>
