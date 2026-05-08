@@ -31,7 +31,7 @@ const GoldenVisaProgram = () => {
     <Layout>
       <SEO 
         title="Argentina Golden Visa 2026 | Fast-Track Investor Residency"
-        description="Argentina's new Golden Visa launches 2026. Get fast-track residency with $100K+ investment. Program details, timeline & eligibility inside."
+        description="Argentina's new Golden Visa launches 2026. Get fast-track residency with $100K+ investment. Program details, timeline and eligibility inside."
         canonical="/guides/argentina-golden-visa-program"
         schema={schema}
       />

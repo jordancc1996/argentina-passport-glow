@@ -12,7 +12,7 @@ const RealEstateInvestment = () => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Where to Invest: Real Estate & Funds for Argentina Residency",
+    "headline": "Where to Invest: Real Estate and Funds for Argentina Residency",
     "description": "Discover qualifying investments for Argentina's Golden Visa including luxury real estate in Palermo and Puerto Madero, plus approved investment funds.",
     "author": {
       "@type": "Organization",
@@ -46,7 +46,7 @@ const RealEstateInvestment = () => {
       name: "Recoleta",
       description: "Classic European-style neighborhood known for French architecture and cultural institutions.",
       priceRange: "$120,000 - $1.5M",
-      highlights: ["Historic charm", "Museums & galleries", "Upscale dining", "Central location"],
+      highlights: ["Historic charm", "Museums and galleries", "Upscale dining", "Central location"],
       appreciation: "8-10% annual growth"
     },
     {
@@ -68,13 +68,13 @@ const RealEstateInvestment = () => {
       />
       <Hero
         title="Investment Options"
-        subtitle="Real Estate & Funds for Residency"
+        subtitle="Real Estate and Funds for Residency"
         backgroundImage={buenosAiresCityscape}
       />
       
       <EditorialSection>
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">
-          Where to Invest: Real Estate & Funds for Argentina Residency
+          Where to Invest: Real Estate and Funds for Argentina Residency
         </h2>
         <p className="text-editorial text-text-secondary mb-8 tracking-wide max-w-3xl mx-auto">
           Argentina's Golden Visa program accepts investments in qualified real estate and approved 
@@ -309,7 +309,7 @@ const RealEstateInvestment = () => {
             },
             {
               label: "Step 4",
-              title: "Investment & Closing",
+              title: "Investment and Closing",
               description:
                 "Funds are transferred through compliant banking channels and the deed is executed at the notary, with proof of investment prepared for migration filing.",
             },

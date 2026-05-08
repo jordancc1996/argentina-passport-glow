@@ -17,7 +17,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: 8,
-    title: "The Argentine Investment Landscape & The Golden Visa Value Proposition",
+    title: "The Argentine Investment Landscape and The Golden Visa Value Proposition",
     excerpt: "Argentina's fiscal discipline, monetary tightening and deregulation are creating a new paradigm for foreign capital. The upcoming Golden Visa program arrives at a uniquely opportune moment in the country's structural transformation.",
     date: "2026-05-08",
     readTime: "14 min read",
@@ -25,7 +25,7 @@ export const blogPosts: BlogPost[] = [
     slug: "argentine-investment-landscape-golden-visa-value-proposition",
     author: "Argentina Residence Advisory",
     image: "/argentine-investment-landscape.jpg",
-    seoTitle: "The Argentine Investment Landscape & Golden Visa Value Proposition | Argentina Residence",
+    seoTitle: "The Argentine Investment Landscape and Golden Visa Value Proposition | Argentina Residence",
     seoDescription: "An in-depth analysis of Argentina's macroeconomic stabilization, structural assets, and how the upcoming Golden Visa program creates a strategic entry point for global investors.",
     keywords: ["Argentina investment", "Argentina Golden Visa", "Vaca Muerta", "Lithium Triangle", "RIGI", "Buenos Aires investment"],
     content: `
@@ -389,7 +389,7 @@ export const blogPosts: BlogPost[] = [
       <h2 class="text-3xl font-serif mb-6 mt-12">Sources</h2>
       
       <ul class="mb-6 ml-6 list-disc space-y-2">
-        <li>Silver, C., & Morelli, A. (2025, September 2). <a href="https://www.investopedia.com/2025-american-dream-costs-more-than-usd5-million-11796727" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">The 2025 "American Dream" Now Costs More Than 5 Million</a>. Investopedia.</li>
+        <li>Silver, C., and Morelli, A. (2025, September 2). <a href="https://www.investopedia.com/2025-american-dream-costs-more-than-usd5-million-11796727" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">The 2025 "American Dream" Now Costs More Than 5 Million</a>. Investopedia.</li>
         <li>Barrett, W. P. (2025, July 19). <a href="https://www.forbes.com/sites/williampbarrett/2025/07/19/the-best-places-to-retire-abroad-in-2025/" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">The Best Places To Retire Abroad In 2025</a>. Forbes.</li>
         <li>Investopedia. (2025, December 8). <a href="https://www.investopedia.com/a-third-of-americans-look-overseas-for-a-cheaper-retirement-11864041" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">A Third of Americans Look Overseas for a Cheaper Retirement</a>.</li>
         <li>Global Citizen Solutions. (2026, January 5). <a href="https://www.globalcitizensolutions.com/golden-visa/" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">The Top 17 Golden Visa Programs in 2026</a>.</li>
