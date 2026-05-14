@@ -361,7 +361,7 @@ const Privacy = () => {
                   <p className="leading-relaxed">
                     <span className="text-white font-medium">Website:</span>{" "}
                     <a href="https://argentinaresidence.com" className="text-text-cream hover:text-white underline">
-                      www.argentinaresidence.com
+                      argentinaresidence.com
                     </a>
                   </p>
                 </div>

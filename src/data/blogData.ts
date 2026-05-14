@@ -289,7 +289,7 @@ export const blogPosts: BlogPost[] = [
 
       <p class="mb-6">For investors seeking European charm at emerging market prices and are willing to bet on Argentina's economic transformation this opportunity is a generational one. Buenos Aires is still a world-class city and firmly within the buyer's market phase. <strong>The bull market has begun but it is in its early stages</strong> and for those with a solid risk tolerance the opportunity window will remain open.</p>
 
-      <p class="mb-6"><strong>Subscribe to the Argentina Residence newsletter</strong> for the latest updates on Argentine residency, visas, and expat living at <a href="https://argentinaresidence.com" class="text-primary hover:underline font-semibold">www.argentinaresidence.com</a></p>
+      <p class="mb-6"><strong>Subscribe to the Argentina Residence newsletter</strong> for the latest updates on Argentine residency, visas, and expat living at <a href="https://argentinaresidence.com" class="text-primary hover:underline font-semibold">argentinaresidence.com</a></p>
 
       <div class="my-12"></div>
 
@@ -382,7 +382,7 @@ export const blogPosts: BlogPost[] = [
 
       <p class="mb-6">For investors interested in real estate specifically, see our <a href="/blog/buenos-aires-real-estate-bull-market-analysis" class="text-primary hover:underline font-semibold">Buenos Aires real estate bull market analysis</a> for a detailed look at current opportunities.</p>
 
-      <p class="mb-6"><strong>Ready to unlock your path to Argentine residency?</strong> Visit <a href="https://argentinaresidence.com" class="text-primary hover:underline font-semibold">www.argentinaresidence.com</a> to explore your Golden Visa options and start your journey today.</p>
+      <p class="mb-6"><strong>Ready to unlock your path to Argentine residency?</strong> Visit <a href="https://argentinaresidence.com" class="text-primary hover:underline font-semibold">argentinaresidence.com</a> to explore your Golden Visa options and start your journey today.</p>
 
       <div class="my-12"></div>
 
@@ -500,7 +500,7 @@ export const blogPosts: BlogPost[] = [
 
       <p class="mb-6">To understand the broader economic case, read our article on <a href="/blog/american-dream-argentina-golden-visa-solution" class="text-primary hover:underline font-semibold">why the American Dream's rising costs make Argentina's Golden Visa compelling</a>.</p>
 
-      <p class="mb-6">If you want to stay up to date on the Argentinian golden visa news visit <a href="https://argentinaresidence.com" class="text-primary hover:underline font-semibold">www.argentinaresidence.com</a> and <a href="/contact" class="text-primary hover:underline font-semibold">sign up for the newsletter</a>.</p>
+      <p class="mb-6">If you want to stay up to date on the Argentinian golden visa news visit <a href="https://argentinaresidence.com" class="text-primary hover:underline font-semibold">argentinaresidence.com</a> and <a href="/contact" class="text-primary hover:underline font-semibold">sign up for the newsletter</a>.</p>
     `,
     date: "2025-12-20",
     readTime: "8 min read",
