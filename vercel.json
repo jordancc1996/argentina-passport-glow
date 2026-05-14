@@ -11,7 +11,7 @@
         }
       ],
       "destination": "https://argentinaresidence.com/:path*",
-      "statusCode": 301
+      "permanent": true
     },
     {
       "source": "/:path+/",
