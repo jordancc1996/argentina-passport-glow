@@ -7,11 +7,21 @@
       "has": [
         {
           "type": "host",
-          "value": "argentinaresidence.com"
+          "value": "www.argentinaresidence.com"
         }
       ],
-      "destination": "https://www.argentinaresidence.com/:path*",
-      "statusCode": 308
+      "destination": "https://argentinaresidence.com/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*/index.html",
+      "destination": "/:path*",
+      "statusCode": 301
     },
     {
       "source": "/about-argentina",
@@ -51,6 +61,10 @@
         {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
         }
       ]
     }

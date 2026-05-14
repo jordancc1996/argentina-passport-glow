@@ -15,14 +15,14 @@ const Index = () => {
       {
         "@type": "Organization",
         "name": "Argentina Residence",
-        "url": "https://www.argentinaresidence.com",
-        "logo": "https://www.argentinaresidence.com/og-image.jpg",
+        "url": "https://argentinaresidence.com",
+        "logo": "https://argentinaresidence.com/og-image.jpg",
         "description": "A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina",
         "sameAs": []
       },
       {
         "@type": "WebSite",
-        "url": "https://www.argentinaresidence.com",
+        "url": "https://argentinaresidence.com",
         "name": "Argentina Residence",
         "description": "Live and invest in South America's most dynamic economy",
         "publisher": {

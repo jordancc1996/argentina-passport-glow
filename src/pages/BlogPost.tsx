@@ -34,17 +34,17 @@ const BlogPost = () => {
     "publisher": {
       "@type": "Organization",
       "name": "Argentina Residence",
-      "url": "https://www.argentinaresidence.com",
+      "url": "https://argentinaresidence.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.argentinaresidence.com/og-image.jpg"
+        "url": "https://argentinaresidence.com/og-image.jpg"
       }
     },
-    "image": post.image ? `https://www.argentinaresidence.com${post.image}` : "https://www.argentinaresidence.com/og-image.jpg",
-    "url": `https://www.argentinaresidence.com/blog/${post.slug}`,
+    "image": post.image ? `https://argentinaresidence.com${post.image}` : "https://argentinaresidence.com/og-image.jpg",
+    "url": `https://argentinaresidence.com/blog/${post.slug}`,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://www.argentinaresidence.com/blog/${post.slug}`
+      "@id": `https://argentinaresidence.com/blog/${post.slug}`
     },
     "keywords": post.keywords ? post.keywords.join(", ") : undefined,
     "articleSection": post.category,
@@ -124,7 +124,7 @@ const BlogPost = () => {
             {/* Share Buttons Section */}
             <div className="mt-12 pt-8 border-t border-border">
               <ShareButtons
-                url={`https://www.argentinaresidence.com/blog/${post.slug}`}
+                url={`https://argentinaresidence.com/blog/${post.slug}`}
                 title={post.title}
                 excerpt={post.excerpt}
               />

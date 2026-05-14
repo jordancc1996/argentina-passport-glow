@@ -23,7 +23,7 @@ const SEO = ({
   noindex = false,
   article
 }: SEOProps) => {
-  const baseUrl = 'https://www.argentinaresidence.com';
+  const baseUrl = 'https://argentinaresidence.com';
   const fullCanonical = canonical ? `${baseUrl}${canonical}` : baseUrl;
   const fullOgImage = ogImage.startsWith('http') ? ogImage : `${baseUrl}${ogImage}`;
 

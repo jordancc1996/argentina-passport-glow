@@ -57,7 +57,7 @@ const Breadcrumbs = () => {
       "@type": "ListItem",
       "position": index + 1,
       "name": item.label,
-      "item": `https://www.argentinaresidence.com${item.path === '/' ? '' : item.path}`
+      "item": `https://argentinaresidence.com${item.path === '/' ? '' : item.path}`
     }))
   };
 

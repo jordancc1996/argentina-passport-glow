@@ -15,18 +15,18 @@ const Blog = () => {
     "@type": "Blog",
     "name": "Argentina Residence Blog",
     "description": "Latest insights, guides, and updates about Argentina residency, investment, and living as an expat in Argentina.",
-    "url": "https://www.argentinaresidence.com/blog",
+    "url": "https://argentinaresidence.com/blog",
     "publisher": {
       "@type": "Organization",
       "name": "Argentina Residence",
-      "url": "https://www.argentinaresidence.com"
+      "url": "https://argentinaresidence.com"
     },
     "blogPost": blogPosts.map(post => ({
       "@type": "BlogPosting",
       "headline": post.title,
       "description": post.excerpt,
       "datePublished": post.date,
-      "url": `https://www.argentinaresidence.com/blog/${post.slug}`
+      "url": `https://argentinaresidence.com/blog/${post.slug}`
     }))
   };
 
