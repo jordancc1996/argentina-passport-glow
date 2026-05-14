@@ -14,7 +14,7 @@ const About = () => {
       "@type": "Organization",
       "name": "Argentina Residence",
       "description": "A specialized advisory boutique facilitating strategic capital deployment and residency acquisition in Argentina",
-      "url": "https://www.argentinaresidence.com"
+      "url": "https://argentinaresidence.com"
     },
     "about": {
       "@type": "Place",

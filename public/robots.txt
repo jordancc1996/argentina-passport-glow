@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://www.argentinaresidence.com/sitemap.xml
+Sitemap: https://argentinaresidence.com/sitemap.xml

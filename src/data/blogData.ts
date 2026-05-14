@@ -151,7 +151,7 @@ export const blogPosts: BlogPost[] = [
 
       <p class="mb-6">Argentina's structural assets and active high-growth sectors will attract substantial foreign investment, and the Golden Visa will offer deal flow, partnerships and geographic arbitrage to its holders. The Argentinian Golden Visa is being offered at exactly the right time. The OECD projects GDP growth of 4.3% in 2026, driven by structural improvements in fiscal and external accounts rather than a temporary cyclical rebound. Asset valuations are still low when compared to other major cities and reflect a risk premium that is compressing as stabilization continues. <strong>Argentina will be the most compelling Golden Visa program available to global investors in the past decade.</strong></p>
 
-      <p class="mb-6">Stay ahead of the latest Argentina Golden Visa and residency developments, investment insights, and policy updates by subscribing to our newsletter at <a href="https://www.argentinaresidence.com" class="text-primary hover:underline font-semibold">ArgentinaResidence.com</a>. We also help facilitate qualifying investments in Argentina through our trusted local network and strategic partners.</p>
+      <p class="mb-6">Stay ahead of the latest Argentina Golden Visa and residency developments, investment insights, and policy updates by subscribing to our newsletter at <a href="https://argentinaresidence.com" class="text-primary hover:underline font-semibold">ArgentinaResidence.com</a>. We also help facilitate qualifying investments in Argentina through our trusted local network and strategic partners.</p>
     `,
   },
   {
@@ -289,16 +289,16 @@ export const blogPosts: BlogPost[] = [
 
       <p class="mb-6">For investors seeking European charm at emerging market prices and are willing to bet on Argentina's economic transformation this opportunity is a generational one. Buenos Aires is still a world-class city and firmly within the buyer's market phase. <strong>The bull market has begun but it is in its early stages</strong> and for those with a solid risk tolerance the opportunity window will remain open.</p>
 
-      <p class="mb-6"><strong>Subscribe to the Argentina Residence newsletter</strong> for the latest updates on Argentine residency, visas, and expat living at <a href="https://www.argentinaresidence.com" class="text-primary hover:underline font-semibold">www.argentinaresidence.com</a></p>
+      <p class="mb-6"><strong>Subscribe to the Argentina Residence newsletter</strong> for the latest updates on Argentine residency, visas, and expat living at <a href="https://argentinaresidence.com" class="text-primary hover:underline font-semibold">www.argentinaresidence.com</a></p>
 
       <div class="my-12"></div>
 
       <h2 class="text-3xl font-serif mb-6 mt-12">Sources</h2>
       
       <ul class="mb-6 ml-6 list-disc space-y-2">
-        <li>"The Escalating Price of the American Dream and Why Investors Should Look to the Argentina Golden Visa for the Solution," Argentina Residence, January 6, 2026, <a href="https://www.argentinaresidence.com/blog/american-dream-argentina-golden-visa-solution" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
-        <li>"The New Argentine Dream: Why we expect American Investors to Turn to Argentina's Golden Visa in 2026 and 2027," Argentina Residence, January 1, 2026, <a href="https://www.argentinaresidence.com/blog/argentina-golden-visa-american-investors-2026" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
-        <li>"Argentina's New Citizenship By Investment Program is Attracting American Investors," Argentina Residence, <a href="https://www.argentinaresidence.com/blog/argentina-citizenship-investment-american-investors" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
+        <li>"The Escalating Price of the American Dream and Why Investors Should Look to the Argentina Golden Visa for the Solution," Argentina Residence, January 6, 2026, <a href="https://argentinaresidence.com/blog/american-dream-argentina-golden-visa-solution" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
+        <li>"The New Argentine Dream: Why we expect American Investors to Turn to Argentina's Golden Visa in 2026 and 2027," Argentina Residence, January 1, 2026, <a href="https://argentinaresidence.com/blog/argentina-golden-visa-american-investors-2026" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
+        <li>"Argentina's New Citizenship By Investment Program is Attracting American Investors," Argentina Residence, <a href="https://argentinaresidence.com/blog/argentina-citizenship-investment-american-investors" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
       </ul>
     `,
     date: "2026-01-13",
@@ -382,7 +382,7 @@ export const blogPosts: BlogPost[] = [
 
       <p class="mb-6">For investors interested in real estate specifically, see our <a href="/blog/buenos-aires-real-estate-bull-market-analysis" class="text-primary hover:underline font-semibold">Buenos Aires real estate bull market analysis</a> for a detailed look at current opportunities.</p>
 
-      <p class="mb-6"><strong>Ready to unlock your path to Argentine residency?</strong> Visit <a href="https://www.argentinaresidence.com" class="text-primary hover:underline font-semibold">www.argentinaresidence.com</a> to explore your Golden Visa options and start your journey today.</p>
+      <p class="mb-6"><strong>Ready to unlock your path to Argentine residency?</strong> Visit <a href="https://argentinaresidence.com" class="text-primary hover:underline font-semibold">www.argentinaresidence.com</a> to explore your Golden Visa options and start your journey today.</p>
 
       <div class="my-12"></div>
 
@@ -500,7 +500,7 @@ export const blogPosts: BlogPost[] = [
 
       <p class="mb-6">To understand the broader economic case, read our article on <a href="/blog/american-dream-argentina-golden-visa-solution" class="text-primary hover:underline font-semibold">why the American Dream's rising costs make Argentina's Golden Visa compelling</a>.</p>
 
-      <p class="mb-6">If you want to stay up to date on the Argentinian golden visa news visit <a href="https://www.argentinaresidence.com" class="text-primary hover:underline font-semibold">www.argentinaresidence.com</a> and <a href="/contact" class="text-primary hover:underline font-semibold">sign up for the newsletter</a>.</p>
+      <p class="mb-6">If you want to stay up to date on the Argentinian golden visa news visit <a href="https://argentinaresidence.com" class="text-primary hover:underline font-semibold">www.argentinaresidence.com</a> and <a href="/contact" class="text-primary hover:underline font-semibold">sign up for the newsletter</a>.</p>
     `,
     date: "2025-12-20",
     readTime: "8 min read",

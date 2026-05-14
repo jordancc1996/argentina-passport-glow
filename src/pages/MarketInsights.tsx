@@ -20,7 +20,7 @@ const MarketInsights = () => {
       "name": "Argentina Residence",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.argentinaresidence.com/og-image.jpg"
+        "url": "https://argentinaresidence.com/og-image.jpg"
       }
     },
     "datePublished": "2025-01-01",

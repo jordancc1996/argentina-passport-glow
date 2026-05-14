@@ -21,7 +21,7 @@ const GoldenVisaProgram = () => {
     "publisher": {
       "@type": "Organization",
       "name": "Argentina Residence",
-      "url": "https://www.argentinaresidence.com"
+      "url": "https://argentinaresidence.com"
     },
     "datePublished": "2026-01-22",
     "dateModified": "2026-01-22"

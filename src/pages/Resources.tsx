@@ -52,7 +52,7 @@ const Resources = () => {
     "@type": "CollectionPage",
     "name": "Argentina Residency Resources",
     "description": "Essential information and official sources for Argentina residency",
-    "url": "https://www.argentinaresidence.com/resources",
+    "url": "https://argentinaresidence.com/resources",
     "mainEntity": {
       "@type": "ItemList",
       "itemListElement": officialResources.map((resource, index) => ({

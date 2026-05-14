@@ -7,7 +7,7 @@ const Privacy = () => {
     "@type": "WebPage",
     "name": "Privacy Policy - Argentina Residence",
     "description": "Privacy policy for Argentina Residence website and application forms",
-    "url": "https://www.argentinaresidence.com/privacy"
+    "url": "https://argentinaresidence.com/privacy"
   };
 
   return (
@@ -360,7 +360,7 @@ const Privacy = () => {
                   </p>
                   <p className="leading-relaxed">
                     <span className="text-white font-medium">Website:</span>{" "}
-                    <a href="https://www.argentinaresidence.com" className="text-text-cream hover:text-white underline">
+                    <a href="https://argentinaresidence.com" className="text-text-cream hover:text-white underline">
                       www.argentinaresidence.com
                     </a>
                   </p>

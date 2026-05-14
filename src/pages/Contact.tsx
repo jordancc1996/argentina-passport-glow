@@ -8,11 +8,11 @@ const Contact = () => {
     "@type": "ContactPage",
     "name": "Contact Argentina Residence",
     "description": "Get in touch for information about Argentina residency by investment",
-    "url": "https://www.argentinaresidence.com/contact",
+    "url": "https://argentinaresidence.com/contact",
     "mainEntity": {
       "@type": "Organization",
       "name": "Argentina Residence",
-      "url": "https://www.argentinaresidence.com"
+      "url": "https://argentinaresidence.com"
     }
   };
 
