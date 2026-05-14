@@ -11,7 +11,29 @@
         }
       ],
       "destination": "https://argentinaresidence.com/:path*",
-      "statusCode": 301
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "argentinaresidence.com"
+        }
+      ],
+      "destination": "https://argentinaresidence.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.argentinaresidence.com"
+        }
+      ],
+      "destination": "https://argentinaresidence.com/:path*",
+      "permanent": true
     },
     {
       "source": "/:path+/",
