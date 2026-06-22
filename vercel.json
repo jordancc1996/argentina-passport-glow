@@ -50,6 +50,11 @@
       "source": "/blog",
       "destination": "/research",
       "statusCode": 301
+    },
+    {
+      "source": "/guides",
+      "destination": "/resources",
+      "statusCode": 301
     }
   ],
   "rewrites": [
