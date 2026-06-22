@@ -375,9 +375,9 @@ export const blogPosts: BlogPost[] = [
       <h2 class="text-3xl font-serif mb-6 mt-12">Sources</h2>
       
       <ul class="mb-6 ml-6 list-disc space-y-2">
-        <li>"The Escalating Price of the American Dream and Why Investors Should Look to the Argentina Golden Visa for the Solution," Argentina Residence, January 6, 2026, <a href="https://argentinaresidence.com/blog/american-dream-argentina-golden-visa-solution" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
-        <li>"The New Argentine Dream: Why we expect American Investors to Turn to Argentina's Golden Visa in 2026 and 2027," Argentina Residence, January 1, 2026, <a href="https://argentinaresidence.com/blog/argentina-golden-visa-american-investors-2026" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
-        <li>"Argentina's New Citizenship By Investment Program is Attracting American Investors," Argentina Residence, <a href="https://argentinaresidence.com/blog/argentina-citizenship-investment-american-investors" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
+        <li>"The Escalating Price of the American Dream and Why Investors Should Look to the Argentina Golden Visa for the Solution," Argentina Residence, January 6, 2026, <a href="https://argentinaresidence.com/research/american-dream-argentina-golden-visa-solution" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
+        <li>"The New Argentine Dream: Why we expect American Investors to Turn to Argentina's Golden Visa in 2026 and 2027," Argentina Residence, January 1, 2026, <a href="https://argentinaresidence.com/research/argentina-golden-visa-american-investors-2026" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
+        <li>"Argentina's New Citizenship By Investment Program is Attracting American Investors," Argentina Residence, <a href="https://argentinaresidence.com/research/argentina-citizenship-investment-american-investors" class="text-primary hover:underline" target="_blank" rel="noopener noreferrer">argentinaresidence.com</a></li>
       </ul>
     `,
     date: "2026-01-13",
@@ -459,7 +459,7 @@ export const blogPosts: BlogPost[] = [
       
       <p class="mb-6">Golden visa programs present a compelling value proposition for every American. These programs offer a pathway to residency and in some cases citizenship in exchange for a significant investment in the host country's economy.</p>
 
-      <p class="mb-6">For investors interested in real estate specifically, see our <a href="/blog/buenos-aires-real-estate-bull-market-analysis" class="text-primary hover:underline font-semibold">Buenos Aires real estate bull market analysis</a> for a detailed look at current opportunities.</p>
+      <p class="mb-6">For investors interested in real estate specifically, see our <a href="/research/buenos-aires-real-estate-bull-market-analysis" class="text-primary hover:underline font-semibold">Buenos Aires real estate bull market analysis</a> for a detailed look at current opportunities.</p>
 
       <p class="mb-6"><strong>Ready to unlock your path to Argentine residency?</strong> Visit <a href="https://argentinaresidence.com" class="text-primary hover:underline font-semibold">argentinaresidence.com</a> to explore your Golden Visa options and start your journey today.</p>
 
@@ -577,7 +577,7 @@ export const blogPosts: BlogPost[] = [
 
       <p class="mb-6"><strong>Investors are strongly advised to wait until the final, detailed regulations are officially published before making any financial commitments.</strong></p>
 
-      <p class="mb-6">To understand the broader economic case, read our article on <a href="/blog/american-dream-argentina-golden-visa-solution" class="text-primary hover:underline font-semibold">why the American Dream's rising costs make Argentina's Golden Visa compelling</a>.</p>
+      <p class="mb-6">To understand the broader economic case, read our article on <a href="/research/american-dream-argentina-golden-visa-solution" class="text-primary hover:underline font-semibold">why the American Dream's rising costs make Argentina's Golden Visa compelling</a>.</p>
 
       <p class="mb-6">If you want to stay up to date on the Argentinian golden visa news visit <a href="https://argentinaresidence.com" class="text-primary hover:underline font-semibold">argentinaresidence.com</a> and <a href="/contact" class="text-primary hover:underline font-semibold">sign up for the newsletter</a>.</p>
     `,
@@ -676,7 +676,7 @@ export const blogPosts: BlogPost[] = [
       
       <p class="mb-6">Established investment migration programs in Europe are facing increased regulatory pressure and political backlash which effectively is closing their window of opportunity. Argentina is entering the market at an opportune time. The country has learned from the mistakes of other programs and is designing the program to prioritize genuine economic impact.</p>
 
-      <p class="mb-6">The <strong>Argentine Golden Visa</strong> is more than just another passport; it is a strategy to help Americans offset some of the negatives of current American structure. The Argentinian golden visa is poised to become a powerful magnet for American capital and talent. For a deeper look at the program's legal framework, read our guide on <a href="/blog/argentina-citizenship-investment-american-investors" class="text-primary hover:underline font-semibold">Argentina's citizenship by investment program</a>.</p>
+      <p class="mb-6">The <strong>Argentine Golden Visa</strong> is more than just another passport; it is a strategy to help Americans offset some of the negatives of current American structure. The Argentinian golden visa is poised to become a powerful magnet for American capital and talent. For a deeper look at the program's legal framework, read our guide on <a href="/research/argentina-citizenship-investment-american-investors" class="text-primary hover:underline font-semibold">Argentina's citizenship by investment program</a>.</p>
 
       <div class="my-12"></div>
 

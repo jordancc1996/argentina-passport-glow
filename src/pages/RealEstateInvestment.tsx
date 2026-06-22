@@ -361,7 +361,7 @@ const RealEstateInvestment = () => {
           </Link>
           
           <Link 
-            to="/blog/buenos-aires-real-estate-bull-market-analysis" 
+            to="/research/buenos-aires-real-estate-bull-market-analysis" 
             className="p-6 border border-border rounded-lg hover:border-gold/50 hover:bg-secondary/20 transition-all group"
           >
             <h3 className="font-serif text-lg mb-2 group-hover:text-gold transition-colors">
