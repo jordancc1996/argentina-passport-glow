@@ -138,7 +138,7 @@ function buildEntries() {
   // Blog posts
   for (const { slug, date } of extractEntries("src/data/blogData.ts")) {
     entries.push({
-      loc: `${BASE_URL}/blog/${slug}`,
+      loc: `${BASE_URL}/research/${slug}`,
       lastmod: date || TODAY,
       changefreq: "weekly",
       priority: "0.6",

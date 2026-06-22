@@ -23,7 +23,7 @@ export const faqData: FAQItem[] = [
 
 <p>Argentina's citizenship by investment program, established by Decree 524/2025, requires a minimum investment of <strong>$500,000 USD</strong> in qualifying Argentine assets. The program is administered by the newly created Agency for Citizenship by Investment, which oversees verification, compliance, and approvals for all applicants.</p>
 
-<p>U.S. applicants should also review our detailed analysis on <a href="/blog/argentina-citizenship-investment-american-investors">Argentina golden visa requirements for Americans</a>, which covers IRS compliance, tax residency rules, and timeline considerations specific to American investors.</p>
+<p>U.S. applicants should also review our detailed analysis on <a href="/research/argentina-citizenship-investment-american-investors">Argentina golden visa requirements for Americans</a>, which covers IRS compliance, tax residency rules, and timeline considerations specific to American investors.</p>
 
 <h2>Minimum Investment Amount</h2>
 

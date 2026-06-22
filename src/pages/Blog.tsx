@@ -26,7 +26,7 @@ const Blog = () => {
       "headline": post.title,
       "description": post.excerpt,
       "datePublished": post.date,
-      "url": `https://argentinaresidence.com/blog/${post.slug}`
+      "url": `https://argentinaresidence.com/research/${post.slug}`
     }))
   };
 
@@ -80,7 +80,7 @@ const Blog = () => {
                   className="group"
                 >
                   <Link 
-                    to={`/blog/${post.slug}`}
+                    to={`/research/${post.slug}`}
                     className="bg-card border border-border/60 rounded-xl overflow-hidden h-full flex flex-col shadow-[0_1px_2px_rgba(0,0,0,0.04)] hover:shadow-[0_24px_48px_-24px_rgba(0,0,0,0.18)] hover:-translate-y-1 hover:border-border transition-all duration-500 ease-out cursor-pointer block"
                   >
                     {post.image && (

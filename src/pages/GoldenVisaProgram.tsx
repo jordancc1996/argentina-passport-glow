@@ -248,7 +248,7 @@ const GoldenVisaProgram = () => {
           </Link>
           
           <Link 
-            to="/blog/argentina-citizenship-investment-american-investors" 
+            to="/research/argentina-citizenship-investment-american-investors" 
             className="p-6 border border-border rounded-lg hover:border-gold/50 hover:bg-secondary/20 transition-all group"
           >
             <h3 className="font-serif text-lg mb-2 group-hover:text-gold transition-colors">

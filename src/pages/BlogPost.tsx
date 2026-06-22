@@ -12,7 +12,7 @@ const BlogPost = () => {
   const post = slug ? getBlogPostBySlug(slug) : undefined;
 
   if (!post) {
-    return <Navigate to="/blog" replace />;
+    return <Navigate to="/research" replace />;
   }
 
   // Find next and previous posts
@@ -41,10 +41,10 @@ const BlogPost = () => {
       }
     },
     "image": post.image ? `https://argentinaresidence.com${post.image}` : "https://argentinaresidence.com/og-image.jpg",
-    "url": `https://argentinaresidence.com/blog/${post.slug}`,
+    "url": `https://argentinaresidence.com/research/${post.slug}`,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://argentinaresidence.com/blog/${post.slug}`
+      "@id": `https://argentinaresidence.com/research/${post.slug}`
     },
     "keywords": post.keywords ? post.keywords.join(", ") : undefined,
     "articleSection": post.category,
@@ -56,7 +56,7 @@ const BlogPost = () => {
       <SEO 
         title={post.seoTitle || post.title}
         description={(post.seoDescription || post.excerpt).substring(0, 155) + ((post.seoDescription || post.excerpt).length > 155 ? '...' : '')}
-        canonical={`/blog/${post.slug}`}
+        canonical={`/research/${post.slug}`}
         ogImage={post.image}
         schema={schema}
       />
@@ -124,7 +124,7 @@ const BlogPost = () => {
             {/* Share Buttons Section */}
             <div className="mt-12 pt-8 border-t border-border">
               <ShareButtons
-                url={`https://argentinaresidence.com/blog/${post.slug}`}
+                url={`https://argentinaresidence.com/research/${post.slug}`}
                 title={post.title}
                 excerpt={post.excerpt}
               />
@@ -155,7 +155,7 @@ const BlogPost = () => {
                     .map((relatedPost) => (
                       <Link 
                         key={relatedPost.id}
-                        to={`/blog/${relatedPost.slug}`}
+                        to={`/research/${relatedPost.slug}`}
                         className="group bg-card border border-border rounded-lg overflow-hidden hover:border-primary transition-colors"
                       >
                         {relatedPost.image && (
@@ -185,7 +185,7 @@ const BlogPost = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {previousPost && (
                     <Link 
-                      to={`/blog/${previousPost.slug}`}
+                      to={`/research/${previousPost.slug}`}
                       className="group p-6 bg-card border border-border rounded-lg hover:border-primary transition-colors"
                     >
                       <div className="text-sm text-text-secondary mb-2">Previous Article</div>
@@ -196,7 +196,7 @@ const BlogPost = () => {
                   )}
                   {nextPost && (
                     <Link 
-                      to={`/blog/${nextPost.slug}`}
+                      to={`/research/${nextPost.slug}`}
                       className="group p-6 bg-card border border-border rounded-lg hover:border-primary transition-colors md:text-right"
                     >
                       <div className="text-sm text-text-secondary mb-2">Next Article</div>

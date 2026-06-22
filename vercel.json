@@ -47,6 +47,36 @@
       "statusCode": 301
     },
     {
+      "source": "/blog/argentina-citizenship-by-investment-launch-date",
+      "destination": "/research/argentina-citizenship-by-investment-launch-date",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/argentine-investment-landscape-golden-visa-value-proposition",
+      "destination": "/research/argentine-investment-landscape-golden-visa-value-proposition",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/buenos-aires-real-estate-bull-market-analysis",
+      "destination": "/research/buenos-aires-real-estate-bull-market-analysis",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/american-dream-argentina-golden-visa-solution",
+      "destination": "/research/american-dream-argentina-golden-visa-solution",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/argentina-citizenship-investment-american-investors",
+      "destination": "/research/argentina-citizenship-investment-american-investors",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/argentina-golden-visa-american-investors-2026",
+      "destination": "/research/argentina-golden-visa-american-investors-2026",
+      "statusCode": 301
+    },
+    {
       "source": "/blog",
       "destination": "/research",
       "statusCode": 301
