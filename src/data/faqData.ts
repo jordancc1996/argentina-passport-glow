@@ -18,7 +18,7 @@ export const faqData: FAQItem[] = [
     question: "Argentina Golden Visa Investment Requirements",
     answer: "Argentina's citizenship by investment program requires a minimum investment of $500,000 USD in qualifying assets such as real estate, government bonds, or active business ventures. The investment must be maintained for a defined holding period and is subject to government verification.",
     metaTitle: "Argentina Golden Visa Investment Requirements | 2025 Guide",
-    metaDescription: "Learn the minimum investment requirements for Argentina's golden visa. $500K minimum across real estate, bonds, or business. Full breakdown of qualifying options.",
+    metaDescription: "Discover the Argentina golden visa minimum investment amount and options. Learn the exact Argentina citizenship by investment requirements for 2026.",
     richContent: `<h1>Argentina Golden Visa Investment Requirements</h1>
 
 <p>Argentina's citizenship by investment program, established by Decree 524/2025, requires a minimum investment of <strong>$500,000 USD</strong> in qualifying Argentine assets. The program is administered by the newly created Agency for Citizenship by Investment, which oversees verification, compliance, and approvals for all applicants.</p>

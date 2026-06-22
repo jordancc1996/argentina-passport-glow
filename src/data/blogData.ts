@@ -588,7 +588,7 @@ export const blogPosts: BlogPost[] = [
     author: "Argentina Residence Team",
     image: "/argentina-cbi-american-investors-new.jpg",
     seoTitle: "Argentina Citizenship by Investment for Americans",
-    seoDescription: "Why American investors are choosing Argentina's new citizenship by investment program. $500K investment with Mercosur access.",
+    seoDescription: "Explore Argentina citizenship by investment for US investors. Compare tax residency rules, timeline, and the Argentina golden visa application process",
     keywords: ["Argentina citizenship by investment", "American investors Argentina", "Argentina golden visa", "E-2 visa Argentina", "Mercosur citizenship"]
   },
   {
