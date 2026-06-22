@@ -24,7 +24,7 @@ export const blogPosts: BlogPost[] = [
     category: "Market Intelligence",
     slug: "argentina-citizenship-by-investment-launch-date",
     author: "Argentina Residence Advisory",
-    image: "/argentine-investment-landscape.jpg",
+    image: "/__l5e/assets-v1/303e97ef-866e-4d37-ae2e-a3d1651ee56b/argentina-golden-visa-argentinaresidence.jpg",
     seoTitle: "Argentina Citizenship by Investment Launch Date | Q4 2026",
     seoDescription: "When will Argentina citizenship by investment start? A Q4 2026 timeline analysis covering the APCI pivot, the cancelled tender, and the program's current status.",
     keywords: [
@@ -38,7 +38,7 @@ export const blogPosts: BlogPost[] = [
     content: `
       <div class="mb-8">
         <img
-          src="/argentine-investment-landscape.jpg"
+          src="/__l5e/assets-v1/303e97ef-866e-4d37-ae2e-a3d1651ee56b/argentina-golden-visa-argentinaresidence.jpg"
           alt="Argentina citizenship by investment launch date — Q4 2026 market analysis"
           class="w-full h-auto rounded-lg"
           width="1280"
