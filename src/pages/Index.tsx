@@ -208,7 +208,7 @@ const Index = () => {
       <EditorialSection className="bg-secondary/30">
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Your pathway to Argentine residency</h2>
         <p className="text-body text-text-secondary mb-12 max-w-3xl mx-auto tracking-wide">
-          Learn about investment requirements, application procedures, and everything you need to know about Argentina's residency by investment program. Explore our comprehensive guides and resources to help you make informed decisions.
+          Learn about investment requirements, application procedures, and everything you need to know about Argentina's residency by investment program. U.S. investors can explore our dedicated guide on <a href="/blog/argentina-citizenship-investment-american-investors">Argentina investment residency for US citizens</a>, covering tax implications and timeline specifics. Explore our comprehensive guides and resources to help you make informed decisions.
         </p>
       </EditorialSection>
 
