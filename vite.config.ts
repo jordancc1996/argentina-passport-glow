@@ -47,7 +47,9 @@ export default defineConfig(({ mode }) => ({
         blogPostResidence2025: path.resolve(__dirname, "blog/argentina-residence-program-2025/index.html"),
         blogPostTopCities: path.resolve(__dirname, "blog/top-cities-argentina-expats/index.html"),
         blogPostGoldenVisaIntro: path.resolve(__dirname, "blog/argentina-golden-visa-program-introduction/index.html"),
-        blogPostCBIAmericanInvestors: path.resolve(__dirname, "blog/argentina-citizenship-investment-american-investors/index.html"),
+        researchPostCBIAmericanInvestors: path.resolve(__dirname, "research/argentina-citizenship-investment-american-investors/index.html"),
+        researchPostAmericanDream: path.resolve(__dirname, "research/american-dream-argentina-golden-visa-solution/index.html"),
+        researchPostBuenosAiresRealEstate: path.resolve(__dirname, "research/buenos-aires-real-estate-bull-market-analysis/index.html"),
 
         // Golden Visa Hub pages
         guideGoldenVisa: path.resolve(__dirname, "guides/argentina-golden-visa-program/index.html"),
