@@ -57,10 +57,13 @@ function parseRedirectSources() {
 function extractEntries(filePath) {
   const src = readFileSync(resolve(ROOT, filePath), "utf8");
   const entries = [];
-  const objRegex = /\{[\s\S]*?slug:\s*"([^"]+)"[\s\S]*?date:\s*"([^"]+)"[\s\S]*?\}/g;
-  let m;
-  while ((m = objRegex.exec(src)) !== null) {
-    entries.push({ slug: m[1], date: m[2] });
+  // Split into per-object chunks anchored at `id:` (each entry starts with `id: <n>`)
+  // so slug/date order inside the object doesn't matter.
+  const chunks = src.split(/\n\s*\{\s*\n?\s*id:\s*\d+/).slice(1);
+  for (const chunk of chunks) {
+    const slug = chunk.match(/slug:\s*"([^"]+)"/);
+    const date = chunk.match(/date:\s*"([^"]+)"/);
+    if (slug) entries.push({ slug: slug[1], date: date ? date[1] : TODAY });
   }
   return entries;
 }
