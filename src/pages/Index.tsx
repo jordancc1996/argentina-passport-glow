@@ -45,7 +45,7 @@ const Index = () => {
         schema={schema}
       />
       <Hero
-        title="Argentina Residence and Citizenship by Investment"
+        title="Argentina Citizenship by Investment Requirements"
         subtitle="Live and invest in South America's most dynamic economy"
         backgroundImage={heroNightImage}
         ctaText="Explore Your Options"

@@ -149,13 +149,12 @@ const LuxuryContactCTA = () => {
         <div className="w-full lg:w-1/2 flex items-center justify-center px-8 py-16 lg:px-16 lg:py-24">
           <div className="w-full max-w-lg">
             {/* Headline */}
-            <h2
+            <h1
               className="text-3xl md:text-4xl lg:text-5xl text-white mb-6 leading-tight"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
-              Let's Find the{" "}
-              <span className="text-[#C9A962]">Right Path</span> for You
-            </h2>
+              Argentina Investment Immigration Consultation
+            </h1>
 
             <p className="text-white/60 text-base md:text-lg mb-12 leading-relaxed font-sans">
               Book a free, no-obligation 15-minute call with our advisory team. We'll answer your questions about Argentine residency and help you understand your best options.
