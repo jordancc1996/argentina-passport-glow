@@ -21,6 +21,15 @@ const NewsCard = ({ article, index = 0 }: NewsCardProps) => {
         to={`/industry-news/${article.slug}`}
         className="bg-card border border-border/60 rounded-xl overflow-hidden h-full flex flex-col shadow-[0_1px_2px_rgba(0,0,0,0.04)] hover:shadow-[0_24px_48px_-24px_rgba(0,0,0,0.18)] hover:-translate-y-1 hover:border-border transition-all duration-500 ease-out cursor-pointer block"
       >
+        {article.image && (
+          <div className="relative overflow-hidden aspect-[16/9]">
+            <img
+              src={article.image}
+              alt={article.title}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            />
+          </div>
+        )}
         <div className="px-8 md:px-10 pt-10 pb-12 flex-1 flex flex-col">
           <div className="flex items-center gap-3 text-[0.7rem] uppercase tracking-[0.16em] text-muted-foreground mb-7">
             {article.source && (
