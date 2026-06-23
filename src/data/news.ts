@@ -6,6 +6,7 @@ export interface NewsArticle {
   summary: string;
   body: string; // HTML allowed
   source?: string;
+  image?: string;
 }
 
 export const newsArticles: NewsArticle[] = [
@@ -46,6 +47,7 @@ export const newsArticles: NewsArticle[] = [
     date: "2026-06-15",
     summary:
       "A detailed comparison of Argentina's direct citizenship pathway under Decree 524/2025 versus Portugal's established residency-by-investment program, evaluating investment thresholds, global mobility, and family inclusion benefits.",
+    image: "/argentina-cbi-vs-portugal-golden-visa.jpg",
     body: `
       <p class="mb-6">The global landscape of investment migration is undergoing a significant realignment. As European nations restrict their residency programs, South America is emerging as a competitive alternative. The introduction of the Argentina citizenship by investment program under Decree 524/2025 provides a new option for investors seeking global mobility. This analysis compares the pending Argentine program with the established Portugal Golden Visa, evaluating their respective legal frameworks, investment requirements, and long-term benefits.</p>
       <h2 class="text-3xl font-serif mb-6 mt-12">The Structural Difference: Citizenship versus Residency</h2>
