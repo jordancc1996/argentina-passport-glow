@@ -9,6 +9,8 @@ const IndustryNews = () => {
   const sorted = [...newsArticles].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
+  const parallaxY = useParallax(-0.3);
+  const opacity = useScrollOpacity(600);
 
   return (
     <Layout>
