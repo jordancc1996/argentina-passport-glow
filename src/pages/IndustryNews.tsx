@@ -3,6 +3,7 @@ import SEO from "@/components/SEO";
 import NewsCard from "@/components/NewsCard";
 import { motion } from "framer-motion";
 import { newsArticles } from "@/data/news";
+import { useParallax, useScrollOpacity } from "@/hooks/useParallax";
 
 const IndustryNews = () => {
   const sorted = [...newsArticles].sort(
