@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getNewsArticleBySlug, newsArticles } from "@/data/news";
+import { useParallax } from "@/hooks/useParallax";
 
 const IndustryNewsArticle = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -15,6 +16,7 @@ const IndustryNewsArticle = () => {
   }
 
   const related = newsArticles.filter((a) => a.slug !== article.slug).slice(0, 3);
+  const parallaxY = useParallax(-0.3);
 
   return (
     <Layout>
@@ -24,8 +26,27 @@ const IndustryNewsArticle = () => {
         canonical={`/industry-news/${article.slug}`}
       />
 
-      <main className="section-padding">
-        <article className="max-w-4xl mx-auto px-4 md:px-8">
+      <main>
+        {article.image && (
+          <section className="relative min-h-[50vh] overflow-hidden -mt-[72px] pt-[72px] md:-mt-[88px] md:pt-[88px]">
+            <motion.div
+              className="absolute inset-0 z-0 scale-110"
+              style={{ y: parallaxY }}
+              initial={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
+            >
+              <img
+                src={article.image}
+                alt={article.title}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/50" />
+            </motion.div>
+          </section>
+        )}
+
+        <div className={article.image ? "pt-16 pb-16 md:pt-24 md:pb-24" : "section-padding"}>
+          <article className="max-w-4xl mx-auto px-4 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -120,6 +141,7 @@ const IndustryNewsArticle = () => {
             )}
           </motion.div>
         </article>
+        </div>
       </main>
     </Layout>
   );
