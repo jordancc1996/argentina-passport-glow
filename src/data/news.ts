@@ -40,6 +40,7 @@ export const newsArticles: NewsArticle[] = [
       <p class="mb-6">Pricing remains favorable relative to comparable global cities, though early signs of selective appreciation have emerged in prime locations.</p>
     `,
     source: "Market Update",
+    image: "/buenos-aires-foreign-buyer-activity-q1.jpg",
   },
   {
     id: 3,
