@@ -24,6 +24,7 @@ export const newsArticles: NewsArticle[] = [
       <p class="mb-6">Serious investors are advised to begin organizing source-of-funds documentation and consulting with qualified counsel ahead of the application window opening.</p>
     `,
     source: "Internal Briefing",
+    image: "/decree-524-2025-investment-visa.jpg",
   },
   {
     id: 2,
