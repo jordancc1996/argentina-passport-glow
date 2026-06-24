@@ -116,7 +116,7 @@ const BlogPost = () => {
                 prose-a:text-primary prose-a:no-underline hover:prose-a:underline
                 prose-strong:text-foreground prose-strong:font-semibold
                 prose-ul:text-text-secondary prose-li:text-text-secondary
-                prose-h2:text-5xl query prose-h2:mt-12 prose-h2:mb-6
+                prose-h2:text-5xl prose-h2:mt-12 prose-h2:mb-6
                 prose-h3:text-4xl prose-h3:mt-8 prose-h3:mb-4"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
