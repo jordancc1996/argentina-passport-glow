@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { Mail, Phone, Calendar } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const ADVISOR_EMAIL = "rachele@argentinaresidence.com";
 const ADVISOR_PHONE_DISPLAY = "+1 (555) 000-0000"; // placeholder — awaiting confirmed number
 const ADVISOR_PHONE_TEL = "+15550000000";
-const CALENDLY_URL = "https://calendly.com/argentinaresidence"; // placeholder booking link
 
 const ConsultationCTA = () => {
   const [submitting, setSubmitting] = useState(false);
@@ -55,7 +54,7 @@ const ConsultationCTA = () => {
       className="w-full py-16 md:py-20 px-6 md:px-10"
       style={{ backgroundColor: "hsl(150, 5%, 8%)" }}
     >
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-10">
         {/* Column 1 — Form */}
         <div>
           <h3 style={headingStyle}>Start Your Residency Journey Now</h3>
@@ -154,40 +153,6 @@ const ConsultationCTA = () => {
           </ul>
         </div>
 
-        {/* Column 3 — Book a Call */}
-        <div>
-          <h3 style={headingStyle}>Book a 15-Minute Call</h3>
-          <p
-            style={{
-              fontFamily: "'Montserrat', sans-serif",
-              color: "rgba(255,255,255,0.7)",
-              fontSize: 14,
-              lineHeight: 1.6,
-              marginBottom: 20,
-            }}
-          >
-            Choose a time that works for you. No obligation.
-          </p>
-          <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-white/40 text-white hover:bg-primary hover:border-primary transition-all duration-300"
-            style={{
-              fontFamily: "'Montserrat', sans-serif",
-              fontWeight: 600,
-              fontSize: 13,
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
-              padding: "14px 24px",
-              borderRadius: 6,
-              textDecoration: "none",
-            }}
-          >
-            <Calendar className="w-4 h-4" />
-            View Available Times
-          </a>
-        </div>
       </div>
     </section>
   );
