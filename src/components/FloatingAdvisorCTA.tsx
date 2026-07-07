@@ -54,19 +54,19 @@ const FloatingAdvisorCTA = () => {
         type="button"
         onClick={() => { setSubmitted(false); setOpen(true); }}
         aria-label="Speak to an advisor"
-        className="fixed z-[9990] flex items-center gap-2.5 font-sans font-medium bg-primary text-primary-foreground rounded-full
-          px-6 py-4 text-base
+        className="fixed z-[9990] flex items-center gap-3 font-sans font-medium bg-primary text-primary-foreground rounded-full
+          px-7 py-5 text-lg
           hover:scale-[1.03] hover:shadow-[0_8px_28px_rgba(0,0,0,0.28)]
           transition-all duration-300
           bottom-6 right-6
           shadow-[0_6px_20px_rgba(0,0,0,0.2)]
-          max-[480px]:px-3.5 max-[480px]:py-3.5 max-[480px]:bottom-4 max-[480px]:right-4"
+          max-[480px]:px-4 max-[480px]:py-4 max-[480px]:bottom-4 max-[480px]:right-4"
       >
-        <span className="relative flex items-center justify-center w-5 h-5">
+        <span className="relative flex items-center justify-center w-6 h-6">
           <span className="absolute inset-0 rounded-full bg-white/40 advisor-pulse-ring" />
-          <span className="relative w-2.5 h-2.5 rounded-full bg-white" />
+          <span className="relative w-3 h-3 rounded-full bg-white" />
         </span>
-        <MessageCircle className="w-5 h-5 max-[480px]:hidden" strokeWidth={2} />
+        <MessageCircle className="w-6 h-6 max-[480px]:hidden" strokeWidth={2} />
         <span className="max-[480px]:hidden">Speak to an advisor</span>
       </button>
 
