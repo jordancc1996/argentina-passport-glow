@@ -54,7 +54,7 @@ const ConsultationCTA = () => {
       className="w-full py-16 md:py-20 px-6 md:px-10"
       style={{ backgroundColor: "hsl(150, 5%, 8%)" }}
     >
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-10">
         {/* Column 1 — Form */}
         <div>
           <h3 style={headingStyle}>Start Your Residency Journey Now</h3>
