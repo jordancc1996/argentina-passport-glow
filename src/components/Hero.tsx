@@ -109,6 +109,36 @@ const Hero = ({
           </motion.div>
         )}
       </motion.div>
+
+      {/* Editorial scroll indicator — signals content continues below the hero */}
+      <motion.div
+        aria-hidden="true"
+        className="absolute left-1/2 -translate-x-1/2 bottom-8 md:bottom-10 z-10 flex flex-col items-center pointer-events-none"
+        style={{ opacity }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2, delay: 1.6 }}
+      >
+        <span
+          className="font-sans text-[0.6rem] tracking-[0.32em] uppercase mb-3"
+          style={{ color: "rgba(255,255,255,0.55)" }}
+        >
+          Scroll
+        </span>
+        <motion.span
+          className="block w-px bg-white/40"
+          initial={{ height: 0 }}
+          animate={{ height: 48 }}
+          transition={{ duration: 1.2, delay: 1.8, ease: "easeOut" }}
+          style={{ transformOrigin: "top" }}
+        />
+        <motion.span
+          className="block w-px bg-white/70"
+          animate={{ height: [0, 20, 0], y: [0, 28, 48] }}
+          transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut", delay: 2.4 }}
+          style={{ position: "absolute", top: "calc(0.75rem + 12px)" }}
+        />
+      </motion.div>
     </section>
   );
 };
