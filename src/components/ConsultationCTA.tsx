@@ -153,40 +153,6 @@ const ConsultationCTA = () => {
           </ul>
         </div>
 
-        {/* Column 3 — Book a Call */}
-        <div>
-          <h3 style={headingStyle}>Book a 15-Minute Call</h3>
-          <p
-            style={{
-              fontFamily: "'Montserrat', sans-serif",
-              color: "rgba(255,255,255,0.7)",
-              fontSize: 14,
-              lineHeight: 1.6,
-              marginBottom: 20,
-            }}
-          >
-            Choose a time that works for you. No obligation.
-          </p>
-          <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-white/40 text-white hover:bg-primary hover:border-primary transition-all duration-300"
-            style={{
-              fontFamily: "'Montserrat', sans-serif",
-              fontWeight: 600,
-              fontSize: 13,
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
-              padding: "14px 24px",
-              borderRadius: 6,
-              textDecoration: "none",
-            }}
-          >
-            <Calendar className="w-4 h-4" />
-            View Available Times
-          </a>
-        </div>
       </div>
     </section>
   );
