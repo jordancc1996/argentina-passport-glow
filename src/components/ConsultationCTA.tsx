@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { Mail, Phone, Calendar } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const ADVISOR_EMAIL = "rachele@argentinaresidence.com";
 const ADVISOR_PHONE_DISPLAY = "+1 (555) 000-0000"; // placeholder — awaiting confirmed number
 const ADVISOR_PHONE_TEL = "+15550000000";
-const CALENDLY_URL = "https://calendly.com/argentinaresidence"; // placeholder booking link
 
 const ConsultationCTA = () => {
   const [submitting, setSubmitting] = useState(false);
