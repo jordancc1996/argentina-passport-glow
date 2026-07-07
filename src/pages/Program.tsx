@@ -83,6 +83,7 @@ const Program = () => {
       
       <EditorialSection centered={false} className="!pt-12">
         <ScrollytellingSteps
+          className="-mt-20"
           eyebrow="A Bespoke Process"
           heading="From first conversation to approved residency"
           intro="Our advisory team guides qualified investors through every stage — discreetly, methodically, and in close coordination with licensed immigration counsel."
