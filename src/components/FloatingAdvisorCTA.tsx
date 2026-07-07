@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { MessageCircle } from "lucide-react";
 
 /**
  * Floating "Speak to an Advisor" FAB.
@@ -38,15 +39,35 @@ const FloatingAdvisorCTA = () => {
 
   return (
     <>
+      <style>{`
+        @keyframes advisor-pulse {
+          0% { transform: scale(1); opacity: 0.55; }
+          70% { transform: scale(2.4); opacity: 0; }
+          100% { transform: scale(2.4); opacity: 0; }
+        }
+        .advisor-pulse-ring {
+          animation: advisor-pulse 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+      `}</style>
+
       <button
         type="button"
         onClick={() => { setSubmitted(false); setOpen(true); }}
         aria-label="Speak to an advisor"
-        className="fixed z-[9990] font-sans font-medium text-[0.7rem] tracking-[0.22em] uppercase bg-primary text-primary-foreground px-8 py-4 shadow-lg hover:bg-primary/80 hover:-translate-y-0.5 transition-all duration-300
+        className="fixed z-[9990] flex items-center gap-2.5 font-sans font-medium bg-primary text-primary-foreground rounded-full
+          px-6 py-4 text-base
+          hover:scale-[1.03] hover:shadow-[0_8px_28px_rgba(0,0,0,0.28)]
+          transition-all duration-300
           bottom-6 right-6
-          max-md:right-1/2 max-md:translate-x-1/2 max-md:bottom-5 max-md:px-6 max-md:py-3 max-md:text-[0.65rem]"
+          shadow-[0_6px_20px_rgba(0,0,0,0.2)]
+          max-[480px]:px-3.5 max-[480px]:py-3.5 max-[480px]:bottom-4 max-[480px]:right-4"
       >
-        Speak to an Advisor
+        <span className="relative flex items-center justify-center w-5 h-5">
+          <span className="absolute inset-0 rounded-full bg-white/40 advisor-pulse-ring" />
+          <span className="relative w-2.5 h-2.5 rounded-full bg-white" />
+        </span>
+        <MessageCircle className="w-5 h-5 max-[480px]:hidden" strokeWidth={2} />
+        <span className="max-[480px]:hidden">Speak to an advisor</span>
       </button>
 
       {open && (
