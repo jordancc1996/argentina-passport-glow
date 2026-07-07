@@ -14,10 +14,6 @@ const Navigation = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isAdvisorOpen, setIsAdvisorOpen] = useState(false);
-  const [advisorSubmitting, setAdvisorSubmitting] = useState(false);
-  const [advisorSubmitted, setAdvisorSubmitted] = useState(false);
-
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 100);
     window.addEventListener("scroll", onScroll, { passive: true });
