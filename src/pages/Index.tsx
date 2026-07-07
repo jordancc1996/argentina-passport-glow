@@ -207,9 +207,33 @@ const Index = () => {
       
       <EditorialSection className="bg-secondary/30">
         <h2 className="font-serif text-xl-editorial mb-8 tracking-wide">Your pathway to Argentine residency</h2>
-        <p className="text-body text-text-secondary mb-12 max-w-3xl mx-auto tracking-wide">
-          Learn about investment requirements, application procedures, and everything you need to know about Argentina's residency by investment program. U.S. investors can explore our dedicated guide on <a href="/research/argentina-citizenship-investment-american-investors">Argentina investment residency for US citizens</a>, covering tax implications and timeline specifics. Explore our comprehensive guides and resources to help you make informed decisions.
-        </p>
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
+          <Link
+            to="/research/argentina-citizenship-investment-american-investors"
+            className="group flex flex-col bg-card border border-border rounded-lg p-8 hover:border-primary hover:shadow-lg transition-all duration-300"
+          >
+            <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">US Investors</h3>
+            <p className="text-sm text-text-secondary tracking-wide flex-1 mb-6">
+              Tax implications and timeline specifics for U.S. citizens pursuing Argentine residency through investment.
+            </p>
+            <span className="inline-flex items-center gap-2 font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase text-primary group-hover:underline">
+              Read Guide <ArrowRight className="w-4 h-4" />
+            </span>
+          </Link>
+
+          <Link
+            to="/resources"
+            className="group flex flex-col bg-card border border-border rounded-lg p-8 hover:border-primary hover:shadow-lg transition-all duration-300"
+          >
+            <h3 className="font-serif text-lg-editorial mb-3 tracking-wide">Explore All Guides</h3>
+            <p className="text-sm text-text-secondary tracking-wide flex-1 mb-6">
+              The full guides and resources hub for Argentina residency, investment, and lifestyle.
+            </p>
+            <span className="inline-flex items-center gap-2 font-sans font-semibold text-[0.75rem] tracking-[0.08em] uppercase text-primary group-hover:underline">
+              Browse Resources <ArrowRight className="w-4 h-4" />
+            </span>
+          </Link>
+        </div>
       </EditorialSection>
 
       <EditorialSection>
