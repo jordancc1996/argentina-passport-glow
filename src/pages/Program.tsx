@@ -81,7 +81,7 @@ const Program = () => {
         </div>
       </EditorialSection>
       
-      <EditorialSection centered={false}>
+      <EditorialSection centered={false} className="!pt-12">
         <ScrollytellingSteps
           eyebrow="A Bespoke Process"
           heading="From first conversation to approved residency"
