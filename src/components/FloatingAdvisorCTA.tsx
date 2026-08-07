@@ -3,7 +3,7 @@
  * - Fixed bottom-right on every page.
  * - Circular, dark outlined WhatsApp glyph matching the reference mark.
  */
-const WHATSAPP_NUMBER = "15550000000"; // placeholder — awaiting confirmed number
+const WHATSAPP_NUMBER = "12676323162"; // US number with country code
 
 const FloatingAdvisorCTA = () => (
   <a
